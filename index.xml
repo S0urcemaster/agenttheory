@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<agententheorie>
-  <titel>Agententheorie</titel>
-  <betrifft>
-    <editor>Agent</editor>
-    <editor>User</editor>
-  </betrifft>
-  <idee>Dieses Projekt beschreibt die gemeinsame Architektur jeder Beschreibungseinheit im AI-Agency-Oekosystem.</idee>
+<agenttheory>
+  <titel>Agent Theory</titel>
+  <include datei="glossar.xml" />
+  <typedef>
+    <_self>
+      <glossary name="typedef" />
+      <!-- Vorwärtsverwendung von Glossar / Definition folgt -->
+      <def>
+        <_self>
+          <reserved name="def" />
+          <def>Kurz für Definition</def>
+        </_self>
+      </def>
+    </_self>
+    <def>Agent = AI Agent (Wahrscheinlich du)</def>
+    <def>Theory = Canon Project</def>
+    <def>Jede Theory wird durch den Canon begrenzt</def>
+    <def>Der Canon (dieses Projekt) ist die Urdefinition für alle Canon Projekte</def>
+  </typedef>
+  <typ-beschreibung></typ-beschreibung>
+  <idee>Dieses Projekt beschreibt die gemeinsame Architektur jeder Beschreibungseinheit im AI Agency Oekosystem</idee>
   <bedeutung>Der neueste architektonische Fortschritt wird hier festgehalten.</bedeutung>
+  <bedeutung>Agent Theory = Erste und oberste "Theory" -Definition</bedeutung>
   <ausrichtung>Diese Spec ist zuerst auf den Agenten zugeschnitten. Der User gibt Ziele, Korrekturen und Entscheidungen vor; die formale Pflege der Spec soll der Agent uebernehmen.</ausrichtung>
   <zieldefinition>Am Ende soll der Agent Aenderungen an Spec und Theory rein durch muendliche Anweisungen machen koennen, ohne dass der User direkt in die Dateien hineinschreibt.</zieldefinition>
   <dominanz>Die Metastruktur anderer Projekte ueberschreibt dieses Projekt niemals.</dominanz>
   <include datei="riggsandsmith-imported.xml" />
-</agententheorie>
+</agenttheory>
