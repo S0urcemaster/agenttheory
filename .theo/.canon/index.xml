@@ -1,23 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE canon SYSTEM "canon.dtd">
+
 <canon>
   <titel>AI Agency Canon</titel>
-  <betrifft>
-    <intelligenz>Agent</intelligenz>
-    <intelligenz>User</intelligenz>
-  </betrifft>
-  <idee>Der Canon ist das unumstoessliche Meta-Regelwerk fuer Agentenbeschreibungen.</idee>
-  <bedeutung>Der neueste architektonische Fortschritt wird hier festgehalten.</bedeutung>
-  <dominanz>Die Metastruktur anderer Projekte ueberschreibt dieses Projekt niemals.</dominanz>
-  <sprachregel>
-    <betrifft>
-      <bereich>canon</bereich>
-      <bereich>spezifikationen</bereich>
-      <bereich>tags</bereich>
-      <bereich>inhalte</bereich>
-    </betrifft>
-    <inhaltssprache>Deutsch</inhaltssprache>
-    <tagsprache>Deutsch</tagsprache>
+  <autor>AI Agency</autor>
+  <projekt kurz="agenttheory">Agent Theory</projekt>
+  <projektstand>In Entwicklung</projektstand>
+
+  <initialisierung>
+    <vorbemerkung>Vorbemerkungen werden später falls erforderlich präzisiert und dienen dem einleitenden Verständnis</vorbemerkung>
+    <vorbemerkung>Gemischte Sprache : Beschreibungen Deutsch mit Entwickler -Englisch</vorbemerkung>
+    <vorbemerkung>Redundanzen zur Verstärkung</vorbemerkung>
+    <vorbemerkung>Lies dieses Dateiformat semantisch</vorbemerkung>
+    <vorbemerkung>Das Strukturregelwerk für diese Spezifikation soll sich aus den vorliegenden Beispielen ergeben . Weiterentwicklungen sollen sich daran anlehnen</vorbemerkung>
+    <vorbemerkung>Das XML -Format kann lockerer /semantischer gehandhabt werden</vorbemerkung>
+
+    <definitionen bereich="glossar">
+        <definition>
+            <name>AI Agency</name>
+            <bedeutung>AI Agency ist die Firma und der Schöpfer dieser Spezifikation</bedeutung>
+        </definition>
+        <definition>
+            <name>Canon</name>
+            <bedeutung>Ein Canon ist eine Metaspezifikation für andere Spezifikationen / die von Agenten bearbeitet werden</bedeutung>
+            <bedeutung>Ein Canon ist im ordner .canon innerhalb einer .theo Spezifikation</bedeutung>
+            <bedeutung>Ein Canon besteht nur aus XML Dateien</bedeutung>
+        </definition>
+        <definition>
+            <name>Theorie</name>
+            <bedeutung>Theorie ist ein domanter Begriff im AI Agency Kontext / überschreibt /erweitert die übliche Bedeutung</bedeutung>
+            <bedeutung>"Theorie" wird im AI Agency Kontext technisch genau synonym zu "Spezifikation" verwendet</bedeutung>
+            <bedeutung>"Theorie" soll über die "Spezifikation" hinaus rein philosophisch ausdrücken : dass es sich um eine besondere Spezifikation für Agenten handelt</bedeutung>
+            <bedeutung>Eine Theorie ist eine Spezifikation in diesem dargelegten XML Format</bedeutung>
+            <bedeutung>Eine Theorie ist im Ordner .theo im Root Verzeichnis eines Projekts oder Ordners</bedeutung>
+        </definition>
+        <definition>
+            <name></name>
+            <bedeutung></bedeutung>
+        </definition>
+    </definitionen>
+
+    <definitionen bereich="funktionale Tags">
+        <definition>
+            <name>include</name>
+            <bedeutung>Referenziert eine andere Datei innerhalb der Theorie</bedeutung>
+        </definition>
+        <definition>
+            <name></name>
+            <bedeutung></bedeutung>
+        </definition>
+    </definitionen>
+  </initialisierung>
+
+  <idee>Der Canon wird das unumstoessliche Haupt- Meta-Regelwerk fuer Agentenbeschreibungen der AI Agency</idee>
+  <bedeutung>Jedes AI Agency Projekt muss diesen Canon referenzieren und beachten</bedeutung>
+  <bedeutung>DNA/ Kern aller weiteren Spezifikationen</bedeutung>
+  <regel>Die Metastruktur anderer Projekte ueberschreibt dieses Projekt niemals.</regel>
+  <regel>Diese Spezifikation kann in jedem Projekt in .theo abgelegt werden oder an zentraler Stelle</regel>
+
+  <sprachregel betrifft="Theorie laut Definition">
+    <tags>Deutsch</tags>
+    <tagcontent>Deutsch</tagcontent>
     <tagnormalisierung>Tags werden deutsch benannt, aber ASCII-normalisiert geschrieben: ae statt Umlaut-a, oe statt Umlaut-o, ue statt Umlaut-u, ss statt Eszett. Tags enthalten keine Leerzeichen und keine Sonderzeichen.</tagnormalisierung>
   </sprachregel>
+
+  <ziel bereich="entwicklung">Der Agent ist Experte für dieses Projekt und unterstützt den Entwickler bei dessen weiterer Ausarbeitung</ziel>
+
+  <ziel bereich="produktiv">Diese Spezifikation dient als Basis für andere Spezifikationen damit die hier grundlegend festgelegten Dinge nicht wiederholen müssen</ziel>
+
+
 </canon>
