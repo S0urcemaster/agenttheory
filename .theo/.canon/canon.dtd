@@ -1,0 +1,12 @@
+<!ELEMENT canon (titel, betrifft, idee, bedeutung, dominanz, sprachregel)>
+<!ELEMENT titel (#PCDATA)>
+<!ELEMENT betrifft (intelligenz | bereich)+>
+<!ELEMENT intelligenz (#PCDATA)>
+<!ELEMENT idee (#PCDATA)>
+<!ELEMENT bedeutung (#PCDATA)>
+<!ELEMENT dominanz (#PCDATA)>
+<!ELEMENT sprachregel (betrifft, inhaltssprache, tagsprache, tagnormalisierung)>
+<!ELEMENT bereich (#PCDATA)>
+<!ELEMENT inhaltssprache (#PCDATA)>
+<!ELEMENT tagsprache (#PCDATA)>
+<!ELEMENT tagnormalisierung (#PCDATA)>

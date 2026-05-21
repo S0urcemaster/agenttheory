@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE canon SYSTEM "canon.dtd">
+<canon>
+  <titel>AI Agency Canon</titel>
+  <betrifft>
+    <intelligenz>Agent</intelligenz>
+    <intelligenz>User</intelligenz>
+  </betrifft>
+  <idee>Der Canon ist das unumstoessliche Meta-Regelwerk fuer Agentenbeschreibungen.</idee>
+  <bedeutung>Der neueste architektonische Fortschritt wird hier festgehalten.</bedeutung>
+  <dominanz>Die Metastruktur anderer Projekte ueberschreibt dieses Projekt niemals.</dominanz>
+  <sprachregel>
+    <betrifft>
+      <bereich>canon</bereich>
+      <bereich>spezifikationen</bereich>
+      <bereich>tags</bereich>
+      <bereich>inhalte</bereich>
+    </betrifft>
+    <inhaltssprache>Deutsch</inhaltssprache>
+    <tagsprache>Deutsch</tagsprache>
+    <tagnormalisierung>Tags werden deutsch benannt, aber ASCII-normalisiert geschrieben: ae statt Umlaut-a, oe statt Umlaut-o, ue statt Umlaut-u, ss statt Eszett. Tags enthalten keine Leerzeichen und keine Sonderzeichen.</tagnormalisierung>
+  </sprachregel>
+</canon>
