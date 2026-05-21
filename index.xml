@@ -10,4 +10,5 @@
   <ausrichtung>Diese Spec ist zuerst auf den Agenten zugeschnitten. Der User gibt Ziele, Korrekturen und Entscheidungen vor; die formale Pflege der Spec soll der Agent uebernehmen.</ausrichtung>
   <zieldefinition>Am Ende soll der Agent Aenderungen an Spec und Theory rein durch muendliche Anweisungen machen koennen, ohne dass der User direkt in die Dateien hineinschreibt.</zieldefinition>
   <dominanz>Die Metastruktur anderer Projekte ueberschreibt dieses Projekt niemals.</dominanz>
+  <include datei="riggsandsmith-imported.xml" />
 </agententheorie>
