@@ -6,7 +6,7 @@
   <importquelle bereich="domain">/home/sntr/code/riggsandsmith/_spec</importquelle>
   <zweck>Diese Datei ist eine vorlaeufige XML-Uebertragung der Riggs-and-Smith-Spezifikationsstruktur zum Anschauen und Vergleichen mit der Agententheorie.</zweck>
 
-  <metaspezifikation>
+  <definitionen>
     <definition>
       <name>Meta Specification</name>
       <bedeutung>Die Metaspezifikation definiert, wie die Spezifikation funktioniert.</bedeutung>
@@ -30,7 +30,7 @@
       <bedeutung>Ein Behavior Contract ist eine kompakte Produktfunktions-Erklaerung ueber beobachtbares Verhalten.</bedeutung>
       <bedeutung>Seine Acceptance Checks sind die testbare Form der Funktion selbst.</bedeutung>
     </definition>
-
+</definitionen>
     <prinzip name="aktuelle produktwahrheit">
       <aussage>Die Spezifikation ist immer als aktuell gueltige Beschreibung des beabsichtigten Produkts zu lesen.</aussage>
       <aussage>Sie ist kein Draft-Schnappschuss.</aussage>
@@ -141,7 +141,6 @@
       <schicht nummer="6">Implementation</schicht>
       <hinweis>Die konkrete Dateistruktur darf variieren, solange diese Schichten erkennbar bleiben.</hinweis>
     </domainform>
-  </metaspezifikation>
 
   <domainspezifikation>
     <titel>Project Specification</titel>
