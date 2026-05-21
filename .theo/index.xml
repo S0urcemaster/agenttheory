@@ -1,55 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <canon>
-  <titel>AI Agency Canon</titel>
+  <titel>AI Agency Canon Definition</titel>
   <autor>AI Agency</autor>
-  <projekt kurz="agenttheory">Agent Theory</projekt>
+
+  <regel>Lies dieses Dateiformat semantisch</regel>
+  <regel>Lies vor dem Fortfahren das referenzierte Objekt bei folgenden &lt;ref&gt;s</regel>
+
+  <ref datei="glossar.xml" />
+  <ref datei="regeln.xml" />
+  
+  <projektname kurz="agenttheory">Agent Theory</projektname>
+  <bedeutung>"Agent Theory" soll die Ur -Theorie jedes Agents sein - der Canon / dem alle Agents folgen</bedeutung>
   <projektstand>In Entwicklung</projektstand>
 
   <initialisierung>
     <vorbemerkung>Vorbemerkungen werden spaeter falls erforderlich praezisiert und dienen dem einleitenden Verstaendnis</vorbemerkung>
     <vorbemerkung>Gemischte Sprache : Beschreibungen Deutsch mit Entwickler -Englisch</vorbemerkung>
-    <vorbemerkung>Redundanzen zur Verstaerkung</vorbemerkung>
-    <vorbemerkung>Lies dieses Dateiformat semantisch</vorbemerkung>
+    <vorbemerkung></vorbemerkung>
     <vorbemerkung>Das Strukturregelwerk fuer diese Spezifikation soll sich aus den vorliegenden Beispielen ergeben . Weiterentwicklungen sollen sich daran anlehnen</vorbemerkung>
     <vorbemerkung>Das XML -Format kann lockerer /semantischer gehandhabt werden</vorbemerkung>
 
-    <definitionen bereich="glossar">
-        <definition>
-            <name>AI Agency</name>
-            <bedeutung>AI Agency ist die Firma und der Schoepfer dieser Spezifikation</bedeutung>
-        </definition>
-        <definition>
-            <name>Canon</name>
-            <bedeutung>Ein Canon ist eine Metaspezifikation fuer andere Spezifikationen / die von Agenten bearbeitet werden</bedeutung>
-            <bedeutung>Ein Canon ist im Ordner .canon innerhalb einer .theo Spezifikation</bedeutung>
-            <bedeutung>Ein Canon besteht nur aus XML Dateien</bedeutung>
-        </definition>
-        <definition>
-            <name>Theorie</name>
-            <bedeutung>Theorie ist ein dominanter Begriff im AI Agency Kontext / ueberschreibt /erweitert die uebliche Bedeutung</bedeutung>
-            <bedeutung>"Theorie" wird im AI Agency Kontext technisch genau synonym zu "Spezifikation" verwendet</bedeutung>
-            <bedeutung>"Theorie" soll ueber die "Spezifikation" hinaus rein philosophisch ausdruecken : dass es sich um eine besondere Spezifikation fuer Agenten handelt</bedeutung>
-            <bedeutung>Eine Theorie ist eine Spezifikation in diesem dargelegten XML Format</bedeutung>
-            <bedeutung>Eine Theorie ist im Ordner .theo im Root Verzeichnis eines Projekts oder Ordners</bedeutung>
-        </definition>
-    </definitionen>
-
-    <definitionen bereich="funktionale Tags">
-        <definition>
+    <defen bereich="funktionale Tags">
+        <def>
             <name>include</name>
             <bedeutung>Referenziert eine andere Datei innerhalb der Theorie</bedeutung>
-        </definition>
-    </definitionen>
+        </def>
+    </defen>
   </initialisierung>
 
-  <idee>Der Canon wird das unumstoessliche Haupt- Meta-Regelwerk fuer Agentenbeschreibungen der AI Agency</idee>
-  <bedeutung>Jedes AI Agency Projekt muss diesen Canon referenzieren und beachten</bedeutung>
+  <bedeutung></bedeutung>
   <bedeutung>DNA/ Kern aller weiteren Spezifikationen</bedeutung>
   <regel>Die Metastruktur anderer Projekte ueberschreibt dieses Projekt niemals.</regel>
   <regel>Diese Spezifikation kann in jedem Projekt in .theo abgelegt werden oder an zentraler Stelle</regel>
 
-  <sprachregel betrifft="Theorie laut Definition">
+  <sprachregel betrifft="Theorie laut def">
     <tags>Deutsch</tags>
     <tagcontent>Deutsch</tagcontent>
     <tagnormalisierung>Tags werden deutsch benannt, aber ASCII-normalisiert geschrieben: ae statt Umlaut-a, oe statt Umlaut-o, ue statt Umlaut-u, ss statt Eszett. Tags enthalten keine Leerzeichen und keine Sonderzeichen.</tagnormalisierung>

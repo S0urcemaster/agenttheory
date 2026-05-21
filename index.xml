@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agenttheory>
+  <include datei="/.theo/index.xml" />
   <titel>Agent Theory</titel>
-  <include datei="glossar.xml" />
   <typedef>
     <_self>
       <glossary name="typedef" />
-      <!-- Vorwärtsverwendung von Glossar / Definition folgt -->
       <def>
         <_self>
           <reserved name="def" />
