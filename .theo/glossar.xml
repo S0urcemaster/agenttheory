@@ -18,5 +18,7 @@
             <bedeutung>Eine Theorie ist eine Spezifikation in diesem dargelegten XML Format</bedeutung>
             <bedeutung>Eine Theorie ist im Ordner .theo im Root Verzeichnis eines Projekts oder Ordners</bedeutung>
         </def>
+  
+  <def name="Heartbeat" volatility="">Eigener Heartbeat da der von openclaw unzuverlässig ist</def>
 
 </glossar>
