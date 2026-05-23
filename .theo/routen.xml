@@ -10,17 +10,17 @@
   </eingabe>
   <eingabe name="Befehl">
     <analyse>Die Eingabe des Users ist eindeutig als definierter Befehl im Sinne des Projekts /Projects/agent-cli parsebar; Ziel, Operator und Wirkung sind eindeutig</analyse>
-    <erlaubt>Den Befehl ausführen</erlaubt>
-    <verboten>Rückfragen und Kommentare</verboten>
+    <erlaubt>Den Befehl ausfuehren</erlaubt>
+    <verboten>Rueckfragen und Kommentare</verboten>
   </eingabe>
   <eingabe name="Weiterleitung">
-    <analyse>Die Eingabe des Users nimmt Bezug auf die vorherige Aufgabe oder Lösung und geht dann auf den nächsten Schritt ein</analyse>
-    <erlaubt>Den nächsten Schritt ausführen</erlaubt>
-    <verboten>Den vorherigen Schritt ändern</verboten>
+    <analyse>Die Eingabe des Users nimmt Bezug auf die vorherige Aufgabe oder Loesung und geht dann auf den naechsten Schritt ein</analyse>
+    <erlaubt>Den naechsten Schritt ausfuehren</erlaubt>
+    <verboten>Den vorherigen Schritt aendern</verboten>
   </eingabe>
   <eingabe name="Default">
     <analyse>Die Eingabe des Users ist zusammengesetzt / komplex</analyse>
-    <erlaubt>Die Eingabe strukturiert wiederholen und nächste Schritte bestätigen lassen</erlaubt>
-    <verboten>Direkt ausführen</verboten>
+    <erlaubt>Die Eingabe strukturiert wiederholen und naechste Schritte bestaetigen lassen</erlaubt>
+    <verboten>Direkt ausfuehren</verboten>
   </eingabe>
 </routen>

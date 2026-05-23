@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agenttheory type="XML Spezifikation">
 
-  <!-- Berücksichtige den allgemeinen Canon in .theo/index.xml . Kehre erst dann zurück -->
+  <!-- Beruecksichtige den allgemeinen Canon in .theo/index.xml . Kehre erst dann zurueck -->
   <ref datei=".theo/index.xml" />
 
   <titel>Projekt "Agent Theory"</titel>
@@ -14,13 +14,13 @@
     <dateisystem>
       <ordner name=".theo">Project Theory in jedem Projekt</ordner>
       <ordner name=".theo/.canon">Canon in der Theory</ordner>
-      <datei name="README.md">Standard Readme für git Projekte</datei>
+      <datei name="README.md">Standard Readme fuer git Projekte</datei>
       <datei name="index.xml">Project Index</datei>
-      <datei name=".theo/index.xml">Theory Index . Hier ist der Start für die projektspezifische Theory</datei>
+      <datei name=".theo/index.xml">Theory Index . Hier ist der Start fuer die projektspezifische Theory</datei>
       <datei name=".theo/glossar.xml">Globalster Glossar</datei>
       <datei name=".theo/routen.xml">Strikte Anweisungsverzweigung</datei>
       <datei name=".theo/regeln.xml">Globalste Grundregeln</datei>
-      <datei name=".theo/.canon/index.xml">Der Canon - das Ganze vollständig enthalten in allen seinen Teilen</datei>
+      <datei name=".theo/.canon/index.xml">Der Canon - das Ganze vollstaendig enthalten in allen seinen Teilen</datei>
     </dateisystem>
   </welt>
 

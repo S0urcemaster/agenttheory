@@ -8,14 +8,14 @@
   <def name="Agent"></def>
 
   <!-- Aktuell in Verwendung -->
-  <def name="def">Kurz für Definition . Mit &lt;def&gt; wird eine Definition festgelegt</def>
+  <def name="def">Kurz fuer Definition . Mit &lt;def&gt; wird eine Definition festgelegt</def>
   <def name="Glossar">Das Glossar definiert alle im Projekt verwendeten / vom normalen Sprachgebrauch abweichenden Begriffe und/oder stellt die Definition sicher</def>
   
   <!-- Das Universum -->
-  <def name="Canon">Der Canon ist Gott - unveränderlich für den Agenten / aber auch nur eine weitere Theory mit denselben Grundregeln (in unserer Anschauung)</def>
-  <def name="Canon">Der Canon ist ein wiederverwendbarer einleitender Teil einer Spezifikation eines Projekts / das gedacht ist für die Bearbeitung durch einen Agenten</def>
+  <def name="Canon">Der Canon ist Gott - unveraenderlich fuer den Agenten / aber auch nur eine weitere Theory mit denselben Grundregeln (in unserer Anschauung)</def>
+  <def name="Canon">Der Canon ist ein wiederverwendbarer einleitender Teil einer Spezifikation eines Projekts / das gedacht ist fuer die Bearbeitung durch einen Agenten</def>
   <def name="Canon">Eine Theory baut immer auf dem Canon auf . Jedes Projekt im AI Agency Kontext ist eine Theory</def>
-  <def name="Theory">Die Theory ist das Regelwerk für den Agenten . Jedes Projekt hat eine eigene Theory / die auf dem Canon basiert</def>
+  <def name="Theory">Die Theory ist das Regelwerk fuer den Agenten . Jedes Projekt hat eine eigene Theory / die auf dem Canon basiert</def>
   <def name="Theory">Eine Theory (ausnahmsweise mit englischer Schreibweise) ist eine XML Spezifikation mit Canon als Ausgangspunkt / Kern- Theory</def>
   <def name="Wirkfeld">Der Raum im AIAgency Kontext / der durch eine Theorie beschrieben ist und der ein Wirkbereich = Daten hat (Projekt/Daten)</def>
   <def name="Daten">Den Wirkbereich eines durch eine Theorie beschriebenen Wirkfeldes nennen wir Daten</def>  

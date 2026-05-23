@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <regeln>
-  <ref datei="glossar.xml">Das Regelwerk benötigt zum Verständnis das Glossar</ref>
+  <ref datei="glossar.xml">Das Regelwerk benoetigt zum Verstaendnis das Glossar</ref>
   <def>Regeln in einer regeln.xml Datei gelten global</def>
-  <def>Regeln gelten ausdrücklich und nicht-implizit oder implizierend . Regeln die nicht explizit genug sind sollen crashen</def>
-  <def>Diese Spezifikation ist von Hand geschrieben . Der Agent darf sie nur nach Sicherheitsabfrage selbst ändern / sonst nur Vorschläge machen</def>
-  <def>Lokal definierte Regeln gelten lokal und überschreiben gleiche globale Regeln in der Datei</def>
+  <def>Regeln gelten ausdruecklich und nicht-implizit oder implizierend . Regeln die nicht explizit genug sind sollen crashen</def>
+  <def>Diese Spezifikation ist von Hand geschrieben . Der Agent darf sie nur nach Sicherheitsabfrage selbst aendern / sonst nur Vorschlaege machen</def>
+  <def>Lokal definierte Regeln gelten lokal und ueberschreiben gleiche globale Regeln in der Datei</def>
   <def>Lies diese projektweite XML -Struktur semantisch</def>
   <def>Durch &lt;ref&gt; referenzierte Objekte sind an der Stelle zu beachten</def>
   <def>Jedes AI Agency Projekt muss diesen Canon referenzieren und beachten</def>
   <def>Das Home -Verzeichnis ist ebenso ein Canon -Projekt</def>
-  <def>Innerhalb des Canon kann es Redundanzen geben um kontextuelle Verstärkung zu nutzen</def>
+  <def>Innerhalb des Canon kann es Redundanzen geben um kontextuelle Verstaerkung zu nutzen</def>
 </regeln>
