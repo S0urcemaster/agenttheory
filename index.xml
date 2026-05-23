@@ -2,6 +2,16 @@
 <agenttheory>
   <include datei="/.theo/index.xml" />
   <titel>Agent Theory</titel>
+  <world name="canon">
+    <def>Die "Agent Theory" (dieses Projekt) ist der Canon</def>
+    <dateisystem>
+      <ordner name="/.theo">Die Theory ist der Canon</ordner>
+      <ordner name="/.theo/.canon">Der Canon kommt aus der Uneindlichkeit</ordner>
+      <datei name="/README.md">Standard Readme für git Projekte</datei>
+      <datei name="/index.xml">Theory Index and Introduction</datei>
+      <datei name=".theo/index.xml">Der Canon - das Ganze vollständig enthalten in allen seinen Teilen</datei>
+    </dateisystem>
+  </world>
   <typedef>
     <_self>
       <glossary name="typedef" />

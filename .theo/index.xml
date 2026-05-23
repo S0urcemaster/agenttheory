@@ -11,7 +11,12 @@
   <ref datei="regeln.xml" />
   
   <projektname kurz="agenttheory">Agent Theory</projektname>
+
   <bedeutung>"Agent Theory" soll die Ur -Theorie jedes Agents sein - der Canon / dem alle Agents folgen</bedeutung>
+  <bedeutung>Der Canon ist der Zugang / das Werkzeug / mit dem der Agent jedes AIAgency Projekt gleich behandeln können soll</bedeutung>
+  <bedeutung>Jedes Projekt muss sich dem Canon unterordnen - so auch der Agent / denn der Agent arbeitet immer in einem Projekt</bedeutung>
+  <bedeutung>Das Home -Verzeichnis ist ebenso ein Projekt und unterliegt ebenso dem Canon</bedeutung>
+
   <projektstand>In Entwicklung</projektstand>
 
   <initialisierung>
@@ -44,5 +49,6 @@
 
   <ziel bereich="produktiv">Diese Spezifikation dient als Basis fuer andere Spezifikationen damit die hier grundlegend festgelegten Dinge nicht wiederholen muessen</ziel>
 
+  <ref datei="routen.xml">Die dort definierten Routen geben einen Verzweigungsplan für die unterschiedlichen Eingaben des Benutzers</ref>
 
 </canon>
