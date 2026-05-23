@@ -2,4 +2,4 @@
 
 Nicht von einem Agent zu bearbeiten
 
-XML Spezifikation . Siehe /index.xml
+XML Spezifikation . Siehe index.xml
