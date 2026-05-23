@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <canon>
+
+  <!-- Beruecksichtige den allgemeinen Canon in .theo/index.xml . Kehre erst dann zurueck -->
+  <ref datei=".theo/index.xml" />
+
   <titel>AI Agency Canon Definition</titel>
   <autor>AI Agency</autor>
 
