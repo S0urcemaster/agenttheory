@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agenttheory>
   <include datei="/.theo/index.xml" />
-  <titel>Agent Theory</titel>
+  <titel>Projekt Agent Theory</titel>
+
   <world name="canon">
     <def>Die "Agent Theory" (dieses Projekt) ist der Canon</def>
     <dateisystem>
@@ -10,24 +11,18 @@
       <datei name="/README.md">Standard Readme für git Projekte</datei>
       <datei name="/index.xml">Theory Index and Introduction</datei>
       <datei name=".theo/index.xml">Der Canon - das Ganze vollständig enthalten in allen seinen Teilen</datei>
+      <datei name=".theo/glossar.xml">Globalster Glossar</datei>
+      <datei name=".theo/routen.xml">Strikte Anweisungsverzweigung</datei>
+      <datei name=".theo/regeln.xml">Globalste Grundregeln</datei>
     </dateisystem>
   </world>
-  <typedef>
-    <_self>
-      <glossary name="typedef" />
-      <def>
-        <_self>
-          <reserved name="def" />
-          <def>Kurz für Definition</def>
-        </_self>
-      </def>
-    </_self>
-    <def>Agent = AI Agent (Wahrscheinlich du)</def>
-    <def>Theory = Canon Project</def>
-    <def>Jede Theory wird durch den Canon begrenzt</def>
-    <def>Der Canon (dieses Projekt) ist die Urdefinition für alle Canon Projekte</def>
-  </typedef>
-  <typ-beschreibung></typ-beschreibung>
+
+  <ziel bereich="entwicklung">Der Agent ist Experte fuer dieses Projekt und unterstuetzt den Entwickler bei dessen weiterer Ausarbeitung</ziel>
+
+  <ziel bereich="produktiv">Diese Spezifikation dient als Basis fuer andere Spezifikationen damit die hier grundlegend festgelegten Dinge nicht wiederholen muessen</ziel>
+
+  <ref datei="routen.xml">Die dort definierten Routen geben einen Verzweigungsplan für die unterschiedlichen Eingaben des Benutzers</ref>
+  
   <idee>Dieses Projekt beschreibt die gemeinsame Architektur jeder Beschreibungseinheit im AI Agency Oekosystem</idee>
   <bedeutung>Der neueste architektonische Fortschritt wird hier festgehalten.</bedeutung>
   <bedeutung>Agent Theory = Erste und oberste "Theory" -Definition</bedeutung>

@@ -12,7 +12,7 @@
   
   <projektname kurz="agenttheory">Agent Theory</projektname>
 
-  <bedeutung>"Agent Theory" soll die Ur -Theorie jedes Agents sein - der Canon / dem alle Agents folgen</bedeutung>
+  <bedeutung>"Agent Theory" soll die Ur -Theorie jedes Agents sein - die DNA / der Canon / dem alle Agents folgen</bedeutung>
   <bedeutung>Der Canon ist der Zugang / das Werkzeug / mit dem der Agent jedes AIAgency Projekt gleich behandeln können soll</bedeutung>
   <bedeutung>Jedes Projekt muss sich dem Canon unterordnen - so auch der Agent / denn der Agent arbeitet immer in einem Projekt</bedeutung>
   <bedeutung>Das Home -Verzeichnis ist ebenso ein Projekt und unterliegt ebenso dem Canon</bedeutung>
@@ -22,33 +22,26 @@
   <initialisierung>
     <vorbemerkung>Vorbemerkungen werden spaeter falls erforderlich praezisiert und dienen dem einleitenden Verstaendnis</vorbemerkung>
     <vorbemerkung>Gemischte Sprache : Beschreibungen Deutsch mit Entwickler -Englisch</vorbemerkung>
-    <vorbemerkung></vorbemerkung>
     <vorbemerkung>Das Strukturregelwerk fuer diese Spezifikation soll sich aus den vorliegenden Beispielen ergeben . Weiterentwicklungen sollen sich daran anlehnen</vorbemerkung>
     <vorbemerkung>Das XML -Format kann lockerer /semantischer gehandhabt werden</vorbemerkung>
 
-    <defen bereich="funktionale Tags">
-        <def>
-            <name>include</name>
-            <bedeutung>Referenziert eine andere Datei innerhalb der Theorie</bedeutung>
-        </def>
-    </defen>
+    <definitionen bereich="Spezielle Zeichensetzung für natürliche Sprache">
+        <def>Satzzeichen haben mit Ausnahmen davor und danach ein Leerzeichen</def>
+        <def>Kommas dienen nur für Aufzählungen . Sätze und Nebensätze werden semantisch mit : / - und dem Mittelpunkt · statt dem unteren Punkt . getrennt</def>
+        <def>Auf ein abschließendes Satzzeichen am Ende eines Absatzes wird verzichtet</def>
+    </definitionen>
+
+    <definitionen bereich="Semantische Tags">
+        <def name="[Tagname hier]">Tags werden deutsch benannt, aber ASCII-normalisiert geschrieben: ae statt Umlaut-a, oe statt Umlaut-o, ue statt Umlaut-u, ss statt Eszett. Tags enthalten keine Leerzeichen und keine Sonderzeichen.</def>
+        <def name="initialisierung">Singleton Tag . Für alle Singletons gilt : Wenn nicht näher erläutert : findet ein einzelner Tag kaum Wiederverwendung</def>
+        <def name="def">Eine Definition / nicht so stark wie "bedeutung"</def>
+        <def name="bedeutung">Stärker als "def" . Hier wird versucht : den Urgrund zu vermitteln</def>
+        <def name="ref">Referenziert ein Objekt / meist Datei</def>
+    </definitionen>
   </initialisierung>
 
-  <bedeutung></bedeutung>
-  <bedeutung>DNA/ Kern aller weiteren Spezifikationen</bedeutung>
-  <regel>Die Metastruktur anderer Projekte ueberschreibt dieses Projekt niemals.</regel>
-  <regel>Diese Spezifikation kann in jedem Projekt in .theo abgelegt werden oder an zentraler Stelle</regel>
+  <regel>Wenn nicht referenzierbar : wird diese Spezifikation im Projektordner unter .theo/.canon abgelegt</regel>
+  <regel>Jedes Projekt hat einen eigenen .theo Ordner und mindestens eine /.theo/.canon/.index.xml mit einer Referenz auf den Canon</regel>
 
-  <sprachregel betrifft="Theorie laut def">
-    <tags>Deutsch</tags>
-    <tagcontent>Deutsch</tagcontent>
-    <tagnormalisierung>Tags werden deutsch benannt, aber ASCII-normalisiert geschrieben: ae statt Umlaut-a, oe statt Umlaut-o, ue statt Umlaut-u, ss statt Eszett. Tags enthalten keine Leerzeichen und keine Sonderzeichen.</tagnormalisierung>
-  </sprachregel>
-
-  <ziel bereich="entwicklung">Der Agent ist Experte fuer dieses Projekt und unterstuetzt den Entwickler bei dessen weiterer Ausarbeitung</ziel>
-
-  <ziel bereich="produktiv">Diese Spezifikation dient als Basis fuer andere Spezifikationen damit die hier grundlegend festgelegten Dinge nicht wiederholen muessen</ziel>
-
-  <ref datei="routen.xml">Die dort definierten Routen geben einen Verzweigungsplan für die unterschiedlichen Eingaben des Benutzers</ref>
 
 </canon>
