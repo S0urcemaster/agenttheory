@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agenttheory type="XML Spezifikation">
-  <!-- Lies zuerst die nächste Datei und folge den Anweisungen . Kehre dann zurück -->
-  <ref datei="/.theo/index.xml" />
+
+  <!-- Berücksichtige den allgemeinen Canon in .theo/index.xml . Kehre erst dann zurück -->
+  <ref datei=".theo/index.xml" />
 
   <titel>Projekt "Agent Theory"</titel>
 
@@ -23,7 +24,7 @@
     </dateisystem>
   </welt>
 
-  <idee>Dieses Projekt beschreibt die gemeinsame, wiederverwendbare Architektur jeder Organisationseinheit (Projekte, spezielle Ordner) im AI Agency Oekosystem</idee>
+  <idee>Dieses Projekt beschreibt die gemeinsame, wiederverwendbare Architektur jeder Wirkung (Projekte, spezielle Ordner) im AI Agency Oekosystem</idee>
 
   <ziel bereich="entwicklung">Der Agent ist Experte fuer dieses Projekt und unterstuetzt den Entwickler bei dessen weiterer Ausarbeitung</ziel>
 
