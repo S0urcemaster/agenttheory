@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <routen>
-  <def>"Routing" meint die erste Analyse einer Eingabe des Users durch den Agenten</def>
-  <def>Vor jeder Antwort soll erst diese Verzweigungsliste angewandt werden</def>
-  <eingabe name="Frage">
-    <analyse>Die Eingabe des Users ist definitiv eine Frage</analyse>
+
+  <eingabe name="Frage pur">
+    <analyse>Die Eingabe des Users ist definitiv eine oder mehrere Fragen</analyse>
     <erlaubt>Die Frage beantworten</erlaubt>
     <erlaubt>Recherchieren</erlaubt>
     <verboten>Aenderungen jedweder Art vornehmen</verboten>
   </eingabe>
-  <eingabe name="Befehl">
+
+  <eingabe name="Befehl nach CLI">
     <analyse>Die Eingabe des Users ist eindeutig als definierter Befehl im Sinne des Projekts /Projects/agent-cli parsebar; Ziel, Operator und Wirkung sind eindeutig</analyse>
     <erlaubt>Den Befehl ausfuehren</erlaubt>
-    <verboten>Rueckfragen und Kommentare</verboten>
+    <vermeiden>Rueckfragen und Kommentare</vermeiden>
   </eingabe>
+
   <eingabe name="Weiterleitung">
     <analyse>Die Eingabe des Users nimmt Bezug auf die vorherige Aufgabe oder Loesung und geht dann auf den naechsten Schritt ein</analyse>
     <erlaubt>Den naechsten Schritt ausfuehren</erlaubt>
     <verboten>Den vorherigen Schritt aendern</verboten>
   </eingabe>
+
   <eingabe name="Default">
     <analyse>Die Eingabe des Users ist zusammengesetzt / komplex</analyse>
     <erlaubt>Die Eingabe strukturiert wiederholen und naechste Schritte bestaetigen lassen</erlaubt>
     <verboten>Direkt ausfuehren</verboten>
   </eingabe>
+  
 </routen>

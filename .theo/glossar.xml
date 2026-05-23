@@ -20,7 +20,10 @@
   <def name="Wirkfeld">Der Raum im AIAgency Kontext / der durch eine Theorie beschrieben ist und der ein Wirkbereich = Daten hat (Projekt/Daten)</def>
   <def name="Daten">Den Wirkbereich eines durch eine Theorie beschriebenen Wirkfeldes nennen wir Daten</def>  
 
-  <!--  -->
-  <def name="Regel">Regeln werden in einer eigenen Datei oder lokal definiert / wo sie lokal Gueltigkeit haben</def>
+  <!-- Prinzipien -->
+  <def name="Global">Der Canon ist global = er wirkt wie globale Variablen in jeder abgeleiteten Theory</def>
+  <def name="Regel">Regeln werden in regeln.xml global oder lokal definiert / wo sie globale Regeln überschreiben können</def>
+  <def name="Routing">Routing meint die erste Analyse einer Eingabe des Users durch den Agenten</def>
+  
 
 </glossar>

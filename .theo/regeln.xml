@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <regeln>
   <ref datei="glossar.xml">Das Regelwerk benoetigt zum Verstaendnis das Glossar</ref>
-  <def>Regeln in einer regeln.xml Datei gelten global</def>
-  <def>Regeln gelten ausdruecklich und nicht-implizit oder implizierend . Regeln die nicht explizit genug sind sollen crashen</def>
-  <def>Diese Spezifikation ist von Hand geschrieben . Der Agent darf sie nur nach Sicherheitsabfrage selbst aendern / sonst nur Vorschlaege machen</def>
-  <def>Lokal definierte Regeln gelten lokal und ueberschreiben gleiche globale Regeln in der Datei</def>
-  <def>Lies diese projektweite XML -Struktur semantisch</def>
-  <def>Durch &lt;ref&gt; referenzierte Objekte sind an der Stelle zu beachten</def>
-  <def>Jedes AI Agency Projekt muss diesen Canon referenzieren und beachten</def>
-  <def>Das Home -Verzeichnis ist ebenso ein Canon -Projekt</def>
+  
+  <!-- Sicherheit -->
+  <def>Schreibverbot für Agenten !</def>
+  <def>Schreibzugriff bedarf Sicherheitsrückfrage !</def>
+  <def>Diese Spezifikation ist von Hand geschrieben . Der Agent darf sie nur nach Sicherheitsabfrage selbst aendern !</def>
+
+  <!-- Globalität -->
+  <def>Der Canon gilt über XML- Domänen hinweg ! Er ist unterhalb einer Detailtheory eingeordnet - aber dominiert sie !</def>
+  <def>Beachte Globalitaet vor XML-Hierarchie /Domains !</def>
+  <def>Regeln in dieser Datei gelten für alle abgeleiteten Theories (Theory -global)</def>
+  <def>Der Canon generell gilt global / dh fuer alle abgeleiteten Theories</def>
+  <def>Das Glossar gilt global für alle abgeleiteten Theories (Theory -global)</def>
+
+  <!-- Vererbung -->
+  <def>Jede abgeleitende Theory muss diesen Canon referenzieren und beachten</def>
+  <def>Wenn nicht referenzierbar : wird diese Theory im Projektordner unter .theo/.canon abgelegt</def>
+  <def>Jedes Projekt hat einen eigenen .theo Ordner und mindestens eine /.theo/.canon/.index.xml mit einer Referenz auf den Canon</def>
+
+  <!-- Freiheit -->
+  <def>Der Canon ist eine Empfehlung und lässt die Freiheit der Wahl / falls gewünscht</def>
+  <def>Der Canon darf lokal / in der ableitenden Theory überschrieben werden . Der Nutzer übernimmt selbst Verantwortung</def>
+  
+  <!-- Canon Sprachstil -->
+  <def>Lies diese Canon-Theory semantisch</def>
+  <def>Lies diese Canon-Theory nicht streng hierarchisch (beachte globalitaet vor XML-Hierarchie !)</def>
   <def>Innerhalb des Canon kann es Redundanzen geben um kontextuelle Verstaerkung zu nutzen</def>
+
+  <!-- Tag Spezielles -->
+  <def>Durch &lt;ref&gt; referenzierte Objekte sind an der Stelle zu beachten</def>
+  <def>Lokale Regeln verwenden den Tag &lt;regel&gt;</def>
+
+  <!-- Agentenverhalten nach Canon -->
+  <ref datei="routen.xml">Die Routen sollen nicht definiertes Verhalten minimieren</ref>
+  <def>Der Agent darf sich nicht implizit für ein nicht in routen.xml definiertes Verhalten entscheiden</def>
+  <def>Jede Anwweisung des Nutzers wird anhand von routen.xml eingeordnet</def>
+  <def>routen.xml folgt strikt dem select case - Programmierparadigma mit Default-Fall / wodurch nicht vordefiniertes Agentenverhalten minimiert werden soll</def>
+
+  
 </regeln>

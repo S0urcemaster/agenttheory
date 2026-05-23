@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Universelle Eigenheiten von Usern -->
+<!-- Vereinbarungen / an die sich der User zu halten versucht -->
+<!-- Der Agent soll davon ausgehen : dass diese Details vom User gewusst werden-->
+<!-- Kann vom User als Referenz verwendet werden -->
+
 <user>
-  <def>Absolute draft</def>
-  <def>Pfade beginnen ohne /</def>
-  <def>The User has some habits</def>
+  <def>Projektlokale Pfade beginnen ohne führendes / Slash . Führendes Slash bezieht sich auf den gesamten AI Agency workspace</def>
 </user>
