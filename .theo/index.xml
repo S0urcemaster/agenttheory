@@ -10,35 +10,37 @@
   <ref datei="glossar.xml" />
   <ref datei="regeln.xml" />
   <ref datei="routen.xml" />
+
   
-  <bedeutung>Der "Canon" soll die Basis -Spezifikation für jede andere Organisationseinheit der AI Agency sein / die DNA / der alle Agents folgen können</bedeutung>
-  <bedeutung>Der "Canon" hat sein Zuhause im Projekt "Agent Theory"</bedeutung>
-  <bedeutung>Der Canon ist der Zugang / das Werkzeug / mit dem der Agent jedes AI Agency Projekt gleich behandeln können soll</bedeutung>
+  <bedeutung>Der "Canon" soll die Basis -Spezifikation für jedes andere Wirkfeld der AI Agency sein / die DNA / der alle Agents folgen können</bedeutung>
+  <bedeutung>Der Canon hat sein Zuhause im Projekt "Agent Theory"</bedeutung>
+  <bedeutung>Der Canon ist der Zugang / das Werkzeug / mit dem der Agent jedes Wirkfeld gleich behandeln können soll</bedeutung>
   <bedeutung>Jedes Projekt muss sich dem Canon unterordnen - so auch der Agent / denn der Agent arbeitet immer in einer AI Agency Organisationseinheit / Projekt</bedeutung>
   <bedeutung>Das Home -Verzeichnis ist ebenso eine Organisationseinheit / ein Projekt und unterliegt ebenso dem Canon</bedeutung>
 
-  <initialisierung>
-    <vorbemerkung>Vorbemerkungen werden spaeter falls erforderlich praezisiert und dienen dem einleitenden Verstaendnis</vorbemerkung>
-    <vorbemerkung>Gemischte Sprache : Beschreibungen Deutsch mit Entwickler -Englisch</vorbemerkung>
-    <vorbemerkung>Das Strukturregelwerk fuer diese Spezifikation soll sich aus den vorliegenden Beispielen ergeben . Weiterentwicklungen sollen sich daran anlehnen</vorbemerkung>
-    <vorbemerkung>Das XML -Format kann lockerer /semantischer gehandhabt werden</vorbemerkung>
+  <definitionen bereich="Metasprache">
+      <def>Es wird begriffliche und logische Präzision angestrebt</def>
+      <def>Der Canon ist redundant formuliert um beim Agenten Verstärkung zu erzeugen</def>
+      <def>Gemischte Sprache : Beschreibungen Deutsch mit Entwickler -Englisch</def>
+      <def>Der Sprachstil des Canons soll auf alle seine Theorien abfärben</def>
+  </definitionen>
 
-    <definitionen bereich="Spezielle Zeichensetzung für natürliche Sprache">
-        <def>Satzzeichen haben mit Ausnahmen davor und danach ein Leerzeichen</def>
-        <def>Kommas dienen nur für Aufzählungen . Sätze und Nebensätze werden semantisch mit : / - und dem Mittelpunkt · statt dem unteren Punkt . getrennt</def>
-        <def>Auf ein abschließendes Satzzeichen am Ende eines Absatzes wird verzichtet</def>
-    </definitionen>
+  <definitionen bereich="Spezielle Zeichensetzung für natürliche Sprache">
+      <def>Satzzeichen haben mit Ausnahmen davor und danach ein Leerzeichen</def>
+      <def>Kommas dienen nur für Aufzählungen . Sätze und Nebensätze werden semantisch mit : / - und dem Mittelpunkt · statt dem unteren Punkt . getrennt</def>
+      <def>Auf ein abschließendes Satzzeichen am Ende eines Absatzes wird verzichtet</def>
+  </definitionen>
 
-    <definitionen bereich="Semantische Tags">
-        <def name="[Tagname hier]">Tags werden deutsch benannt, aber ASCII-normalisiert geschrieben: ae statt Umlaut-a, oe statt Umlaut-o, ue statt Umlaut-u, ss statt Eszett. Tags enthalten keine Leerzeichen und keine Sonderzeichen.</def>
-        <def name="initialisierung">Singleton Tag . Für alle Singletons gilt : Wenn nicht näher erläutert : findet ein einzelner Tag kaum Wiederverwendung</def>
-        <def name="def">Eine Definition / nicht so stark wie "bedeutung"</def>
-        <def name="bedeutung">Stärker als "def" . Hier wird versucht : den Urgrund zu vermitteln</def>
-        <def name="ref">Referenziert ein Objekt / meist Datei</def>
-    </definitionen>
-  </initialisierung>
+  <definitionen bereich="Semantische Tags">
+      <def name="[Tagname hier]">Tags werden deutsch benannt, aber ASCII-normalisiert geschrieben: ae statt Umlaut-a, oe statt Umlaut-o, ue statt Umlaut-u, ss statt Eszett. Tags enthalten keine Leerzeichen und keine Sonderzeichen.</def>
+      <def name="def">Eine Definition / nicht so stark wie "bedeutung"</def>
+      <def name="definitionen">Liste mit "bereich" -Attribut</def>
+      <def name="bedeutung">Stärker als "def" . Hier wird versucht : den Urgrund zu vermitteln</def>
+      <def name="ref">Referenziert ein Objekt / meist Datei</def>
+      <def name="regel">Legt eine Regel fest . Regeln in regeln.xml gelten global und in ableitenden Theories . Im anderen Fall lokal</def>
+  </definitionen>
 
-  <regel>Wenn nicht referenzierbar : wird diese Spezifikation im Projektordner unter .theo/.canon abgelegt</regel>
+  <regel>Wenn nicht referenzierbar : wird diese Theory im Projektordner unter .theo/.canon abgelegt</regel>
   <regel>Jedes Projekt hat einen eigenen .theo Ordner und mindestens eine /.theo/.canon/.index.xml mit einer Referenz auf den Canon</regel>
 
 

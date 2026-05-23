@@ -17,7 +17,7 @@
   <def name="Canon">Eine Theory baut immer auf dem Canon auf . Jedes Projekt im AI Agency Kontext ist eine Theory</def>
   <def name="Theory">Die Theory ist das Regelwerk für den Agenten . Jedes Projekt hat eine eigene Theory / die auf dem Canon basiert</def>
   <def name="Theory">Eine Theory (ausnahmsweise mit englischer Schreibweise) ist eine XML Spezifikation mit Canon als Ausgangspunkt / Kern- Theory</def>
-  <def name="Wirkfeld">Der Raum / der durch eine Theorie beschrieben ist und der ein Wirkbereich = Daten hat (Projekt /Daten)</def>
+  <def name="Wirkfeld">Der Raum im AIAgency Kontext / der durch eine Theorie beschrieben ist und der ein Wirkbereich = Daten hat (Projekt/Daten)</def>
   <def name="Daten">Den Wirkbereich eines durch eine Theorie beschriebenen Wirkfeldes nennen wir Daten</def>  
 
   <!--  -->
