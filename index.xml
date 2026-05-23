@@ -11,10 +11,10 @@
   <welt name="canon">
     <def>Der "Canon" ist die "Agent Theory" (dieses Projekt)</def>
     <dateisystem>
-      <ordner name="/.theo">Project Theory in jedem Projekt</ordner>
-      <ordner name="/.theo/.canon">Canon in der Theory</ordner>
-      <datei name="/README.md">Standard Readme für git Projekte</datei>
-      <datei name="/index.xml">Project Index</datei>
+      <ordner name=".theo">Project Theory in jedem Projekt</ordner>
+      <ordner name=".theo/.canon">Canon in der Theory</ordner>
+      <datei name="README.md">Standard Readme für git Projekte</datei>
+      <datei name="index.xml">Project Index</datei>
       <datei name=".theo/index.xml">Theory Index . Hier ist der Start für die projektspezifische Theory</datei>
       <datei name=".theo/glossar.xml">Globalster Glossar</datei>
       <datei name=".theo/routen.xml">Strikte Anweisungsverzweigung</datei>

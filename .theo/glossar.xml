@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glossar>
   <def name="def">Kurz für Definition . Mit &lt;def&gt; wird eine Definition festgelegt</def>
-  <def name="Glossar">Das Glossar definiert alle im Projekt verwendeten / vom normalen Sprachgebrauch abweichenden Begriffe und/oder stellt die Definiton sicher</def>
-  <def name="Regel">Regeln werden in einer eigenen Datei oder lokal definiert / wo sie lokal gültigkeit haben</def>
+  <def name="Glossar">Das Glossar definiert alle im Projekt verwendeten / vom normalen Sprachgebrauch abweichenden Begriffe und/oder stellt die Definition sicher</def>
+  <def name="Regel">Regeln werden in einer eigenen Datei oder lokal definiert / wo sie lokal Gueltigkeit haben</def>
   <def name="Agent">AI/KI Agent (Wahrscheinlich du 😉)</def>
   <def name="Theory">Eine Theory (ausnahmsweise mit englischer Schreibweise) ist eine XML Spezifikation mit Canon als Ausgangspunkt</def>
   <def name="Canon">Der Canon ist auch eine Theory mit denselben Grundregeln</def>
   <def name="Canon">Der Canon ist ein wiederverwendbarer einleitender Teil einer Spezifikation eines Projekts / das gedacht ist für die Bearbeitung durch einen Agenten</def>
-  <def name="Canon">Eine Theory baut im AI Agency Kontext immer auf dem Canon auf . Jedes Projekt im AI Agency Kontxt ist eine Theory</def>
+  <def name="Canon">Eine Theory baut im AI Agency Kontext immer auf dem Canon auf . Jedes Projekt im AI Agency Kontext ist eine Theory</def>
   <def name="AI Agency">AI Agency ist die Firma und der Schoepfer dieser Spezifikation</def>
   <def name="Sebastian Teister">Sebastian Teister ist der Programmierer der Agent Theory und eigentümer des Home -Verzeichnisses</def>
 </glossar>
