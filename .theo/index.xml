@@ -10,14 +10,11 @@
   <ref datei="glossar.xml" />
   <ref datei="regeln.xml" />
   
-  <projektname kurz="agenttheory">Agent Theory</projektname>
-
-  <bedeutung>"Agent Theory" soll die Ur -Theorie jedes Agents sein - die DNA / der Canon / dem alle Agents folgen</bedeutung>
+  <bedeutung>Der "Canon" soll die Basis -Spezifikation für jede andere Organisationseinheit der AI Agency sein / die DNA / der alle Agents folgen können</bedeutung>
+  <bedeutung>Der "Canon" hat sein Zuhause im Projekt "Agent Theory"</bedeutung>
   <bedeutung>Der Canon ist der Zugang / das Werkzeug / mit dem der Agent jedes AIAgency Projekt gleich behandeln können soll</bedeutung>
-  <bedeutung>Jedes Projekt muss sich dem Canon unterordnen - so auch der Agent / denn der Agent arbeitet immer in einem Projekt</bedeutung>
-  <bedeutung>Das Home -Verzeichnis ist ebenso ein Projekt und unterliegt ebenso dem Canon</bedeutung>
-
-  <projektstand>In Entwicklung</projektstand>
+  <bedeutung>Jedes Projekt muss sich dem Canon unterordnen - so auch der Agent / denn der Agent arbeitet immer in einer AI Agency Organisationseinheit / Projekt</bedeutung>
+  <bedeutung>Das Home -Verzeichnis ist ebenso eine Organisationseinheit / ein Projekt und unterliegt ebenso dem Canon</bedeutung>
 
   <initialisierung>
     <vorbemerkung>Vorbemerkungen werden spaeter falls erforderlich praezisiert und dienen dem einleitenden Verstaendnis</vorbemerkung>

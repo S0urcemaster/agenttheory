@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<agenttheory>
-  <include datei="/.theo/index.xml" />
-  <titel>Projekt Agent Theory</titel>
+<agenttheory type="XML Spezifikation">
+  <!-- Lies zuerst die nächste Datei und folge den Anweisungen . Kehre dann zurück -->
+  <ref datei="/.theo/index.xml" />
 
-  <world name="canon">
-    <def>Die "Agent Theory" (dieses Projekt) ist der Canon</def>
+  <titel>Projekt "Agent Theory"</titel>
+
+  <projektname kurz="agenttheory">Agent Theory</projektname>
+  <projektstand>In Entwicklung</projektstand>
+
+  <welt name="canon">
+    <def>Der "Canon" ist die "Agent Theory" (dieses Projekt)</def>
     <dateisystem>
-      <ordner name="/.theo">Die Theory ist der Canon</ordner>
-      <ordner name="/.theo/.canon">Der Canon kommt aus der Uneindlichkeit</ordner>
+      <ordner name="/.theo">Project Theory in jedem Projekt</ordner>
+      <ordner name="/.theo/.canon">Canon in der Theory</ordner>
       <datei name="/README.md">Standard Readme für git Projekte</datei>
-      <datei name="/index.xml">Theory Index and Introduction</datei>
-      <datei name=".theo/index.xml">Der Canon - das Ganze vollständig enthalten in allen seinen Teilen</datei>
+      <datei name="/index.xml">Project Index</datei>
+      <datei name=".theo/index.xml">Theory Index . Hier ist der Start für die projektspezifische Theory</datei>
       <datei name=".theo/glossar.xml">Globalster Glossar</datei>
       <datei name=".theo/routen.xml">Strikte Anweisungsverzweigung</datei>
       <datei name=".theo/regeln.xml">Globalste Grundregeln</datei>
+      <datei name=".theo/.canon/index.xml">Der Canon - das Ganze vollständig enthalten in allen seinen Teilen</datei>
     </dateisystem>
-  </world>
+  </welt>
+
+  <idee>Dieses Projekt beschreibt die gemeinsame, wiederverwendbare Architektur jeder Organisationseinheit (Projekte, spezielle Ordner) im AI Agency Oekosystem</idee>
 
   <ziel bereich="entwicklung">Der Agent ist Experte fuer dieses Projekt und unterstuetzt den Entwickler bei dessen weiterer Ausarbeitung</ziel>
 
-  <ziel bereich="produktiv">Diese Spezifikation dient als Basis fuer andere Spezifikationen damit die hier grundlegend festgelegten Dinge nicht wiederholen muessen</ziel>
+  <ziel bereich="produktiv">Diese Spezifikation dient als Basis fuer andere Spezifikationen damit die hier grundlegend festgelegten Dinge nicht wiederholt werden muessen</ziel>
 
-  <ref datei="routen.xml">Die dort definierten Routen geben einen Verzweigungsplan für die unterschiedlichen Eingaben des Benutzers</ref>
-  
-  <idee>Dieses Projekt beschreibt die gemeinsame Architektur jeder Beschreibungseinheit im AI Agency Oekosystem</idee>
-  <bedeutung>Der neueste architektonische Fortschritt wird hier festgehalten.</bedeutung>
-  <bedeutung>Agent Theory = Erste und oberste "Theory" -Definition</bedeutung>
-  <ausrichtung>Diese Spec ist zuerst auf den Agenten zugeschnitten. Der User gibt Ziele, Korrekturen und Entscheidungen vor; die formale Pflege der Spec soll der Agent uebernehmen.</ausrichtung>
-  <zieldefinition>Am Ende soll der Agent Aenderungen an Spec und Theory rein durch muendliche Anweisungen machen koennen, ohne dass der User direkt in die Dateien hineinschreibt.</zieldefinition>
-  <dominanz>Die Metastruktur anderer Projekte ueberschreibt dieses Projekt niemals.</dominanz>
-  <include datei="riggsandsmith-imported.xml" />
 </agenttheory>
