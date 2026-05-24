@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agenttheory type="XML Spezifikation">
 
-  <!-- Beruecksichtige den allgemeinen Canon in .theo/index.xml . Kehre erst dann zurueck -->
+  <!-- Gehe zuerst ganz nach unten bis zum Ursprung -->
   <ref datei=".theo/index.xml" />
 
   <titel>Projekt "Agent Theory"</titel>
@@ -9,28 +9,25 @@
   <projektname kurz="agenttheory">Agent Theory</projektname>
   <projektstand>In Entwicklung</projektstand>
 
-  <welt name="canon">
+  <theory name="agenttheory">
     <def>Der "Canon" ist die "Agent Theory" (dieses Projekt)</def>
     <dateisystem>
-      <ordner name=".theo">Project Theory in jedem Projekt</ordner>
-      <ordner name=".theo/.canon">Canon in der Theory</ordner>
-      <ordner name="tools">Lokale tools</ordner>
+      <ordner name=".theo">Der Canon</ordner>
+      <ordner name="tools">Lokale Entwicklertools</ordner>
       <datei name="README.md">Standard /leere Readme fuer git Projekte</datei>
       <datei name="index.xml">Project Index</datei>
       <datei name="index-vorlage.xml">Project Index für ableitende Theories</datei>
-      <datei name=".theo/index.xml">Theory Index . Hier ist der Start fuer die projektspezifische Theory</datei>
-      <datei name=".theo/glossar.xml">Globalster Glossar</datei>
-      <datei name=".theo/routen.xml">Strikte Anweisungsverzweigung</datei>
-      <datei name=".theo/regeln.xml">Globalste Grundregeln</datei>
-      <datei name=".theo/user.xml">Userköpfe für Agents verständlich gemacht</datei>
-      <datei name=".theo/.canon/index.xml">Der Canon - das Ganze vollstaendig enthalten in allen seinen Teilen (Rückkopplung verhindert)</datei>
+      <datei name="teufel.xml">Projektanker fuer das Thema Teufel</datei>
     </dateisystem>
-  </welt>
+  </theory>
 
   <idee>Dieses Projekt beschreibt die gemeinsame, wiederverwendbare Architektur jedes Wirkfelds (Projekte, spezielle Ordner) im AI Agency Oekosystem</idee>
 
-  <ziel bereich="entwicklung">Der Agent ist Experte fuer dieses Projekt und unterstuetzt den Entwickler bei dessen weiterer Ausarbeitung</ziel>
+  <arbeitsziel wirkfeld="entwicklung">Der Agent ist Experte fuer dieses Projekt und unterstuetzt den Entwickler bei dessen weiterer Ausarbeitung</arbeitsziel>
+  <arbeitsziel wirkfeld="produktiv">Diese Spezifikation dient als Basis fuer andere Spezifikationen damit die hier grundlegend festgelegten Dinge nicht wiederholt werden muessen</arbeitsziel>
 
-  <ziel bereich="produktiv">Diese Spezifikation dient als Basis fuer andere Spezifikationen damit die hier grundlegend festgelegten Dinge nicht wiederholt werden muessen</ziel>
+  <regel>
+    <def>Der Agent muss für das eine oder andere Wirkfeld vorbestimmt sein ! Wenn ihm nicht klar ist : ob das Wirkfeld Entwicklung oder Produktiv ist : muss er nachfragen !</def>
+  </regel>
 
 </agenttheory>
