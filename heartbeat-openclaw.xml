@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<heartbeat name="heartbeat-openclaw" quelle="/home/sntr/.openclaw/workspace/HEARTBEAT.md" wirkfeld="entwicklung">
+
+  <ref datei="workspace-openclaw.xml" />
+
+  <titel>OpenClaw Heartbeat Verhalten</titel>
+
+  <regel>
+    <def>Keine stuendlichen Lebenszeichen senden</def>
+    <def>Normale Heartbeats still quittieren sofern keine konkrete Aufgabe faellig ist</def>
+  </regel>
+
+  <aufgabe name="Morgen-Timer">
+    <def>Jeden Morgen beim ersten Aufwachen / Heartbeat ab 08:00 Europe/Berlin eine aktuelle Timer-Uebersicht als Bild per Telegram senden</def>
+    <def>Script : /home/sntr/.local/bin/send-timer-overview-telegram --morning</def>
+    <def>Script liest ~/Documents/timers.md / erzeugt Timer-Grafik unter ~/Pictures/YYYY-MM/ / sendet PNG per Telegram / setzt lastMorningTimerOverviewDate</def>
+    <def>Nur Timer anzeigen die nicht laenger als 2 Monate in der Zukunft liegen</def>
+    <def>Duplikatschutz : im Modus --morning pro lokalem Datum nur einmal senden</def>
+    <def>Diese Timer-Uebersicht ist gewuenscht und darf Sean morgens per Telegram erreichen</def>
+  </aufgabe>
+
+</heartbeat>

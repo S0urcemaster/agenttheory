@@ -10,29 +10,22 @@
 
     <def>Der "Canon" ist die erste Theory</def>
 
-    <dateisystem>
-        <ordner name=".canon">Der größere Canon</ordner>
-        <ref name=".canon/index.xml">Der Ursprung - das Ganze vollstaendig enthalten in allen seinen
-            Teilen (Rückkopplung verhindert)</ref>
-        <ref name="glossar.xml">Globalster Glossar</ref>
-        <ref name="routen.xml">Strikte Anweisungsverzweigung</ref>
-        <ref name="regeln.xml">Globalste Grundregeln</ref>
-        <ref name="user.xml">Userköpfe für Agents verständlich gemacht</ref>
-    </dateisystem>
+    <ref name=".canon/">Der größere Canon</ref>
+    <ref name=".canon/index.xml">Der Ursprung - das Ganze vollstaendig enthalten in allen seinen Teilen (Rückkopplung verhindert)</ref>
+    <ref name="glossar.xml">Globalster Glossar</ref>
+    <ref name="routen.xml">Strikte Anweisungsverzweigung</ref>
+    <ref name="regeln.xml">Globalste Grundregeln</ref>
+    <ref name="user.xml">Userköpfe für Agents verständlich gemacht</ref>
 
-    <bedeutung>Der "Canon" soll die Basis -Spezifikation fuer jedes andere Wirkfeld der AI Agency
-        sein / die DNA / der alle Agents folgen koennen</bedeutung>
+    <def>Der "Canon" soll die Basis -Spezifikation fuer jedes andere Wirkfeld der AI Agency sein / die DNA / der alle Agents folgen koennen</def>
 
-    <bedeutung>Der Canon hat sein Zuhause im Projekt "Agent Theory"</bedeutung>
+    <def>Der Canon hat sein Zuhause im Projekt "Agent Theory"</def>
 
-    <bedeutung>Der Canon ist der Zugang / das Werkzeug / mit dem der Agent jedes Wirkfeld gleich
-        behandeln koennen soll</bedeutung>
+    <def>Der Canon ist der Zugang / das Werkzeug / mit dem der Agent jedes Wirkfeld gleich behandeln koennen soll</def>
 
-    <bedeutung>Jedes Projekt muss sich dem Canon unterordnen - so auch der Agent / denn der Agent
-        arbeitet immer in einer AI Agency Organisationseinheit / Projekt</bedeutung>
+    <def>Jedes Projekt muss sich dem Canon unterordnen - so auch der Agent / denn der Agent arbeitet immer in einer AI Agency Organisationseinheit / Projekt</def>
 
-    <bedeutung>Das Home -Verzeichnis ist ebenso eine Organisationseinheit / ein Projekt und
-        unterliegt ebenso dem Canon</bedeutung>
+    <def>Das Home -Verzeichnis ist ebenso eine Organisationseinheit / ein Projekt und unterliegt ebenso dem Canon</def>
 
     <definitionen bereich="Metasprache">
         <def>Es wird begriffliche und logische Praezision angestrebt</def>

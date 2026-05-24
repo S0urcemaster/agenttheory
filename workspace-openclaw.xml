@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theory name="openclaw-workspace" wirkfeld="entwicklung" quelle="/home/sntr/.openclaw/workspace">
+
+  <!-- Beruecksichtige zuerst den Canon . Kehre danach zu dieser Entwicklungsableitung zurueck -->
+  <ref datei=".theo/index.xml" />
+
+  <titel>OpenClaw Workspace Konfiguration als Agent Theory Entwicklungsableitung</titel>
+  <autor>Technoscout Agent</autor>
+
+  <bedeutung>Diese Theory transferiert die aktuellen volatilen OpenClaw Workspace-Dateien semantisch nach agenttheory</bedeutung>
+  <bedeutung>Sie ist Entwicklungsmodus : Sie beschreibt Seans eigenen Codex / Canon und ist noch kein verkaufsfertiger Produktiv-Agent</bedeutung>
+  <bedeutung>Die Markdown-Dateien im OpenClaw Workspace bleiben Quelle / Laufzeitkompatibilitaet . Die XML-Dateien sind die Canon-nahe Zielform</bedeutung>
+
+  <regel>
+    <def>Wirkfeld ist Entwicklung . Bei spaeterer Nutzung fuer produktive / verkaufsfertige Agents muss das Wirkfeld explizit neu bestimmt werden</def>
+  </regel>
+
+  <dateisystem>
+    <ref datei="agents-openclaw.xml">AGENTS.md als Workspace-Rahmen / Routing / Sicherheitsregeln</ref>
+    <ref datei="identity-openclaw.xml">IDENTITY.md als Agentenidentitaet</ref>
+    <ref datei="soul-openclaw.xml">SOUL.md als persona-nahe Grundhaltung</ref>
+    <ref datei="user-openclaw.xml">USER.md als personenbezogener Kontext</ref>
+    <ref datei="tools-openclaw.xml">TOOLS.md als lokale Werkzeug- und Ablageregeln</ref>
+    <ref datei="glossary-openclaw.xml">GLOSSARY.md als priorisiertes Workspace-Glossar</ref>
+    <ref datei="heartbeat-openclaw.xml">HEARTBEAT.md als periodische Aufgabenlogik</ref>
+    <ref datei="bootstrap-openclaw.xml">BOOTSTRAP.md als Startanker</ref>
+  </dateisystem>
+
+</theory>

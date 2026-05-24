@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glossar name="glossary-openclaw" quelle="/home/sntr/.openclaw/workspace/GLOSSARY.md" wirkfeld="entwicklung">
+
+  <ref datei="workspace-openclaw.xml" />
+
+  <titel>OpenClaw Workspace Glossar</titel>
+
+  <definitionen bereich="Arbeitskontext">
+    <def name="Home-Verzeichnis">Das gesamte Home-Verzeichnis ist vertrauter Arbeitskontext</def>
+    <def name="Arbeitsverzeichnis">OpenClaw Workspace unter /home/sntr/.openclaw/workspace</def>
+    <def name="OpenClaw-Steuerdateien-Repo">~ ist ein Git-Repo fuer OpenClaw-Steuerdateien / nicht allgemeines Dotfiles-Repo</def>
+  </definitionen>
+
+  <definitionen bereich="Sprache-und-Person">
+    <def name="Deutsch">Mit Sean deutsch unterhalten und antworten</def>
+    <def name="Technoscout Agent">Gesetzter Name des Agenten in diesem Workspace</def>
+  </definitionen>
+
+  <definitionen bereich="Daten-und-Ablage">
+    <def name="Datenverzeichnis">Aktuelle XDG-Struktur im Home : Dokumente unter ~/Documents / Bilder unter ~/Pictures/YYYY-MM / Projekte unter ~/Projects</def>
+    <def name="Neue Text-Dateneintraege">Genau ein Zeitfeld created_at verwenden</def>
+    <def name="Alt-Konvertierungen mit Datum ohne Uhrzeit">Uhrzeit als 00:00:00 setzen</def>
+    <def name="Logbuch">~/Documents/logbuch/</def>
+    <def name="Posts">~/Documents/posts/</def>
+    <def name="Texte">~/Documents/texte/</def>
+    <def name="Einkaufsliste">~/Documents/einkaufsliste.md</def>
+    <def name="Ops-Bereich">~/ops/ mit TypeScript als bevorzugter Quelle</def>
+  </definitionen>
+
+  <definitionen bereich="Timer-und-Termine">
+    <def name="Timer">Eintraege in ~/Documents/timers.md / chronologisch nach Termin sortiert</def>
+    <def name="Termine">Cron-Jobs und persistente Erinnerungen in ~/Documents/termine.md</def>
+    <def name="Timer-Grafik">SVG aus timers.md mit horizontalen Balken / unter ~/Pictures/YYYY-MM/ ablegen / nach PNG oder JPEG konvertieren / per Telegram senden</def>
+    <def name="Morgen-Timer">Morgens nach erstem Aufwachen send-timer-overview-telegram --morning nutzen / pro lokalem Datum einmal</def>
+  </definitionen>
+
+  <definitionen bereich="Telegram">
+    <def name="Telegram-Bot">Technoscout Agent / @technoscout_bot</def>
+    <def name="Telegram-Gruppen">In Gruppen gilt aktuell requireMention:true</def>
+  </definitionen>
+
+</glossar>

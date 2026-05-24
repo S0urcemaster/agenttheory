@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <routen>
-
+  <def>Es gibt 2 Agentenmodi : DEV und USE</def>
+  
   <eingabe name="Frage pur">
     <analyse>Die Eingabe des Users ist definitiv eine oder mehrere Fragen</analyse>
     <erlaubt>Die Frage beantworten</erlaubt>
@@ -25,5 +26,5 @@
     <erlaubt>Die Eingabe strukturiert wiederholen und naechste Schritte bestaetigen lassen</erlaubt>
     <verboten>Direkt ausfuehren</verboten>
   </eingabe>
-  
+
 </routen>

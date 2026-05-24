@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lokale-werkzeuge name="tools-openclaw" quelle="/home/sntr/.openclaw/workspace/TOOLS.md" wirkfeld="entwicklung">
+
+  <ref datei="workspace-openclaw.xml" />
+
+  <titel>Lokale Werkzeug- und Ablageregeln</titel>
+
+  <definitionen bereich="Arbeitskontext">
+    <def>Das gesamte Home-Verzeichnis ~ ist vertrauter Arbeitskontext / nicht nur /home/sntr/.openclaw/workspace</def>
+    <def>Begriffsdefinitionen und gelernte Ablageregeln stehen gebuendelt in /home/sntr/.openclaw/workspace/GLOSSARY.md</def>
+  </definitionen>
+
+  <ablage bereich="XDG">
+    <def>Bilder ausschliesslich unter ~/Pictures/ ablegen</def>
+    <def>In ~/Pictures je Monat einen Ordner YYYY-MM verwenden oder anlegen</def>
+    <def>Projekte unter ~/Projects bevorzugen</def>
+    <def>Weitere Standardordner : ~/Documents / ~/Downloads / ~/Music / ~/Videos</def>
+    <def>Keine neuen deutschen Duplikatordner wie ~/bilder oder ~/projekte anlegen oder bevorzugen</def>
+    <def>~/Daten wurde am 2026-05-19 aufgeloest und darf nicht als aktueller Zielordner verwendet werden</def>
+  </ablage>
+
+  <ablage bereich="Textdaten">
+    <def>Neue Text- / Dateneintraege verwenden genau ein Zeitfeld : created_at im ISO-Format mit lokaler Zeitzone</def>
+    <def>Logbuch liegt unter ~/Documents/logbuch/</def>
+    <def>Posts liegen unter ~/Documents/posts/</def>
+    <def>Texte liegen unter ~/Documents/texte/</def>
+    <def>Einkaufsliste liegt unter ~/Documents/einkaufsliste.md</def>
+  </ablage>
+
+  <ablage bereich="Sprueche">
+    <def>Sprueche liegen nicht mehr unter ~/Documents/sprueche.md</def>
+    <def>Einziges Datenfile fuer Sprueche ist /home/sntr/code/digicompass/frontend/src/data/sayings.json</def>
+    <def>Neue Spruch-Eintraege haben ein source:string[] Feld fuer Urheber</def>
+  </ablage>
+
+  <regeln bereich="Timer-und-Termine">
+    <def>Timer werden in ~/Documents/timers.md gesammelt und chronologisch nach Zeitpunkt sortiert</def>
+    <def>Eintraege in timers.md Timer nennen / nicht Termine</def>
+    <def>Mit Terminen meint Sean Cron-Jobs</def>
+    <def>Termine / Cron-Jobs persistent in ~/Documents/termine.md fuehren</def>
+    <def>Einmalige Erinnerungen beim Anlegen mit Zeit / Titel / Notiz / created_at / Tags / spaeterem Status dokumentieren</def>
+  </regeln>
+
+  <regeln bereich="Timer-Grafik">
+    <def>Bei Nachfrage zu Timer-Uebersicht oder Timer-Grafik aus ~/Documents/timers.md eine SVG-Grafik mit horizontalen Balken erzeugen</def>
+    <def>Grafik unter ~/Pictures/YYYY-MM/ ablegen / nach PNG oder JPEG konvertieren / per Telegram senden</def>
+    <def>Morgenroutine nutzt /home/sntr/.local/bin/send-timer-overview-telegram --morning</def>
+    <def>Morgendliche Grafik zeigt nur Timer die nicht laenger als 2 Monate in der Zukunft liegen</def>
+  </regeln>
+
+  <regeln bereich="Telegram">
+    <def>Bei User-Entscheidungen und Rueckfragen per Telegram moeglichst Inline-Keyboard-Buttons / Formulare verwenden</def>
+    <def>Button-Werte eindeutig halten : yes / no oder stabile Options-IDs</def>
+  </regeln>
+
+  <definitionen bereich="Ops-und-Backup">
+    <def>~/ops/ ist der lokale Ops- / Skriptbereich</def>
+    <def>Bevorzugt TypeScript als lesbare Quelle plus gebautes JavaScript fuer Ausfuehrung</def>
+    <def>Hauptmenue : npm --prefix ~/ops run ops</def>
+    <def>Workspace-Backup : npm --prefix ~/ops run backup:workspace</def>
+    <def>Finales sdb2-Backup : npm --prefix ~/ops run backup:final</def>
+    <def>Lokale manuelle Backups liegen unter ~/Backup ohne Datumsiteration</def>
+    <def>Finales Backup ersetzt G:\backup auf /dev/sdb2 aus ~/Backup</def>
+  </definitionen>
+
+</lokale-werkzeuge>

@@ -18,8 +18,11 @@
       <datei name="index.xml">Project Index</datei>
       <datei name="index-vorlage.xml">Project Index für ableitende Theories</datei>
       <datei name="teufel.xml">Projektanker fuer das Thema Teufel</datei>
+      <datei name="workspace-openclaw.xml">Entwicklungsableitung der aktuellen OpenClaw Workspace-Konfiguration</datei>
     </dateisystem>
   </theory>
+
+  <ref datei="workspace-openclaw.xml">Volatile OpenClaw Workspace-Konfiguration als Canon-nahe Entwicklungsableitung</ref>
 
   <idee>Dieses Projekt beschreibt die gemeinsame, wiederverwendbare Architektur jedes Wirkfelds (Projekte, spezielle Ordner) im AI Agency Oekosystem</idee>
 

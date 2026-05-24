@@ -2,5 +2,28 @@
 
 <!-- Es ist kein Canon tiefer als der Canon ! -->
 
-<!-- Referenziere den Canon hier im Projekt -->
-<ref datei="feedback" />
+<structure name="canon">
+  XML-Struktur des Kanons und abgeleiteter Theories
+  <theory>
+    Eine AI Agent Theory Definition
+    <def name="optional">Tag zur Definition</def>
+    <definitionen wirkfeld="optional">Tag für Listen von def- Elementen</definitionen>
+    <ref name="dateiname">Tag für Referenzen</ref>
+    <titel>Titel der Theory</titel>
+    <autor>Verfasser der Theory</autor>
+  </theory>
+  
+  <glossar>Der Glossar wird definiert</glossar>  
+  <user>Dieses Wissen wird vom User vorausgesetzt</user>
+  <regeln>Globale Regeln die auf abgeleitete Theories abfärben</regeln>
+  
+  <routen>
+    In routen.xml steht die erste Weichenstellung nach User Eingabe
+    <eingabe>
+      <analyse></analyse>
+      <erlaubt></erlaubt>
+      <verboten></verboten>
+    </eingabe>
+  </routen>
+
+</structure>
