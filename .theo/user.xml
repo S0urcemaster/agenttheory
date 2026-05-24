@@ -5,5 +5,7 @@
 <!-- Kann vom User als Referenz verwendet werden -->
 
 <user>
+  <def>Der User denkt hierarchisch</def>
+  
   <def>Projektlokale Pfade beginnen ohne führendes / Slash . Führendes Slash bezieht sich auf den gesamten AI Agency workspace</def>
 </user>

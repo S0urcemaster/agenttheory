@@ -25,5 +25,9 @@
   <def name="Regel">Regeln werden in regeln.xml global oder lokal definiert / wo sie globale Regeln überschreiben können</def>
   <def name="Routing">Routing meint die erste Analyse einer Eingabe des Users durch den Agenten</def>
   
+  <definitionen bereich="Workspace">
+    <def>Workspace / oder ~ Home des Users . Dieser ist in der Hauptsache gemeint</def>
+    <def>Privater Workspace des Agenten in .openclaw/workspace . Dieser ist ein Nebenschauplatz und extra benannt</def>
+  </definitionen>
 
 </glossar>
