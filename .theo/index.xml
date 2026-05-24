@@ -10,10 +10,13 @@
 
     <def>Der "Canon" ist die erste Theory</def>
 
+    <def>Notiz : Es gibt Entwickler Agenten und  Agenten - es gibt Agentenklassen</def>
+
     <ref name=".canon/">Der größere Canon</ref>
     <ref name=".canon/index.xml">Der Ursprung - das Ganze vollstaendig enthalten in allen seinen Teilen (Rückkopplung verhindert)</ref>
     <ref name="glossar.xml">Globalster Glossar</ref>
     <ref name="routen.xml">Strikte Anweisungsverzweigung</ref>
+    <ref name="modus-verzweigung.xml">Bedingung fuer die Verzweigung nach DEV und USE</ref>
     <ref name="regeln.xml">Globalste Grundregeln</ref>
     <ref name="user.xml">Userköpfe für Agents verständlich gemacht</ref>
 

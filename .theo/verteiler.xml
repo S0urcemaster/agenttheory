@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<verteiler stil="4-Wege- / Y-Baum">
+  <def>Es gibt 2 Agentenmodi : Entwicklung a und Ausfuehrung b</def>
+  
+  <y name="User Eingabe Auswertung">
+
+    <!-- Eindeutig eine oder mehrere Frage . Nur Fragen -->
+    <a name="Frage">
+      <y name="Entwicklung oder Ausführung / E oder A">
+        <a name="Entwicklung">
+          <!-- Die Frage betrifft die Entwicklung -->
+           <y></y>
+        </a>
+        <b name="Ausfuehrung">
+          <!-- Die Frage betrifft die Ausfuehrung -->
+          <y></y>
+        </b>
+        <!-- ab ist keine Option -->
+        <sonst name="Unscharf">
+          <y></y>
+        </sonst>
+      </y>
+    </a>
+
+    <!-- Eindeutig eine Anweisung ohne Umschweife und ohne Zweifel -->
+    <b name="Anweisung">
+      <y>
+        <a name="CLI Anweisung">
+          <!-- CLI Anweisungen auch für Ausführung ? -->
+          
+        </a>
+        <b name="Sprachliche Anweisung">
+          <y name="E oder A">
+            <a name="Entwicklung">
+              <!-- Es ist eindeutig die Entwicklerrolle : die ein Anliegen hat -->
+
+            </a>
+            <b name="Ausfuehrung">
+              <!-- Es ist eindeutig die Andwenderrolle : die sich meldet -->
+
+            </b>
+            <!-- ab ist keine Option -->
+            <sonst name="Unscharf">
+              <y></y>
+            </sonst>
+          </y>
+        </b>
+        <ab>
+          <!-- Es ist zuerst eine CLI Anweisung und dann weitere Anweisungen . Das kann nur der Enwtickler -->
+          <z name="Entwickler CLI Befehl + weitere Anweisung(en)">Führe die Entwickleranweisungen aus</z>
+        </ab>
+        <sonst>
+          <z name="Was soll das">Was soll das sein ? Rückfragen</z>
+        </sonst>
+      </y>
+    </b>
+
+    <!-- Es können eine oder mehrere Fragen UND eine oder mehrere Anweisung identifiziert werden . Sonst nichts -->
+    <ab name="Frage und Anweisung">
+      <y name="E oder A">
+        <a name="Entwicklung">
+          <!-- Es ist eindeutig die Entwicklerrolle : die ein Anliegen hat -->
+
+        </a>
+        <b name="Ausfuehrung">
+          <!-- Es ist eindeutig die Andwenderrolle : die sich meldet -->
+
+        </b>
+        <!-- ab ist keine Option -->
+        <sonst name="Unscharf">
+          <y></y>
+        </sonst>
+      </y>
+    </ab>
+
+    <sonst name="Unscharf">
+      <y name="Aussage">
+        <!-- Ist eine Botschaft enthalten / die keine Frage und keine Anweisung ist ? -->
+        <a name="Entwicklung">
+          <!-- Es ist eindeutig die Entwicklerrolle : die ein Anliegen hat -->
+          
+        </a>
+        <b name="Ausfuehrung">
+          <!-- Es ist eindeutig die Andwenderrolle : die sich meldet -->
+
+        </b>
+        <!-- ab ist keine Option -->
+        <sonst name="Unscharf">
+          <z name="Was soll das">Was soll das sein ? Rückfragen</z>
+        </sonst>
+      </y>
+    </sonst>
+
+  </y>
+
+</verteiler>
