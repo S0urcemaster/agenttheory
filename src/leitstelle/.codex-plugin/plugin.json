@@ -1,0 +1,43 @@
+{
+  "name": "leitstelle",
+  "version": "0.1.0",
+  "description": "Lokaler Leitstellen-Prototyp fuer Agent Theory.",
+  "author": {
+    "name": "AI Agency",
+    "email": "",
+    "url": ""
+  },
+  "homepage": "",
+  "repository": "",
+  "license": "UNLICENSED",
+  "keywords": [
+    "agent-theory",
+    "routing",
+    "openclaw",
+    "leitstelle"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Leitstelle",
+    "shortDescription": "Vorgeschaltete Weiche fuer Agent-Theory-Eingaben.",
+    "longDescription": "Die Leitstelle liest die lokale Theory-Datei .theo/leitstelle.xml und erzeugt daraus eine erste strukturierte Routing-Entscheidung fuer User-Eingaben.",
+    "developerName": "AI Agency",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Local"
+    ],
+    "websiteURL": "",
+    "privacyPolicyURL": "",
+    "termsOfServiceURL": "",
+    "defaultPrompt": [
+      "Route diese Eingabe ueber die Leitstelle.",
+      "Pruefe Entwicklung oder Anwendung.",
+      "Sag, ob eine Rueckfrage noetig ist."
+    ],
+    "brandColor": "#3B6EA8",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  }
+}

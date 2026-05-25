@@ -1,0 +1,17 @@
+{
+  "name": "leitstelle",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lokaler Leitstellen-Prototyp fuer Agent Theory.",
+  "scripts": {
+    "route": "node scripts/route-input.mjs",
+    "route:offline": "node scripts/route-input.mjs --offline"
+  },
+  "bin": {
+    "leitstelle-route": "./scripts/route-input.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
