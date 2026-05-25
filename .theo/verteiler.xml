@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <verteiler stil="4-Wege- / Y-Baum">
-  <def>Es gibt 2 Agentenmodi : Entwicklung a und Ausfuehrung b</def>
+  <def>Es gibt 2 Agentenmodi : Entwicklung a und Anwendung</def>
   
   <y name="User Eingabe Auswertung">
 
     <!-- Eindeutig eine oder mehrere Frage . Nur Fragen -->
     <a name="Frage">
-      <y name="Entwicklung oder Ausführung / E oder A">
+      <y name="Entwicklung oder Anwendung / E oder A">
         <a name="Entwicklung">
           <!-- Die Frage betrifft die Entwicklung -->
-           <y></y>
+          <z name="Entwicklungskontext">Beantworte die Entwicklerfrage</z>
         </a>
-        <b name="Ausfuehrung">
-          <!-- Die Frage betrifft die Ausfuehrung -->
-          <y></y>
+        <b name="Anwendung">
+          <!-- Die Frage betrifft die Anwendung -->
+          <z name="Anwendungskontext">Beantworte die Anwenderfrage</z>
         </b>
         <!-- ab ist keine Option -->
         <sonst name="Unscharf">
-          <y></y>
+          <z name="Was soll das">Was soll das sein ? Rückfragen</z>
         </sonst>
       </y>
     </a>
 
-    <!-- Eindeutig eine Anweisung ohne Umschweife und ohne Zweifel -->
+    <!-- Eindeutig eine Anweisung oder mehrere ohne Umschweife und ohne Zweifel -->
     <b name="Anweisung">
       <y>
         <a name="CLI Anweisung">
-          <!-- CLI Anweisungen auch für Ausführung ? -->
-          
+          <!-- CLI Anweisungen auch für Anwendung ? Eher nicht -->
+          <z name="CLI Befehl">Führe den CLI Befehl aus</z>
         </a>
         <b name="Sprachliche Anweisung">
           <y name="E oder A">
             <a name="Entwicklung">
               <!-- Es ist eindeutig die Entwicklerrolle : die ein Anliegen hat -->
-
+              <z name="Entwickler Anweisung">Führe die Anweisung aus</z>
             </a>
-            <b name="Ausfuehrung">
+            <b name="Anwendung">
               <!-- Es ist eindeutig die Andwenderrolle : die sich meldet -->
-
+              <z name="Anwender Anweisung">Führe die Anweisung aus</z>
             </b>
             <!-- ab ist keine Option -->
             <sonst name="Unscharf">
-              <y></y>
+              <z name="Was soll das">Was soll das sein ? Rückfragen</z>
             </sonst>
           </y>
         </b>
@@ -60,29 +60,44 @@
       <y name="E oder A">
         <a name="Entwicklung">
           <!-- Es ist eindeutig die Entwicklerrolle : die ein Anliegen hat -->
-
+          <z name="Entwickler Anweisung">Führe die Anweisung aus</z>
         </a>
-        <b name="Ausfuehrung">
+        <b name="Anwendung">
           <!-- Es ist eindeutig die Andwenderrolle : die sich meldet -->
-
+          <z name="Anwender Anweisung">Führe die Anweisung aus</z>
         </b>
         <!-- ab ist keine Option -->
         <sonst name="Unscharf">
-          <y></y>
+          <z name="Was soll das">Was soll das sein ? Rückfragen</z>
         </sonst>
       </y>
     </ab>
 
     <sonst name="Unscharf">
-      <y name="Aussage">
+      <y name="Aussage extrahieren">
         <!-- Ist eine Botschaft enthalten / die keine Frage und keine Anweisung ist ? -->
-        <a name="Entwicklung">
-          <!-- Es ist eindeutig die Entwicklerrolle : die ein Anliegen hat -->
-          
+        <a name="Aussage vorhanden">
+          <!-- Die Nachricht enthält neben weiteren Elementen eine klare Aussage -->
+          <y>
+            <!-- Die Nachricht ist nur eine Aussage -->
+            <a name="Aussagennachricht">
+              <!-- Einzelne oder mehrere Aussagen . Nur Aussagen -->
+              <z name="Entwickler Anweisung">Führe die Anweisung aus</z>
+            </a>
+            <b name="Keine Aussage">
+              <!-- Mindestens eine Aussage und weitere Elemente -->
+              <z name="Anwender Anweisung">Führe die Anweisung aus</z>
+            </b>
+            <!-- ab ist keine Option -->
+            <sonst name="Unscharf">
+              <z name="Was soll das">Was soll das sein ? Rückfragen</z>
+            </sonst>
+          </y>
+          <z name="Entwickler Botschaft">Führe die Anweisung aus</z>
         </a>
-        <b name="Ausfuehrung">
+        <b name="Anwendung">
           <!-- Es ist eindeutig die Andwenderrolle : die sich meldet -->
-
+          <z name="Anwender Anweisung">Führe die Anweisung aus</z>
         </b>
         <!-- ab ist keine Option -->
         <sonst name="Unscharf">
