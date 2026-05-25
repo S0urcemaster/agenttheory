@@ -9,4 +9,5 @@ Das sieht aus wie ein Scaffold . Muss sich noch zeigen
 
 Erstes Plugin-Geruest: `leitstelle/`
 
-Setze OPENAI_API_KEY=...
+export OPENAI_API_KEY=
+

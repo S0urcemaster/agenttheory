@@ -32,11 +32,15 @@ Noch offen:
     cd /home/sntr/code/agenttheory/src/leitstelle
     npm run route:offline -- "neues projekt erstellen: Theory XSLT"
     OPENAI_API_KEY=... npm run route -- "neues projekt erstellen: Theory XSLT"
+    npm run route -- --require-api "neues projekt erstellen: Theory XSLT"
 
 Der Prototyp liest standardmaessig
 /home/sntr/code/agenttheory/.theo/leitstelle.xml. Mit
 LEITSTELLE_THEORY=/pfad/zur/leitstelle.xml kann eine andere Theory-Datei
 verwendet werden.
+
+Wenn kein OPENAI_API_KEY im Prozess ankommt, meldet das Script den Fallback auf
+stderr. Mit --require-api wird daraus ein Fehler.
 
 ## Grenze
 

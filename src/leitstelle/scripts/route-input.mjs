@@ -10,13 +10,15 @@ const defaultTheoryPath = path.join(repoRoot, ".theo", "leitstelle.xml");
 
 const args = process.argv.slice(2);
 const offline = args.includes("--offline");
+const requireApi = args.includes("--require-api");
 const help = args.includes("--help") || args.includes("-h");
-const textArgs = args.filter((arg) => arg !== "--offline" && arg !== "--help" && arg !== "-h");
+const textArgs = args.filter((arg) => !["--offline", "--require-api", "--help", "-h"].includes(arg));
 
 if (help || textArgs.length === 0) {
   console.log([
     "usage: npm run route -- <user-eingabe>",
     "       npm run route:offline -- <user-eingabe>",
+    "       npm run route -- --require-api <user-eingabe>",
     "",
     "Environment:",
     "  OPENAI_API_KEY       nutzt die OpenAI API, sofern --offline nicht gesetzt ist",
@@ -101,7 +103,13 @@ function heuristicDecision(input) {
 
 async function callOpenAI(input) {
   const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) return heuristicDecision(input);
+  if (!apiKey) {
+    if (requireApi) {
+      throw new Error("OPENAI_API_KEY ist in diesem Prozess nicht gesetzt.");
+    }
+    console.error("leitstelle: OPENAI_API_KEY nicht gesetzt, nutze Offline-Heuristik. Mit --require-api hart fehlschlagen.");
+    return heuristicDecision(input);
+  }
 
   const model = process.env.OPENAI_MODEL || "gpt-4.1-mini";
   const prompt = [
@@ -154,6 +162,10 @@ async function callOpenAI(input) {
   const parsed = JSON.parse(outputText);
   parsed.source = { theory_path: theoryPath };
   return parsed;
+}
+
+if (offline) {
+  console.error("leitstelle: --offline gesetzt, nutze Offline-Heuristik.");
 }
 
 const decision = offline ? heuristicDecision(userInput) : await callOpenAI(userInput);
