@@ -1,0 +1,20 @@
+{
+  "name": "agenttheory-local",
+  "interface": {
+    "displayName": "Agent Theory Local"
+  },
+  "plugins": [
+    {
+      "name": "leitstelle",
+      "source": {
+        "source": "local",
+        "path": "./src/leitstelle"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

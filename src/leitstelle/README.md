@@ -35,8 +35,8 @@ Noch offen:
     npm run route -- --require-api "neues projekt erstellen: Theory XSLT"
 
 Der Prototyp liest standardmaessig
-/home/sntr/code/agenttheory/.theo/leitstelle.xml. Mit
-LEITSTELLE_THEORY=/pfad/zur/leitstelle.xml kann eine andere Theory-Datei
+/home/sntr/code/agenttheory/.theo/leitstelle/index.xml. Mit
+LEITSTELLE_THEORY=/pfad/zur/leitstelle/index.xml kann eine andere Theory-Datei
 verwendet werden.
 
 Wenn kein OPENAI_API_KEY im Prozess ankommt, meldet das Script den Fallback auf

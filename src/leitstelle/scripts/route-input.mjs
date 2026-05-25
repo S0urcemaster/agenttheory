@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const pluginRoot = path.resolve(path.dirname(__filename), "..");
 const repoRoot = path.resolve(pluginRoot, "..", "..");
-const defaultTheoryPath = path.join(repoRoot, ".theo", "leitstelle.xml");
+const defaultTheoryPath = path.join(repoRoot, ".theo", "leitstelle", "index.xml");
 
 const args = process.argv.slice(2);
 const offline = args.includes("--offline");
@@ -23,7 +23,7 @@ if (help || textArgs.length === 0) {
     "Environment:",
     "  OPENAI_API_KEY       nutzt die OpenAI API, sofern --offline nicht gesetzt ist",
     "  OPENAI_MODEL         optional, default: gpt-4.1-nano",
-    "  LEITSTELLE_THEORY    optionaler Pfad zu leitstelle.xml"
+    "  LEITSTELLE_THEORY    optionaler Pfad zu leitstelle/index.xml"
   ].join("\n"));
   process.exit(help ? 0 : 64);
 }
@@ -113,8 +113,7 @@ async function callOpenAI(input) {
 
   const model = process.env.OPENAI_MODEL || "gpt-4.1-nano";
   const prompt = [
-    "Du bist die Leitstelle vor einem OpenClaw-Agenten.",
-    "Nutze die XML-Theory als Entscheidungslogik.",
+    "Nutze das XML als Entscheidungslogik.",
     "Gib ausschliesslich eine JSON-Entscheidung nach Schema aus.",
     "Wenn die Eingabe nicht hart entscheidbar ist, waehle route=rueckfrage und rueckfrage_noetig=true.",
     "",

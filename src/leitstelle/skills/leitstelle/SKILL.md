@@ -26,4 +26,4 @@ Noch kein produktiver Skill. Bei Nutzung nur als Entwicklungsnotiz behandeln.
 - `/home/sntr/code/agenttheory/.theo/index.xml`
 - `/home/sntr/code/agenttheory/.theo/modus-verzweigung.xml`
 - `/home/sntr/code/agenttheory/.theo/verteiler.xml`
-- `/home/sntr/code/agenttheory/.theo/leitstelle.xml`
+- `/home/sntr/code/agenttheory/.theo/leitstelle/index.xml`
