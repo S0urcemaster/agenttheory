@@ -42,6 +42,9 @@ verwendet werden.
 Wenn kein OPENAI_API_KEY im Prozess ankommt, meldet das Script den Fallback auf
 stderr. Mit --require-api wird daraus ein Fehler.
 
+Default-Modell fuer die OpenAI API ist gpt-4.1-nano. Mit OPENAI_MODEL kann
+das Modell pro Lauf ueberschrieben werden.
+
 ## Grenze
 
 Dieses Plugin ist Entwicklungswerkzeug fuer Agent Theory. Es ist noch nicht als

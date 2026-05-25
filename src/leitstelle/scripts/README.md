@@ -16,3 +16,4 @@ Beispiele:
 Mit OPENAI_API_KEY nutzt npm run route die OpenAI API. Ohne API-Key oder mit
 --offline faellt das Script auf eine einfache lokale Heuristik zurueck.
 Mit --require-api bricht das Script ab, wenn OPENAI_API_KEY im Prozess fehlt.
+Default-Modell ist gpt-4.1-nano; OPENAI_MODEL kann es ueberschreiben.

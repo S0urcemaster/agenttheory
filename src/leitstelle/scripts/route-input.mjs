@@ -22,7 +22,7 @@ if (help || textArgs.length === 0) {
     "",
     "Environment:",
     "  OPENAI_API_KEY       nutzt die OpenAI API, sofern --offline nicht gesetzt ist",
-    "  OPENAI_MODEL         optional, default: gpt-4.1-mini",
+    "  OPENAI_MODEL         optional, default: gpt-4.1-nano",
     "  LEITSTELLE_THEORY    optionaler Pfad zu leitstelle.xml"
   ].join("\n"));
   process.exit(help ? 0 : 64);
@@ -111,7 +111,7 @@ async function callOpenAI(input) {
     return heuristicDecision(input);
   }
 
-  const model = process.env.OPENAI_MODEL || "gpt-4.1-mini";
+  const model = process.env.OPENAI_MODEL || "gpt-4.1-nano";
   const prompt = [
     "Du bist die Leitstelle vor einem OpenClaw-Agenten.",
     "Nutze die XML-Theory als Entscheidungslogik.",
