@@ -20,7 +20,7 @@
     <ref name="szenarios.xml">Beispielhafte Use-Cases und Szenarien</ref>
     <ref name="teufel.xml">Warnanker fuer Fehlverhalten und Folgen</ref>
     <ref name="user.xml">Userköpfe für Agents verständlich gemacht</ref>
-    <ref name="leitstelle/index.xml">"Leitstelle" ist ein System zur Eingabequalifizierung durch einen Nano-Agenten und kein relevanter Bereich für den sprachlichen Agentenaustausch</ref>
+    <ref name="leitstelle/">"Leitstelle" ist ein System zur Eingabequalifizierung durch einen Mini-Agenten und kein relevanter Bereich für den sprachlichen Agentenaustausch</ref>
 
     <def>Der "Canon" soll die Basis -Spezifikation fuer jedes andere Wirkfeld der AI Agency sein / die DNA / der alle Agents folgen koennen</def>
 
