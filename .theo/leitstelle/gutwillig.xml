@@ -4,104 +4,102 @@
   <!-- Hier ist also alles schön fluffig -->
 
   <y frage="Von welcher User-Rolle kommt wohl die Eingabe ?">
-    <a antwort="Die User-Eingabe hört sich professionell und zielstrebig an/ weiß : was sie will . "></a>
+    <a antwort="Die User-Eingabe hört sich professionell und zielstrebig an / weiß : was sie will"></a>
 
-    <a antwort="Frage">
-      <y name="Entwicklung oder Anwendung / E oder A">
-        <a name="Entwicklung">
-          <!-- Die Frage betrifft die Entwicklung -->
+    <a antwort="Die User-Eingabe ist eine Frage">
+      <y frage="Betrifft die Frage Entwicklung oder Anwendung ?">
+        <a antwort="Die Frage betrifft die Entwicklung">
           <z name="Entwicklungskontext">Entwickler mit Frage: [input_text]</z>
         </a>
-        <b name="Anwendung">
-          <!-- Die Frage betrifft die Anwendung -->
+        <b antwort="Die Frage betrifft die Anwendung">
           <z name="Anwendungskontext">User mit Frage: [input_text]</z>
         </b>
         <!-- ab ist keine Option -->
-        <sonst name="Unscharf">
+        <sonst antwort="Die Rolle der Frage ist unscharf">
           <z name="Was soll das">Bitte den Benutzer: sein Anliegen zu wiederholen</z>
         </sonst>
       </y>
     </a>
 
     <!-- Eindeutig eine Anweisung oder mehrere ohne Umschweife und ohne Zweifel -->
-    <b name="Anweisung">
-      <y>
-        <a name="CLI Anweisung">
+    <b antwort="Die User-Eingabe ist eine Anweisung">
+      <y frage="Welche Art von Anweisung liegt vor ?">
+        <a antwort="Die Anweisung ist eine CLI-Anweisung">
           <!-- CLI Anweisungen auch für Anwendung ? Eher nicht -->
           <z name="CLI Befehl">Entwickler mit CLI-Anweisung: [input_text]</z>
         </a>
-        <b name="Sprachliche Anweisung">
-          <y name="E oder A">
-            <a name="Entwicklung">
+        <b antwort="Die Anweisung ist eine sprachliche Anweisung">
+          <y frage="Betrifft die sprachliche Anweisung Entwicklung oder Anwendung ?">
+            <a antwort="Die Anweisung betrifft die Entwicklung">
               <!-- Es ist eindeutig die Entwicklerrolle : die ein Anliegen hat -->
               <z name="Entwickler Anweisung">Entwickler mit Anweisung: [input_text]</z>
             </a>
-            <b name="Anwendung">
-              <!-- Es ist eindeutig die Andwenderrolle : die sich meldet -->
+            <b antwort="Die Anweisung betrifft die Anwendung">
+              <!-- Es ist eindeutig die Anwenderrolle : die sich meldet -->
               <z name="Anwender Anweisung">User mit Anweisung: [input_text]</z>
             </b>
             <!-- ab ist keine Option -->
-            <sonst name="Unscharf">
+            <sonst antwort="Die Rolle der Anweisung ist unscharf">
               <z name="Was soll das">Bitte den Benutzer: sein Anliegen zu wiederholen</z>
             </sonst>
           </y>
         </b>
-        <ab>
-          <!-- Es ist zuerst eine CLI Anweisung und dann weitere Anweisungen . Das kann nur der Enwtickler -->
+        <ab antwort="Die Eingabe ist zuerst eine CLI-Anweisung und danach eine oder mehrere weitere Anweisungen">
+          <!-- Es ist zuerst eine CLI Anweisung und dann weitere Anweisungen . Das kann nur der Entwickler -->
           <z name="Entwickler CLI Befehl + weitere Anweisung(en)">Entwickler mit CLI-Anweisung und weiterer Anweisung: [input_text]</z>
         </ab>
-        <sonst>
+        <sonst antwort="Die Art der Anweisung ist unscharf">
           <z name="Was soll das">Bitte den Benutzer: sein Anliegen zu wiederholen</z>
         </sonst>
       </y>
     </b>
 
     <!-- Es können eine oder mehrere Fragen UND eine oder mehrere Anweisung identifiziert werden . Sonst nichts -->
-    <ab name="Frage und Anweisung">
-      <y name="E oder A">
-        <a name="Entwicklung">
+    <ab antwort="Die User-Eingabe enthält Frage und Anweisung">
+      <y frage="Betrifft die Kombination aus Frage und Anweisung Entwicklung oder Anwendung ?">
+        <a antwort="Die Kombination betrifft die Entwicklung">
           <!-- Es ist eindeutig die Entwicklerrolle : die ein Anliegen hat -->
           <z name="Entwickler Anweisung">Entwickler mit Frage und Anweisung: [input_text]</z>
         </a>
-        <b name="Anwendung">
-          <!-- Es ist eindeutig die Andwenderrolle : die sich meldet -->
+        <b antwort="Die Kombination betrifft die Anwendung">
+          <!-- Es ist eindeutig die Anwenderrolle : die sich meldet -->
           <z name="Anwender Anweisung">User mit Frage und Anweisung: [input_text]</z>
         </b>
         <!-- ab ist keine Option -->
-        <sonst name="Unscharf">
+        <sonst antwort="Die Rolle der Kombination ist unscharf">
           <z name="Was soll das">Bitte den Benutzer: sein Anliegen zu wiederholen</z>
         </sonst>
       </y>
     </ab>
 
-    <sonst name="Unscharf">
-      <y name="Aussage extrahieren">
+    <sonst antwort="Die User-Eingabe ist unscharf">
+      <y frage="Ist eine Aussage extrahierbar ?">
         <!-- Ist eine Botschaft enthalten / die keine Frage und keine Anweisung ist ? -->
-        <a name="Aussage vorhanden">
+        <a antwort="Die Nachricht enthält eine klare Aussage">
           <!-- Die Nachricht enthält neben weiteren Elementen eine klare Aussage -->
-          <y>
+          <y frage="Besteht die Nachricht nur aus Aussage oder enthält sie weitere Elemente ?">
             <!-- Die Nachricht ist nur eine Aussage -->
-            <a name="Aussagennachricht">
+            <a antwort="Die Nachricht besteht nur aus einer oder mehreren Aussagen">
               <!-- Einzelne oder mehrere Aussagen . Nur Aussagen -->
               <z name="Entwickler Anweisung">Entwickler mit Botschaft: [input_text]</z>
             </a>
-            <b name="Keine Aussage">
+            <b antwort="Die Nachricht enthält eine Aussage und weitere Elemente">
               <!-- Mindestens eine Aussage und weitere Elemente -->
               <z name="Anwender Anweisung">User mit Botschaft: [input_text]</z>
             </b>
             <!-- ab ist keine Option -->
-            <sonst name="Unscharf">
+            <sonst antwort="Die Aussage ist unscharf">
               <z name="Was soll das">Bitte den Benutzer: sein Anliegen zu wiederholen</z>
             </sonst>
           </y>
           <z name="Entwickler Botschaft">Entwickler mit Botschaft: [input_text]</z>
         </a>
-        <b name="Anwendung">
-          <!-- Es ist eindeutig die Andwenderrolle : die sich meldet -->
+        <b antwort="Die Eingabe betrifft die Anwendung">
+          <!-- Es ist eindeutig die Anwenderrolle : die sich meldet -->
           <z name="Anwender Anweisung">User mit Anweisung: [input_text]</z>
         </b>
         <!-- ab ist keine Option -->
-        <sonst name="Unscharf">
+        <sonst antwort="Die Eingabe bleibt unscharf">
           <z name="Was soll das">Bitte den Benutzer: sein Anliegen zu wiederholen</z>
         </sonst>
       </y>

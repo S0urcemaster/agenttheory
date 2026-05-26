@@ -3,7 +3,7 @@
 <!-- Es ist kein Canon tiefer als der Canon ! -->
 
 <structure name="canon">
-  <!-- XML-Struktur des Kanons und abgeleiteter Theories -->
+  <!-- XML-Struktur des Kanons und abgeleiteter Theories im Beispiel -->
 
   <!-- Universelle Tags können überall unterhalb von Top Level Tags auftauchen -->
 

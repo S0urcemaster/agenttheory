@@ -1,4 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <structure name="leitstelle">
+  <!-- XML-Struktur einer Leitstelle im Beispiel -->
+  
+  <leitstelle teil="optional">
+    <!-- Die Hauptleitstelle hat keine "teil"-Attribut -->
+
+    <!-- var definiert eine Leitstellen- globale Variable / die in allen Teilen gültig ist -->
+    <var name="Variablenname">
+      <option>Bezeichnet eine</option>
+    </var>
+
+    <!-- Es gibt immer genau EIN Y Element pro Ebene -->
+    <!-- Es gibt immer genau 2 Wahlmöglichkeiten pro Y- Element : a und a + "beide" wenn möglich + "weder-noch" -->
+    <y frage="Diese Frage soll geklärt werden">
+
+      <!-- a : Genau ein a Element -->
+      <a antwort="Diese Antwort führt hier entlang">
+        <!-- Ein Ausgang -->
+        <z name="Beispielname">Beispielrückgabetext</z>
+      </a>
+      
+      <!-- b : Genau ein b Element -->
+      <b antwort="Diese Antwort fürt dort entlang">
+        <!-- Eine unidirektionele Weiterleitung -->
+        <gehezu ref="Beispieldatei" />
+      </b>
+      
+      <!-- a und b gelten gleichzeitig wenn logisch möglich . Sonst fehlt das Element -->
+      <ab antwort="Diese Antwort ist zutreffend für die Überschneidung und führt in diese Richtung">
+
+      </ab>
+      
+      <!-- Weder-noch : genau ein sonst Element -->
+      <sonst antwort="Diese Antwort führt meistens zum User zurück mit Bitte um wiederholung">
+
+      </sonst>
+    </y>
+
+  </leitstelle>
+
+
+
+  <def name="var">Deklariert eine Variable oder einen semantischen Auswahlraum</def>
+  <def name="option">Benennt eine erlaubte Option innerhalb von var</def>
+
+  <def name="y">Stellt eine qualifizierende Frage und beinhaltet die Antwortmöglichkeiten . Die Frage steht im attribut frage</def>
+  <def name="a">Erste positive oder bevorzugte Antwort auf eine y-Frage . Die Antwort steht im attribut antwort</def>
+  <def name="b">Zweite Antwort auf eine y-Frage . Die Antwort steht im attribut antwort</def>
+  <def name="ab">Antwortkombination oder Zwischenfall zwischen a und b . Die Antwort steht im attribut antwort</def>
+  <def name="sonst">Fallback-Antwort wenn a / b / ab nicht sicher greifen . Die Antwort steht im attribut antwort</def>
+  <def name="gehzu">Verzweigt in eine referenzierte Leitstellen-Datei . Das Ziel steht im attribut ref</def>
+
 </structure>
