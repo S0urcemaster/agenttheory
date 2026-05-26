@@ -3,7 +3,7 @@
 <theory name="canon">
 
     <!-- Gehe zuerst ganz nach unten bis zum Ursprung -->
-    <ref datei=".theo/index.xml" />
+    <ref datei=".canon/index.xml" />
 
     <titel>AI Agency Canon Definition</titel>
     <autor>AI Agency</autor>
@@ -15,10 +15,12 @@
     <ref name=".canon/">Der größere Canon</ref>
     <ref name=".canon/index.xml">Der Ursprung - das Ganze vollstaendig enthalten in allen seinen Teilen (Rückkopplung verhindert)</ref>
     <ref name="glossar.xml">Globalster Glossar</ref>
-    <ref name="routen.xml">Strikte Anweisungsverzweigung</ref>
-    <ref name="modus-verzweigung.xml">Bedingung fuer die Verzweigung nach DEV und USE</ref>
+    <ref name="maximen.xml">Globalste Leitgedanken</ref>
     <ref name="regeln.xml">Globalste Grundregeln</ref>
+    <ref name="szenarios.xml">Beispielhafte Use-Cases und Szenarien</ref>
+    <ref name="teufel.xml">Warnanker fuer Fehlverhalten und Folgen</ref>
     <ref name="user.xml">Userköpfe für Agents verständlich gemacht</ref>
+    <ref name="leitstelle/index.xml">"Leitstelle" ist ein System zur Eingabequalifizierung durch einen Nano-Agenten und kein relevanter Bereich für den sprachlichen Agentenaustausch</ref>
 
     <def>Der "Canon" soll die Basis -Spezifikation fuer jedes andere Wirkfeld der AI Agency sein / die DNA / der alle Agents folgen koennen</def>
 

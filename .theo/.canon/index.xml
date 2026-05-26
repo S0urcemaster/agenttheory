@@ -8,10 +8,10 @@
   <!-- Universelle Tags können überall unterhalb von Top Level Tags auftauchen -->
 
     <!-- def Tag -->
-    <def name="optionales attribut">Tag zur Definition</def>
+    <def name="optionales semantisches attribut">Tag zur Definition</def>
 
     <!-- definitionen Tag -->
-    <definitionen>Tag für Listen von def- Elementen</definitionen>
+    <definitionen name="Ein qualifizierender Name">Tag für Listen von def- Elementen</definitionen>
 
     <!-- ref Tag -->
     <ref name="dateiname">Tag für Referenzen</ref>
@@ -25,21 +25,21 @@
   <!-- Top Level Tags : -->
   
     <!-- Eine AI Agent Theory Definition -->
-    <theory name='canon'>
+    <theory name='Beispielname'>
 
-      <def name="beispiel">allgemeine Tags können überall vorkommen</def>
+      <def name="Beispiel">allgemeine Tags können überall vorkommen</def>
 
       <!-- Titel Tag -->
-      <titel>Titel der Theory</titel>
+      <titel>Verpflichtender Titel der Theory</titel>
 
       <!-- Autor Tag -->
-      <autor>Verfasser der Theory</autor>
+      <autor>Verpflichtender Verfasser der Theory</autor>
 
     </theory>
     
     <glossar>Der Glossar wird definiert</glossar>  
     <user>Dieses Wissen wird vom User vorausgesetzt</user>
-    <regeln>Globale Regeln die auf abgeleitete Theories abfärben</regeln>
+    <regeln>Globale Regeln die auf abgeleitete Theories abfaerben</regeln>
     <teufel>Nichtbeachtung hat Konsequenzen !</teufel>
     
     <leitstelle teil="optional">Eingabequalifizierung - Ohne "teil"- Attribut = Hauptleitstelle</leitstelle>

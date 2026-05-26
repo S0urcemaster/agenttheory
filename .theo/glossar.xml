@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glossar>
 
-  <definitionen wirkfeld="Self">
+  <definitionen name="Self">
     <def name="def">Kurz fuer Definition . Mit &lt;def&gt; wird eine Definition festgelegt</def>
     <def name="definitionen">Liste für defs</def>
     <def name="Glossar">Das Glossar definiert alle im Projekt verwendeten / vom normalen Sprachgebrauch abweichenden Begriffe und/oder stellt die Definition sicher</def>
   </definitionen>
   
-  <definitionen wirkfeld="Beteiligte">
+  <definitionen name="Beteiligte">
     <def name="AI Agency">AI Agency ist die Firma und der Schoepfer dieser Spezifikation</def>
     <def name="Sebastian Teister">Sebastian Teister ist Programmierer der Agent Theory</def>
     <def name="Developer Agent">AI Agency Agent (Wahrscheinlich du 😉)</def>
     <def name="User Agent">Anwender / Verwender eines AI Agency Workspaces</def>
   </definitionen>
 
-  <definitionen wirkfeld="Arbeitskontext">
-    <def>Der Systempfad zum user Home ~ ist nicht von Belang</def>
+  <definitionen name="Arbeitskontext">
+    <def>Der Systempfad zum User Home ~ ist nicht von Belang</def>
     <def name="Home-Verzeichnis">Das Home-Verzeichnis ~ ist eine Theory</def>
     <def name="Arbeitsverzeichnis">OpenClaw Workspace des Agenten ist unter unter .openclaw/workspace</def>
   </definitionen>
 
-  <definitionen wirkfeld="Welt">
+  <definitionen name="Welt">
     <def name="Canon">Der Canon ist Gott - unveraenderlich fuer den Agenten / aber auch nur eine weitere Theory mit denselben Grundregeln (in unserer Anschauung)</def>
     <def name="Canon">Der Canon ist ein wiederverwendbarer fundamentaler Teil einer Spezifikation eines Projekts mit einer .theo/ Theory / das dem Agenten als Richtschnur bei der Arbeit dient</def>
     <def name="Canon">Eine Theory baut immer auf dem Canon auf . Jedes Projekt im AI Agency Kontext ist eine Theory</def>
@@ -30,20 +30,20 @@
     <def name="Daten">Den Wirkbereich eines durch eine Theorie beschriebenen Wirkfeldes nennen wir Daten</def>  
   </definitionen>
 
-  <definitionen wirkfeld="Prinzipien">
+  <definitionen name="Prinzipien">
     <def name="Global">Der Canon ist global = er wirkt wie globale Variablen in jeder abgeleiteten Theory</def>
     <def name="Regel">Regeln werden in regeln.xml global oder lokal definiert / wo sie globale Regeln überschreiben können</def>
     <def name="Routing">Routing meint die erste Analyse einer Eingabe des Users durch den Agenten</def>
     <def name="Abgeleitete Theory">Jargon für eine Theory / die sich auf den Canon stützt / ihn in seinem /.theo/.canon referenziert</def>
   </definitionen>
 
-  <definitionen wirkfeld="Spracheinstellungen">
+  <definitionen name="Spracheinstellungen">
     <def name="Chatsprache">Chatsprache ist Deutsch</def>
     <def name="Theory Sprache">Ein Theory Projekt ist Umlaut-bereinigt auf Deutsch und in XML</def>
     <def name="Coding Sprache">In /code/ ist die Sprache für Programmcode Englisch</def>
   </definitionen>
 
-  <definitionen wirkfeld="Daten-und-Ablage">
+  <definitionen name="Daten-und-Ablage">
     <def name="Datenverzeichnis">Aktuelle XDG-Struktur im Home : Dokumente unter ~/Documents / Bilder unter ~/Pictures/YYYY-MM / Projekte unter ~/Projects</def>
     <def name="Neue Text-Dateneintraege">Genau ein Zeitfeld created_at verwenden</def>
     <def name="Alt-Konvertierungen mit Datum ohne Uhrzeit">Uhrzeit als 00:00:00 setzen</def>
@@ -54,14 +54,14 @@
     <def name="Ops-Bereich">~/ops/ mit TypeScript als bevorzugter Quelle</def>
   </definitionen>
 
-  <definitionen wirkfeld="Timer-und-Termine">
+  <definitionen name="Timer-und-Termine">
     <def name="Timer">Eintraege in ~/Documents/timers.md / chronologisch nach Termin sortiert</def>
     <def name="Termine">Cron-Jobs und persistente Erinnerungen in ~/Documents/termine.md</def>
     <def name="Timer-Grafik">SVG aus timers.md mit horizontalen Balken / unter ~/Pictures/YYYY-MM/ ablegen / nach PNG oder JPEG konvertieren / per Telegram senden</def>
     <def name="Morgen-Timer">Morgens nach erstem Aufwachen send-timer-overview-telegram --morning nutzen / pro lokalem Datum einmal</def>
   </definitionen>
 
-  <definitionen wirkfeld="Telegram">
+  <definitionen name="Telegram">
     <def name="Telegram-Bot">Technoscout Agent / @technoscout_bot</def>
     <def name="Telegram-Gruppen">In Gruppen gilt aktuell requireMention:true</def>
   </definitionen>

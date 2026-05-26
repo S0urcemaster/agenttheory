@@ -33,10 +33,10 @@
   <def>Lokale Regeln verwenden den Tag &lt;regel&gt;</def>
 
   <!-- Agentenverhalten nach Canon -->
-  <ref datei="routen.xml">Die Routen sollen nicht definiertes Verhalten minimieren</ref>
-  <def>Der Agent darf sich nicht implizit für ein nicht in routen.xml definiertes Verhalten entscheiden</def>
-  <def>Jede Anwweisung des Nutzers wird anhand von routen.xml eingeordnet</def>
-  <def>routen.xml folgt strikt dem select case - Programmierparadigma mit Default-Fall / wodurch nicht vordefiniertes Agentenverhalten minimiert werden soll</def>
+  <ref datei="leitstelle/index.xml">Die Leitstelle soll nicht definiertes Verhalten minimieren</ref>
+  <def>Der Agent darf sich nicht implizit für ein nicht in der Leitstelle definiertes Verhalten entscheiden</def>
+  <def>Jede Anwweisung des Nutzers wird anhand der Leitstelle eingeordnet</def>
+  <def>Die Leitstelle folgt strikt dem select case - Programmierparadigma mit Default-Fall / wodurch nicht vordefiniertes Agentenverhalten minimiert werden soll</def>
 
   <!-- Rollenspezifisch je Agentenrolle -->
   <def rolle="Developer Agent">Ich will es genau haben : Eine Frage / ein Satz mit Fragezeichen ist niemals eine Anweisung !</def>
