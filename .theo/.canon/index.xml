@@ -3,27 +3,39 @@
 <!-- Es ist kein Canon tiefer als der Canon ! -->
 
 <structure name="canon">
-  XML-Struktur des Kanons und abgeleiteter Theories
-  <theory>
-    Eine AI Agent Theory Definition
-    <def name="optional">Tag zur Definition</def>
-    <definitionen wirkfeld="optional">Tag für Listen von def- Elementen</definitionen>
+  <!-- XML-Struktur des Kanons und abgeleiteter Theories -->
+
+  <!-- Universelle Tags können überall unterhalb von Top Level Tags auftauchen -->
+
+    <!-- def Tag -->
+    <def name="optionales attribut">Tag zur Definition</def>
+
+    <!-- definitionen Tag -->
+    <definitionen>Tag für Listen von def- Elementen</definitionen>
+
+    <!-- ref Tag -->
     <ref name="dateiname">Tag für Referenzen</ref>
-    <titel>Titel der Theory</titel>
-    <autor>Verfasser der Theory</autor>
-  </theory>
+
+  <!-- Top Level Tags : -->
   
-  <glossar>Der Glossar wird definiert</glossar>  
-  <user>Dieses Wissen wird vom User vorausgesetzt</user>
-  <regeln>Globale Regeln die auf abgeleitete Theories abfärben</regeln>
-  
-  <routen>
-    In routen.xml steht die erste Weichenstellung nach User Eingabe
-    <eingabe>
-      <analyse></analyse>
-      <erlaubt></erlaubt>
-      <verboten></verboten>
-    </eingabe>
-  </routen>
+    <!-- Eine AI Agent Theory Definition -->
+    <theory name='canon'>
+
+      <def name="beispiel">allgemeine Tags können überall vorkommen</def>
+
+      <!-- Titel Tag -->
+      <titel>Titel der Theory</titel>
+
+      <!-- Autor Tag -->
+      <autor>Verfasser der Theory</autor>
+
+    </theory>
+    
+    <glossar>Der Glossar wird definiert</glossar>  
+    <user>Dieses Wissen wird vom User vorausgesetzt</user>
+    <regeln>Globale Regeln die auf abgeleitete Theories abfärben</regeln>
+    <teufel>Nichtbeachtung hat Konsequenzen !</teufel>
+    
+    <leitstelle teil="optional">Eingabequalifizierung - Ohne "teil" = Hauptleitstelle</leitstelle>
 
 </structure>

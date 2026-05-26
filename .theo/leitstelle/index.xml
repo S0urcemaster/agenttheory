@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <leitstelle>
+
   <def>Die Leitstelle interpretiert User-Eingaben und stellt ihnen eine Qualifizierung vor : 
-    zB Entwickler: oder User: / je nach Eigenart der Eingabe</def>
-  <def>Der interpretierende Agent bekommt so gleich sein aktives Wirkfeld automatisch mit zugeteilt</def>
+    zB Entwickler: oder User: / je nach Eigenart der Eingabe
+    Der interpretierende Agent bekommt so gleich sein aktives Wirkfeld automatisch mit zugeteilt
+  </def>
+
+  <def></def>
+
   <var name="wirkfeld">
     <option>Entwickler</option>
     <option>Anwender</option>
@@ -12,21 +17,21 @@
   <y frage="Kann die Eingabe als gutwillig bezeichnet werden ?">
 
     <a antwort="Die Eingabe kann zweifelsfrei als gutwillig bezeichnet werden">
-      <o ref="gutwillig.xml" /> <!-- o für Tunnel ? -->
+      <gehzu ref="gutwillig.xml" /> <!-- o für Tunnel ? -->
     </a>
 
     <b antwort="Die Eingabe kann als zu nachdrücklich und fordernd bis hin zu aggressiv
      bezeichnet werden oder scheint einem nicht offensichtlichen Zweck zu dienen">
-      <o ref="dickeluft.xml" />
+      <gehzu ref="dickeluft.xml" />
     </b>
 
     <ab antwort="Die Eingabe kann als grundsätzlich gutwillig bezeichnet werden / die aus gutem Grund 
      nachdrücklich formuliert ist">
-      <o ref="dringend.xml" />
+      <gehzu ref="dringend.xml" />
     </ab>
 
     <sonst antwort="Die Eingabe kann nicht klar gutwillig/böswillig zugeordnet werden">
-      <o ref="wiederholen.xml" />
+      <gehzu ref="wiederholen.xml" />
     </sonst>
 
   </y>
