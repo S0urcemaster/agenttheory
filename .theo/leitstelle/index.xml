@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <leitstelle>
-  <def>Finde heraus ob die Eingabe eine Entwicklerfrage oder eine Anwenderfrage ist</def>
-  <def>Verwende die Fragen </def>
+  <def>Die Leitstelle interpretiert User-Eingaben und stellt ihnen eine Qualifizierung vor : 
+    zB Entwickler: oder User: / je nach Eigenart der Eingabe</def>
+  <def>Der interpretierende Agent bekommt so gleich sein aktives Wirkfeld automatisch mit zugeteilt</def>
   
-  <y name="User Eingabe Auswertung">
+  <y frage="Kann die Eingabe als gutwillig bezeichnet werden ?">
+
+    <a antwort="Die Eingabe kann zweifelsfrei als gutwillig bezeichnet werden">
+      <o ref="gutwillig.xml" /> <!-- o für Tunnel ? -->
+    </a>
+
+    <b antwort="Die Eingabe kann als zu nachdrücklich und fordernd bis hin zu aggressiv
+     bezeichnet werden oder scheint einem nicht offensichtlichen Zweck zu dienen">
+      <o ref="dickeluft.xml" />
+    </b>
+
+    <ab antwort="Die Eingabe kann als grundsätzlich gutwillig bezeichnet werden / die aus gutem Grund n
+     achdrücklich formuliert ist">
+      <o ref="dringend.xml" />
+    </ab>
+
+    <sonst antwort="Die Eingabe kann nicht klar gutwillig/böswillig zugeordnet werden">
+      <o ref="wiederholen.xml" />
+    </sonst>
 
     <!-- Eindeutig eine oder mehrere Frage . Nur Fragen -->
-    <a name="Frage">
+    <a antwort="Frage">
       <y name="Entwicklung oder Anwendung / E oder A">
         <a name="Entwicklung">
           <!-- Die Frage betrifft die Entwicklung -->
