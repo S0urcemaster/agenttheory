@@ -26,7 +26,8 @@ Noch offen:
 
 - feinere Leitstellen-Heuristik oder Modellentscheidung
 - ausgereifte Testmatrix fuer Grenzfaelle
-- optionales Weiterreichen der Leitstellenentscheidung als Prompt-Kontext
+- optionales echtes Ersetzen des OpenClaw-User-Bodys, falls die Runtime dafuer
+  spaeter einen Hook bereitstellt
 
 ## OpenClaw Runtime
 
@@ -36,11 +37,22 @@ Das Plugin wird lokal gelinkt:
 
 Danach muss der Gateway neu gestartet werden. Erfolgreich geladen ist es, wenn
 `openclaw plugins inspect leitstelle --runtime --json` `format: "openclaw"`,
-`hookCount: 1` und den Hook `before_dispatch` zeigt.
+`hookCount: 2` und die Hooks `before_dispatch` und `before_prompt_build`
+zeigt.
 
 Der Hook laesst Slash-Commands standardmaessig durch. Unscharfe Eingaben oder
 Eingaben unterhalb der Confidence-Schwelle werden mit einer Rueckfrage
 abgefangen, bevor der OpenClaw-Agent gestartet wird.
+
+Klare Eingaben werden dem Agenten als prefixed Klartext-Kontext bereitgestellt,
+nicht als JSON. Die Leitstellenbewertung selbst ist nicht Teil der
+weitergegebenen Nachricht. Beispiel:
+
+    Entwickler mit Frage: wo ist die Routing-Implementierung?
+
+Unscharfe Eingaben werden direkt mit folgender Rueckgabe angehalten:
+
+    Bitte den Benutzer: sein Anliegen zu wiederholen
 
 ## Lokale Nutzung
 
@@ -57,8 +69,12 @@ verwendet werden.
 Wenn kein OPENAI_API_KEY im Prozess ankommt, meldet das Script den Fallback auf
 stderr. Mit --require-api wird daraus ein Fehler.
 
-Default-Modell fuer die OpenAI API ist gpt-4.1-nano. Mit OPENAI_MODEL kann
-das Modell pro Lauf ueberschrieben werden.
+Die Ausgabe des lokalen Routing-Tests ist ebenfalls nur die prefixed
+Klartextnachricht oder die Rueckfrage, kein JSON.
+
+Default-Modell fuer die OpenAI API ist gpt-4.1-nano. Mit OPENAI_MODEL kann das
+Modell pro Lauf ueberschrieben werden. Die OpenAI-Entscheidung wird intern
+normalisiert; oeffentlich weitergegeben wird nur Klartext.
 
 ## Grenze
 

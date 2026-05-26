@@ -58,6 +58,18 @@ const DEVELOPMENT_RE = /\b(canon|theory|theorie|\.theo|xml|spec|spezifikation|pl
 const CLI_RE = /^\s*\/|\b(sync|next|einkaufsliste|tools|channels|plugins|status)\b/u;
 const APPLICATION_RE = /\b(timer|termin|termine|einkaufsliste|spruch|saying|logbuch|post|text|bild|bilder|dokument|datei|backup|telegram|wetter|kalender|mail|email)\b/u;
 
+export const routePrefixes = {
+  entwicklungskontext: "Entwickler mit Frage",
+  anwendungskontext: "User mit Frage",
+  "cli-befehl": "Entwickler mit CLI-Anweisung",
+  "entwickler-anweisung": "Entwickler mit Anweisung",
+  "anwender-anweisung": "User mit Anweisung",
+  "entwickler-cli-befehl-plus-weitere-anweisungen": "Entwickler mit CLI-Anweisung und weiterer Anweisung",
+  "entwickler-botschaft": "Entwickler mit Botschaft"
+};
+
+export const unclearForwardedMessage = "Bitte den Benutzer: sein Anliegen zu wiederholen";
+
 function clampConfidence(value) {
   return Math.max(0, Math.min(1, Number.isFinite(value) ? value : 0));
 }
@@ -186,7 +198,8 @@ export async function callOpenAI(input, options = {}) {
   const model = options.model || process.env.OPENAI_MODEL || "gpt-4.1-nano";
   const prompt = [
     "Nutze das XML als Entscheidungslogik.",
-    "Gib ausschliesslich eine JSON-Entscheidung nach Schema aus.",
+    "Erzeuge intern eine Entscheidung nach Schema.",
+    "Die oeffentliche Weitergabe erfolgt spaeter ausschliesslich als prefixed Klartextnachricht.",
     "Wenn die Eingabe nicht hart entscheidbar ist, waehle route=rueckfrage und rueckfrage_noetig=true.",
     "",
     "LEITSTELLE XML:",
@@ -243,6 +256,26 @@ export async function routeUserInput(input, options = {}) {
   return heuristicDecision(input, options);
 }
 
+export function formatForwardedMessage(decision, input) {
+  const trimmed = String(input ?? decision?.angepasste_usereingabe ?? "").trim();
+  if (!trimmed || decision?.rueckfrage_noetig === true || decision?.route === "rueckfrage") {
+    return unclearForwardedMessage;
+  }
+
+  const prefix = decision?.eingabeart === "frage-und-anweisung" && decision?.wirkfeld === "entwicklung"
+    ? "Entwickler mit Frage und Anweisung"
+    : decision?.eingabeart === "frage-und-anweisung" && decision?.wirkfeld === "anwendung"
+      ? "User mit Frage und Anweisung"
+      : routePrefixes[decision?.route];
+  if (!prefix) return unclearForwardedMessage;
+  return `${prefix}: ${trimmed}`;
+}
+
+export async function routeUserMessage(input, options = {}) {
+  const decision = await routeUserInput(input, options);
+  return formatForwardedMessage(decision, input);
+}
+
 export function shouldBypassInput(input, options = {}) {
   const trimmed = String(input || "").trim();
   const prefixes = options.bypassPrefixes || ["/"];
@@ -250,7 +283,5 @@ export function shouldBypassInput(input, options = {}) {
 }
 
 export function buildClarifyingReply(decision, options = {}) {
-  const prefix = options.prefix || "Leitstelle:";
-  const reason = decision?.begruendung ? ` ${decision.begruendung}` : "";
-  return `${prefix} Ich halte das kurz an, weil die Route nicht eindeutig ist.${reason} Sag bitte klar, ob ich das als Entwicklung oder Anwendung behandeln und ob ich etwas ausfuehren soll.`;
+  return options.message || unclearForwardedMessage;
 }

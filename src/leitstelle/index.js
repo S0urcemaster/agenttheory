@@ -2,6 +2,7 @@ import { definePluginEntry } from "/usr/lib/node_modules/openclaw/dist/plugin-sd
 import {
   buildClarifyingReply,
   defaultTheoryPath,
+  formatForwardedMessage,
   routeUserInput,
   shouldBypassInput
 } from "./lib/router.mjs";
@@ -82,7 +83,7 @@ export default definePluginEntry({
           model: config.model,
           theoryPath: config.theoryPath
         });
-        return { text: JSON.stringify(decision, null, 2) };
+        return { text: formatForwardedMessage(decision, args) };
       }
     });
 
@@ -112,6 +113,26 @@ export default definePluginEntry({
       return {
         handled: true,
         text: buildClarifyingReply(decision)
+      };
+    }, { priority: 100, timeoutMs: 10000 });
+
+    api.on("before_prompt_build", async (event) => {
+      const config = normalizeConfig(api.pluginConfig);
+      if (!config.enabled) return;
+
+      const body = String(event?.prompt || "").trim();
+      if (!body || shouldBypassInput(body, { bypassPrefixes: config.bypassPrefixes })) return;
+
+      const decision = await routeUserInput(body, {
+        mode: config.mode,
+        model: config.model,
+        theoryPath: config.theoryPath
+      });
+      const forwardedMessage = formatForwardedMessage(decision, body);
+      if (shouldBlockDecision(decision, config)) return;
+
+      return {
+        prependContext: forwardedMessage
       };
     }, { priority: 100, timeoutMs: 10000 });
   }

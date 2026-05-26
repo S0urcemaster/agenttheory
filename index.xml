@@ -5,32 +5,33 @@
   <ref datei=".theo/index.xml" />
 
   <titel>Projekt "Agent Theory"</titel>
+  
+  <def>Nur Projektgerüst - kein Teil des Canons</def>
 
   <projektname kurz="agenttheory">Agent Theory</projektname>
   <projektstand>In Entwicklung</projektstand>
 
   <theory name="agenttheory">
-    <def>Der "Canon" ist die "Agent Theory" (dieses Projekt)</def>
-    <dateisystem>
-      <ordner name=".theo">Der Canon</ordner>
-      <ordner name="tools">Lokale Entwicklertools</ordner>
-      <datei name="README.md">Standard /leere Readme fuer git Projekte</datei>
-      <datei name="index.xml">Project Index</datei>
-      <datei name="index-vorlage.xml">Project Index für ableitende Theories</datei>
-      <datei name="teufel.xml">Projektanker fuer das Thema Teufel</datei>
-      <datei name="workspace-openclaw.xml">Entwicklungsableitung der aktuellen OpenClaw Workspace-Konfiguration</datei>
-    </dateisystem>
+    <def>Der "Canon" ist die "Agent Theory" : Kern in einer Schale</def>
+    <ref name=".theo/">Der Canon</ref>
+    <ref name="tools">Lokale Entwicklertools</ref>
+    <ref name="README.md">Standard /leere Readme fuer git Projekte</ref>
+    <ref name="index.xml">Project Index</ref>
+    <ref name="index-vorlage.xml">Project Index für ableitende Theories</ref>
+    <ref name="teufel.xml">Projektanker fuer das Thema Teufel</ref>
+    <ref name="workspace-openclaw.xml">Entwicklungsableitung der aktuellen OpenClaw Workspace-Konfiguration</ref>
+    
+    <ref datei="workspace-openclaw.xml">Volatile OpenClaw Workspace-Konfiguration als Canon-nahe Entwicklungsableitung</ref>
+
+    <idee>Dieses Projekt beschreibt die gemeinsame, wiederverwendbare Architektur jedes Wirkfelds (Projekte, spezielle Ordner) im AI Agency Oekosystem</idee>
+
+    <arbeitsziel wirkfeld="entwicklung">Der Agent ist Experte fuer dieses Projekt und unterstuetzt den Entwickler bei dessen weiterer Ausarbeitung</arbeitsziel>
+    <arbeitsziel wirkfeld="produktiv">Diese Spezifikation dient als Basis fuer andere Spezifikationen damit die hier grundlegend festgelegten Dinge nicht wiederholt werden muessen</arbeitsziel>
+
+    <regel>
+      <def>Der Agent muss für das eine oder andere Wirkfeld vorbestimmt sein ! Wenn ihm nicht klar ist : ob das Wirkfeld Entwicklung oder Produktiv ist : muss er nachfragen !</def>
+    </regel>
   </theory>
 
-  <ref datei="workspace-openclaw.xml">Volatile OpenClaw Workspace-Konfiguration als Canon-nahe Entwicklungsableitung</ref>
-
-  <idee>Dieses Projekt beschreibt die gemeinsame, wiederverwendbare Architektur jedes Wirkfelds (Projekte, spezielle Ordner) im AI Agency Oekosystem</idee>
-
-  <arbeitsziel wirkfeld="entwicklung">Der Agent ist Experte fuer dieses Projekt und unterstuetzt den Entwickler bei dessen weiterer Ausarbeitung</arbeitsziel>
-  <arbeitsziel wirkfeld="produktiv">Diese Spezifikation dient als Basis fuer andere Spezifikationen damit die hier grundlegend festgelegten Dinge nicht wiederholt werden muessen</arbeitsziel>
-
-  <regel>
-    <def>Der Agent muss für das eine oder andere Wirkfeld vorbestimmt sein ! Wenn ihm nicht klar ist : ob das Wirkfeld Entwicklung oder Produktiv ist : muss er nachfragen !</def>
-  </regel>
 
 </agenttheory>

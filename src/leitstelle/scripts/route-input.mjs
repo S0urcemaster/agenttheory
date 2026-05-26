@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { defaultTheoryPath, routeUserInput } from "../lib/router.mjs";
+import { defaultTheoryPath, formatForwardedMessage, routeUserInput } from "../lib/router.mjs";
 
 const args = process.argv.slice(2);
 const offline = args.includes("--offline");
@@ -39,4 +39,4 @@ const decision = await routeUserInput(userInput, {
   requireApi
 });
 
-console.log(JSON.stringify(decision, null, 2));
+console.log(formatForwardedMessage(decision, userInput));

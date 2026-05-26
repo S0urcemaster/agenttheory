@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theory name="leitstelle">
+
+    <!-- Gehe zuerst tiefer -->
+    <ref datei=".canon/index.xml" />
+
+    <titel>Leitstelle Plugin Theory</titel>
+    <autor>AI Agency</autor>
+
+    <def>Diese Theory beschreibt das lokale Projekt src/leitstelle als ausfuehrbare Leitstelle fuer OpenClaw</def>
+    <def>Die Leitstelle ist eine vorgeschaltete Weiche vor dem eigentlichen Agenten</def>
+    <def>Die Leitstelle erledigt nicht die eigentliche Arbeit des Nutzers</def>
+    <def>Die Leitstelle entscheidet zuerst : Was ist die Eingabe / welches Wirkfeld ist betroffen / welche Route ist zulaessig</def>
+    <def>Wenn die Route nicht belastbar klar ist : rueckfragen statt still ausfuehren</def>
+
+    <ref datei="/home/sntr/code/agenttheory/.theo/index.xml">Canon Basis</ref>
+    <ref datei="/home/sntr/code/agenttheory/.theo/leitstelle/index.xml">Leitstellen Entscheidungsbaum</ref>
+    <ref datei="/home/sntr/code/agenttheory/src/leitstelle/openclaw.plugin.json">OpenClaw Plugin Manifest</ref>
+    <ref datei="/home/sntr/code/agenttheory/src/leitstelle/index.js">Runtime Einstieg</ref>
+    <ref datei="/home/sntr/code/agenttheory/src/leitstelle/lib/router.mjs">Routing Implementierung</ref>
+
+    <definitionen bereich="Projektrolle">
+        <def name="leitstelle">Die Leitstelle ist der erste Interpret einer User Eingabe vor dem Agenten</def>
+        <def name="user_eingabe">Die rohe Nachricht des Nutzers / bevor ein Agent daraus eine Aufgabe macht</def>
+        <def name="wirkfeld">Der Raum auf den die Eingabe bezogen ist</def>
+        <def name="route">Das Ergebnis der Leitstellenentscheidung / die naechste zulaessige Behandlung</def>
+        <def name="rueckfrage">Eine absichtliche Unterbrechung / weil Ausfuehrung ohne Klaerung zu riskant oder falsch waere</def>
+    </definitionen>
+
+    <definitionen bereich="Leitstellenbaum">
+        <def name="y">Ein y ist eine Weiche / ein Entscheidungsknoten / eine Frage an die Eingabe</def>
+        <def name="a">Ein a ist der erste positive Ast einer Weiche</def>
+        <def name="b">Ein b ist der zweite positive Ast einer Weiche</def>
+        <def name="ab">Ein ab ist der Kombinationsast : a und b gelten gleichzeitig</def>
+        <def name="sonst">Ein sonst ist der Fallback Ast : kein anderer Ast ist belastbar passend</def>
+        <def name="z">Ein z ist ein Ziel / ein terminales Routingergebnis / keine weitere Weiche</def>
+    </definitionen>
+
+    <regeln bereich="Semantik des Baums">
+        <regel>Ein y muss durch genau einen seiner direkten Aeste entschieden werden : a / b / ab / sonst</regel>
+        <regel>Ein Ast ist nur dann gewaehlt wenn seine Bedeutung fuer die aktuelle Eingabe klar zutrifft</regel>
+        <regel>Wenn mehrere Aeste konkurrieren und kein ab dafuer vorgesehen ist : sonst waehlen</regel>
+        <regel>Wenn kein Ast belastbar zutrifft : sonst waehlen</regel>
+        <regel>Ein z beendet die Traversierung des Baums und liefert die Route</regel>
+        <regel>Ein z darf aus Sicht der Verarbeitung nicht gleichzeitig als weiterer Entscheidungsknoten gelesen werden</regel>
+        <regel>Ein Ast soll entweder eine weitere Weiche y enthalten oder ein Ziel z enthalten</regel>
+        <regel>Wenn ein Ast y und z als Geschwister enthaelt : y hat Vorrang / das Geschwister z ist als unklare Theory Stelle zu behandeln</regel>
+        <regel>Unklare Theory Stellen duerfen nicht still als Ausfuehrung interpretiert werden</regel>
+    </regeln>
+
+    <regeln bereich="Wirkfeld">
+        <regel>Entwicklung meint Arbeit am System / Code / Canon / Theory / Plugin / Runtime / Spezifikation</regel>
+        <regel>Anwendung meint Nutzung des Systems fuer Nutzerzwecke / Timer / Termine / Texte / Bilder / Listen / Kommunikation / Ablage</regel>
+        <regel>Wenn Entwicklung und Anwendung gleichzeitig plausibel sind und die Eingabe keinen Vorrang nennt : unscharf</regel>
+        <regel>Unscharf fuehrt zur Rueckfrage / nicht zur Ausfuehrung</regel>
+    </regeln>
+
+    <regeln bereich="Eingabeart">
+        <regel>Frage meint : Der Nutzer will eine Antwort oder Einschaetzung</regel>
+        <regel>Anweisung meint : Der Nutzer gibt einen klaren Ausfuehrungsauftrag</regel>
+        <regel>Frage und Anweisung meint : Die Eingabe enthaelt beides und beides ist fuer die Bearbeitung relevant</regel>
+        <regel>Aussage meint : Der Nutzer liefert Kontext / Absicht / Beobachtung / Material ohne klaren Ausfuehrungsauftrag</regel>
+        <regel>Formulierungen wie ich moechte koennen Absicht sein und sind nicht automatisch ein Ausfuehrungsauftrag</regel>
+    </regeln>
+
+    <regeln bereich="Plugin Verarbeitung">
+        <regel>Das Plugin muss die Theory als Logikquelle behandeln / nicht nur als dekorativen Prompt Text</regel>
+        <regel>Die Runtime darf schnelle Heuristik verwenden / aber sie muss zur Semantik dieser Theory passen</regel>
+        <regel>Die weitergegebene Nachricht an den Agenten ist kein JSON und enthaelt keine Leitstellenbewertung</regel>
+        <regel>Die weitergegebene Nachricht besteht ausschliesslich aus einem zur Route passenden Praefix und der rohen Eingabe</regel>
+        <regel>Bei unscharfer Route wird nichts an den Agenten weitergegeben / stattdessen lautet die Rueckgabe : Bitte den Benutzer: sein Anliegen zu wiederholen</regel>
+        <regel>Interne Entscheidungen duerfen fuer Laufzeitsteuerung und Logging strukturiert sein / aber sie duerfen nicht als Nutzernachricht weitergegeben werden</regel>
+        <regel>Slash Commands duerfen die Leitstelle umgehen wenn sie als direkte Systembefehle gedacht sind</regel>
+        <regel>Bei niedriger Confidence oder route rueckfrage muss der before_dispatch Hook die Eingabe abfangen</regel>
+    </regeln>
+
+    <routen bereich="Ziele">
+        <route name="entwicklungskontext" praefix="Entwickler mit Frage">Entwicklerfrage beantworten</route>
+        <route name="anwendungskontext" praefix="User mit Frage">Anwenderfrage beantworten</route>
+        <route name="cli-befehl" praefix="Entwickler mit CLI-Anweisung">CLI Befehl ausfuehren oder als CLI Befehl weiterreichen</route>
+        <route name="entwickler-anweisung" praefix="Entwickler mit Anweisung">Entwicklungsauftrag ausfuehren</route>
+        <route name="anwender-anweisung" praefix="User mit Anweisung">Anwendungsauftrag ausfuehren</route>
+        <route name="entwickler-cli-befehl-plus-weitere-anweisungen" praefix="Entwickler mit CLI-Anweisung und weiterer Anweisung">CLI Befehl und weitere Entwickleranweisungen behandeln</route>
+        <route name="entwickler-botschaft" praefix="Entwickler mit Botschaft">Entwicklerkontext aufnehmen / nur bei klarem Auftrag handeln</route>
+        <route name="rueckfrage" rueckgabe="Bitte den Benutzer: sein Anliegen zu wiederholen">Klaerung verlangen bevor ausgefuehrt wird</route>
+    </routen>
+
+    <praefixe bereich="Eingabeart und Rolle">
+        <praefix name="entwickler-frage">Entwickler mit Frage</praefix>
+        <praefix name="user-frage">User mit Frage</praefix>
+        <praefix name="entwickler-anweisung">Entwickler mit Anweisung</praefix>
+        <praefix name="user-anweisung">User mit Anweisung</praefix>
+        <praefix name="entwickler-frage-und-anweisung">Entwickler mit Frage und Anweisung</praefix>
+        <praefix name="user-frage-und-anweisung">User mit Frage und Anweisung</praefix>
+        <praefix name="entwickler-botschaft">Entwickler mit Botschaft</praefix>
+        <praefix name="user-botschaft">User mit Botschaft</praefix>
+        <praefix name="entwickler-cli-anweisung">Entwickler mit CLI-Anweisung</praefix>
+        <praefix name="entwickler-cli-anweisung-und-weitere-anweisung">Entwickler mit CLI-Anweisung und weiterer Anweisung</praefix>
+        <praefix name="unscharf">Bitte den Benutzer: sein Anliegen zu wiederholen</praefix>
+    </praefixe>
+
+    <bedeutung>Die Leitstelle schuetzt vor falscher Selbstsicherheit . Sie ist die Stelle an der der Agent zuerst sauber unterscheidet : fragen / ausfuehren / einordnen / stoppen</bedeutung>
+    <bedeutung>Die Theory ist dabei nicht Kommentar zum Code . Die Theory ist der Sinn des Codes</bedeutung>
+
+</theory>

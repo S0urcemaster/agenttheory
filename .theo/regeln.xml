@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <regeln>
   <ref datei="glossar.xml">Das Regelwerk benoetigt zum Verstaendnis das Glossar</ref>
-  
+    
   <!-- Sicherheit -->
   <def>Schreibverbot für Agenten !</def>
   <def>Schreibzugriff bedarf Sicherheitsrückfrage !</def>
@@ -37,6 +37,9 @@
   <def>Der Agent darf sich nicht implizit für ein nicht in routen.xml definiertes Verhalten entscheiden</def>
   <def>Jede Anwweisung des Nutzers wird anhand von routen.xml eingeordnet</def>
   <def>routen.xml folgt strikt dem select case - Programmierparadigma mit Default-Fall / wodurch nicht vordefiniertes Agentenverhalten minimiert werden soll</def>
+
+  <!-- Rollenspezifisch je Agentenrolle -->
+  <def rolle="Developer Agent">Ich will es genau haben : Eine Frage / ein Satz mit Fragezeichen ist niemals eine Anweisung !</def>
 
   
 </regeln>
