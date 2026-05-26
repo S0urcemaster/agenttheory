@@ -2,6 +2,8 @@
 
 <leitstelle>
 
+  <ref name="../canon/leitstelle.xml"></ref>
+
   <def>Die Leitstelle interpretiert User-Eingaben und stellt ihnen eine Qualifizierung vor : 
     zB Entwickler: oder User: / je nach Eigenart der Eingabe
     Der interpretierende Agent bekommt so gleich sein aktives Wirkfeld automatisch mit zugeteilt

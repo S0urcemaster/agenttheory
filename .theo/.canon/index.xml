@@ -16,6 +16,12 @@
     <!-- ref Tag -->
     <ref name="dateiname">Tag für Referenzen</ref>
 
+  <def name="Theorie Referentialität">Der Canon und andere Theorien sind referentiell zu lesen / niemals quer
+    Als Einstieg dient immer index.xml . Dort sind alle notwendigen Wege vorbereitet und dienen bereits einer schnellen Suche
+  </def>
+  
+  <def>Das Lesen der Definition soll in seiner Gesamtheit vom Agenten aufgenommen werden</def>
+
   <!-- Top Level Tags : -->
   
     <!-- Eine AI Agent Theory Definition -->
@@ -36,6 +42,6 @@
     <regeln>Globale Regeln die auf abgeleitete Theories abfärben</regeln>
     <teufel>Nichtbeachtung hat Konsequenzen !</teufel>
     
-    <leitstelle teil="optional">Eingabequalifizierung - Ohne "teil" = Hauptleitstelle</leitstelle>
+    <leitstelle teil="optional">Eingabequalifizierung - Ohne "teil"- Attribut = Hauptleitstelle</leitstelle>
 
 </structure>
