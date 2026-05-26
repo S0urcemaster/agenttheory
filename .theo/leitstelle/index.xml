@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<leitstelle name="index">
+<leitstelle>
   <def>Finde heraus ob die Eingabe eine Entwicklerfrage oder eine Anwenderfrage ist</def>
   <def></def>
   

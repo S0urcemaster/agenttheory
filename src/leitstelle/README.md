@@ -2,8 +2,7 @@
 
 ## Zweck
 
-Dieses Verzeichnis enthaelt das erste OpenClaw/Codex-Plugin-Geruest fuer die
-Leitstelle.
+Dieses Verzeichnis enthaelt den lokalen OpenClaw-Leitstellen-Prototyp.
 
 Die Leitstelle ist als vorgeschaltete Weiche gedacht: Sie bewertet eine
 User-Eingabe initial und entscheidet, ob und wie sie an den eigentlichen
@@ -11,21 +10,37 @@ OpenClaw-Agenten weitergegeben wird.
 
 ## Aktueller Stand
 
-Scaffold.
+Runtime-Prototyp.
 
 Vorhanden:
 
-- `.codex-plugin/plugin.json` als Plugin-Manifest
+- `openclaw.plugin.json` als natives OpenClaw-Plugin-Manifest
+- `index.js` mit `before_dispatch`-Hook als vorgeschalteter Filter
+- `lib/router.mjs` als gemeinsame Routinglogik fuer Runtime und CLI
+- `.codex-plugin/plugin.json` als Codex-Bundle-Metadaten fuer den bisherigen Plugin-/Skill-Kontext
 - `skills/` fuer agentengerichtete Leitstellen-Anweisungen
-- `scripts/route-input.mjs` als erster lokaler Routing-Prototyp
+- `scripts/route-input.mjs` als lokaler Routing-Test
 - `assets/` fuer spaetere Plugin-Medien
 
 Noch offen:
 
-- endgueltige Manifest-Werte
-- konkrete Leitstellen-API
-- Modell-/Routingentscheidung
-- Test- oder Demo-Workflow
+- feinere Leitstellen-Heuristik oder Modellentscheidung
+- ausgereifte Testmatrix fuer Grenzfaelle
+- optionales Weiterreichen der Leitstellenentscheidung als Prompt-Kontext
+
+## OpenClaw Runtime
+
+Das Plugin wird lokal gelinkt:
+
+    openclaw plugins install -l /home/sntr/code/agenttheory/src/leitstelle
+
+Danach muss der Gateway neu gestartet werden. Erfolgreich geladen ist es, wenn
+`openclaw plugins inspect leitstelle --runtime --json` `format: "openclaw"`,
+`hookCount: 1` und den Hook `before_dispatch` zeigt.
+
+Der Hook laesst Slash-Commands standardmaessig durch. Unscharfe Eingaben oder
+Eingaben unterhalb der Confidence-Schwelle werden mit einer Rueckfrage
+abgefangen, bevor der OpenClaw-Agent gestartet wird.
 
 ## Lokale Nutzung
 

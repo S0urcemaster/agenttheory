@@ -4,6 +4,15 @@
   "private": true,
   "type": "module",
   "description": "Lokaler Leitstellen-Prototyp fuer Agent Theory.",
+  "openclaw": {
+    "extensions": [
+      "./index.js"
+    ]
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
   "scripts": {
     "route": "node scripts/route-input.mjs",
     "route:offline": "node scripts/route-input.mjs --offline"

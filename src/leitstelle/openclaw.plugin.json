@@ -1,0 +1,46 @@
+{
+  "id": "leitstelle",
+  "activation": {
+    "onStartup": true
+  },
+  "name": "Leitstelle",
+  "description": "Vorgeschaltete Weiche fuer OpenClaw-Eingaben nach Agent-Theory-Logik.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": {
+        "type": "boolean"
+      },
+      "mode": {
+        "type": "string",
+        "enum": [
+          "heuristic",
+          "openai"
+        ]
+      },
+      "model": {
+        "type": "string"
+      },
+      "theoryPath": {
+        "type": "string"
+      },
+      "minConfidenceToPass": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "blockOnUnclear": {
+        "type": "boolean"
+      },
+      "bypassPrefixes": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "maxItems": 16
+      }
+    }
+  }
+}
