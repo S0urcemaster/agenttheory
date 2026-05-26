@@ -1,4 +1,4 @@
-# Godlike
+# Gottgleich
 
 Wo sind WIR denn gelandet ? Das ist der Olymp ! Das Wirkfeld der Goetter ! Nur Goetter duerfen eintreten ! (Und ihre Agenten)
 

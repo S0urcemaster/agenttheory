@@ -40,16 +40,4 @@
 
   </leitstelle>
 
-
-
-  <def name="var">Deklariert eine Variable oder einen semantischen Auswahlraum</def>
-  <def name="option">Benennt eine erlaubte Option innerhalb von var</def>
-
-  <def name="y">Stellt eine qualifizierende Frage und beinhaltet die Antwortmöglichkeiten . Die Frage steht im attribut frage</def>
-  <def name="a">Erste positive oder bevorzugte Antwort auf eine y-Frage . Die Antwort steht im attribut antwort</def>
-  <def name="b">Zweite Antwort auf eine y-Frage . Die Antwort steht im attribut antwort</def>
-  <def name="ab">Antwortkombination oder Zwischenfall zwischen a und b . Die Antwort steht im attribut antwort</def>
-  <def name="sonst">Fallback-Antwort wenn a / b / ab nicht sicher greifen . Die Antwort steht im attribut antwort</def>
-  <def name="gehzu">Verzweigt in eine referenzierte Leitstellen-Datei . Das Ziel steht im attribut ref</def>
-
 </structure>
