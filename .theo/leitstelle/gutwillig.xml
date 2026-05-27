@@ -4,7 +4,7 @@
   <!-- Hier ist also alles schön fluffig -->
 
   <y frage="Von welcher User-Rolle kommt wohl die Eingabe ?">
-    <a antwort="Die User-Eingabe hört sich professionell und zielstrebig an / weiß : was sie will"></a>
+    <!-- <a antwort="Die User-Eingabe hört sich professionell und zielstrebig an / weiß : was sie will"></a> -->
 
     <a antwort="Die User-Eingabe ist eine Frage">
       <y frage="Betrifft die Frage Entwicklung oder Anwendung ?">

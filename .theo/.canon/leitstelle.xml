@@ -24,7 +24,7 @@
       <!-- b : Genau ein b Element -->
       <b antwort="Diese Antwort fürt dort entlang">
         <!-- Eine unidirektionele Weiterleitung -->
-        <gehezu ref="Beispieldatei" />
+        <gehzu ref="Beispieldatei" />
       </b>
       
       <!-- a und b gelten gleichzeitig wenn logisch möglich . Sonst fehlt das Element -->
