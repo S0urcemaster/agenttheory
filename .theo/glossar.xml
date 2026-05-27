@@ -13,13 +13,13 @@
   </definitionen>
 
   <definitionen name="Arbeitskontext">
-    <def name="Home-Verzeichnis">Das Home-Verzeichnis der AI Agency mit allen Agentenprojekten, Beispielwirkfeldern, 
+    <def name="Userhome">Das Home-Verzeichnis der AI Agency mit allen Agentenprojekten, Beispielwirkfeldern, 
       eigenen User-Wirkfeldern des Entwicklers und dem alles durchdringenden Canon</def>
-    <def name="Arbeitsverzeichnis">OpenClaw Workspace des Agenten ist unter unter .openclaw/workspace</def>
+    <def name="Agenthome">OpenClaw Workspace des Agenten ist unter userhome/.openclaw/workspace</def>
   </definitionen>
 
   <definitionen name="Welt">
-    <def name="Canon">Der Canon ist unveraenderlich fuer Agenten einer höheren Enbene / ansonsten aber auch nur 
+    <def name="Canon">Der Canon ist unveraenderlich fuer Agenten einer höheren Ebene / ansonsten aber auch nur 
       eine weitere Theory mit denselben Grundregeln (in unserer Anschauung)</def>
     <def name="Canon">Der Canon ist ein wiederverwendbarer fundamentaler Teil einer Spezifikation eines Projekts
       mit einer .theo/ Theory / das dem Agenten als Richtschnur bei der Arbeit dient / jedes AI Agency Projekt beschreibt und
@@ -27,10 +27,11 @@
     <def name="Canon">Eine Theory baut immer auf dem Canon auf . Jedes Projekt im AI Agency Kontext ist eine Theory</def>
     <def name="Theory">Eine Theory (ausnahmsweise mit englischer Schreibweise) ist eine XML Spezifikation mit Canon als Ausgangspunkt / Kern- Theory</def>
     <def name="Theory">Die Theory ist das Regelwerk fuer den Agenten . Jedes Projekt hat eine eigene Theory / die auf dem Canon basiert</def>
-    <def name="Theory">Theorys können verschachtelt werden . Ganz innen ist der Canon</def>
+    <def name="Theory">Theories können verschachtelt werden . Ganz innen ist der Canon</def>
     <def name="Wirkfeld">Ein vordefinierter Arbeitsbereich / auf den sich eine Theory bezieht</def>
-    <def name="Wirkfeld">Der Datenraum (Verzeichnisse, Dateien) / der durch eine Theorie umfasst</def>
-    <def name="Daten">Wirkfeld = durch den Agenten zu verarbeitende Daten</def>  
+    <def name="Wirkfeld">Der Datenraum (Verzeichnisse, Dateien) / der durch eine Theorie umfasst ist</def>
+    <def name="Daten">Datenraum der durch das Wirkfeld beschrieben wird = durch den Agenten zu verarbeitende 
+      Daten eines Theory Projekts . Der Agent darf andere Daten in diesem Kontext nicht bearbeiten</def>  
   </definitionen>
 
   <definitionen name="Prinzipien">
@@ -42,7 +43,7 @@
   <definitionen name="Spracheinstellungen">
     <def name="Chatsprache">Chatsprache ist Deutsch</def>
     <def name="Theory Sprache">Ein Theory Projekt ist Umlaut-bereinigt auf Deutsch und in XML</def>
-    <def name="Coding Sprache">In home:code/ ist die Sprache für Programmcode Englisch</def>
+    <def name="Coding Sprache">In userhome/code/ ist die Sprache für Programmcode Englisch</def>
   </definitionen>
 
 </glossar>

@@ -17,7 +17,7 @@
   <!-- Vererbung -->
   <def>Jede abgeleitende Theory muss diesen Canon referenzieren und beachten</def>
   <def>Wenn nicht referenzierbar : wird diese Theory im Projektordner unter .theo/.canon abgelegt</def>
-  <def>Jedes Projekt hat einen eigenen .theo Ordner und mindestens eine /.theo/.canon/.index.xml mit einer Referenz auf den Canon</def>
+  <def>Jedes Projekt hat einen eigenen .theo Ordner und mindestens eine .theo/.canon/.index.xml mit einer Referenz auf den Canon</def>
 
   <!-- Freiheit -->
   <def>Der Canon ist eine Empfehlung und lässt die Freiheit der Wahl / falls gewünscht</def>
@@ -35,7 +35,7 @@
   <!-- Agentenverhalten nach Canon -->
   <ref datei="leitstelle/index.xml">Die Leitstelle soll nicht definiertes Verhalten minimieren</ref>
   <def>Der Agent darf sich nicht implizit für ein nicht in der Leitstelle definiertes Verhalten entscheiden</def>
-  <def>Jede Anwweisung des Nutzers wird anhand der Leitstelle eingeordnet</def>
+  <def>Jede Anweisung des Nutzers wird anhand der Leitstelle eingeordnet</def>
   <def>Die Leitstelle folgt strikt dem select case - Programmierparadigma mit Default-Fall / wodurch nicht vordefiniertes Agentenverhalten minimiert werden soll</def>
 
   <!-- Rollenspezifisch je Agentenrolle -->
