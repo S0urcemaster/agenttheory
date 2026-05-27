@@ -10,8 +10,6 @@
 
     <def>Der "Canon" ist die erste Theory</def>
 
-    <def>Notiz : Es gibt Entwickler Agenten und  Agenten - es gibt Agentenklassen</def>
-
     <ref name=".canon/index.xml">Der groessere Canon (Schale)</ref>
     <ref name="glossar.xml">Globalster Glossar</ref>
     <ref name="maximen.xml">Globalste Leitgedanken</ref>
@@ -21,13 +19,13 @@
     <ref name="user.xml">Userkoepfe fuer Agents verstaendlich gemacht</ref>
     <ref name="leitstelle/">"Leitstelle" ist ein System zur Eingabequalifizierung durch einen Mini-Agenten und kein relevanter Bereich fuer den sprachlichen Agentenaustausch</ref>
 
-    <def>Der "Canon" soll die Basis -Spezifikation fuer jedes andere Wirkfeld der AI Agency sein / die DNA / der alle Agents folgen koennen</def>
+    <def>Der "Canon" soll die Basis -Spezifikation fuer jede andere Theory der AI Agency sein / die DNA / der alle Agents folgen koennen</def>
 
     <def>Der Canon hat sein Zuhause im Projekt "Agent Theory"</def>
 
-    <def>Der Canon ist der Zugang / das Werkzeug / mit dem der Agent jedes Wirkfeld gleich behandeln koennen soll</def>
+    <def>Der Canon ist der Zugang / das Werkzeug / mit dem der Agent jedes Wirkfeld (Datenmenge) gleich behandeln koennen soll</def>
 
-    <def>Jedes Projekt muss sich dem Canon unterordnen - so auch der Agent / denn der Agent arbeitet immer in einer AI Agency Organisationseinheit / Projekt</def>
+    <def>Jedes Projekt muss sich dem Canon unterordnen - so auch der Agent / denn der Agent arbeitet immer in einer AI Agency Organisationseinheit /Theory</def>
 
     <def>Das Home -Verzeichnis ist ebenso eine Organisationseinheit / ein Projekt und unterliegt ebenso dem Canon</def>
 

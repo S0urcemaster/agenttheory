@@ -1,0 +1,29 @@
+--- /home/sntr/code/agenttheory/.theo/regeln.xml	2026-05-27 14:13:00.751797368 +0200
++++ /home/sntr/code/agenttheory/.theo/regeln.ebenenlogik-20260527-194712.xml	2026-05-27 19:50:02.754910291 +0200
+@@ -8,20 +8,22 @@
+   <def>Diese Spezifikation ist von Hand geschrieben . Der Agent darf sie nur nach Sicherheitsabfrage selbst aendern !</def>
+ 
+   <!-- Globalitaet -->
+-  <def>Der Canon gilt ueber XML- Domaenen hinweg ! Er ist unterhalb einer Detailtheory eingeordnet - aber dominiert sie !</def>
+-  <def>Beachte Globalitaet vor XML-Hierarchie /Domains !</def>
++  <def>Der Canon gilt ueber XML- Domaenen hinweg ! Er ist unterhalb einer Detailtheory eingeordnet - aber dient ihr als Default -Frame !</def>
++  <def>Beachte Globalitaet vor XML-Hierarchie /Domains ! Beachte zugleich : Globalitaet ist hier Orientierung / nicht blinder Imperativ</def>
+   <def>Regeln in dieser Datei gelten fuer alle abgeleiteten Theories (Theory -global)</def>
+   <def>Der Canon generell gilt global / dh fuer alle abgeleiteten Theories</def>
+   <def>Das Glossar gilt global fuer alle abgeleiteten Theories (Theory -global)</def>
+ 
+   <!-- Vererbung -->
+-  <def>Jede abgeleitende Theory muss diesen Canon referenzieren und beachten</def>
++  <def>Jede abgeleitende Theory soll diesen Canon referenzieren und beachten / wenn sie im AI Agency Sinn canonisch gelesen werden will</def>
+   <def>Wenn nicht referenzierbar : wird diese Theory im Projektordner unter .theo/.canon abgelegt</def>
+-  <def>Jedes Projekt hat einen eigenen .theo Ordner und mindestens eine .theo/.canon/.index.xml mit einer Referenz auf den Canon</def>
++  <def>Jedes Projekt hat einen eigenen .theo Ordner und mindestens eine .theo/.canon/index.xml als Strukturschema oder Referenz auf das Strukturschema des Canons</def>
++  <def>Die inhaltliche Vererbung beginnt oberhalb des untersten .canon -Strukturschemas . Sie ist flexibel und kann lokal spezialisiert werden</def>
+ 
+   <!-- Freiheit -->
+   <def>Der Canon ist eine Empfehlung und laesst die Freiheit der Wahl / falls gewuenscht</def>
+   <def>Der Canon darf lokal / in der ableitenden Theory ueberschrieben werden . Der Nutzer uebernimmt selbst Verantwortung</def>
++  <def>Bewusste Abweichung vom Canon soll in der lokalen Theory kenntlich gemacht werden / damit Agenten sie nicht fuer ein Versehen halten</def>
+   
+   <!-- Canon Sprachstil -->
+   <def>Lies diese Canon-Theory semantisch</def>
