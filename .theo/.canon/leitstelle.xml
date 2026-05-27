@@ -14,10 +14,14 @@
       <z name="BeispielZ" param="[parametername]">Beispiel mit [parametername] : jetzt der Eingabetext [input_text]</z>
 
       <!-- Beispiel y -Komponente / Weiche / Frage mit weitergereichtem parameter -->
-      <y frage="Eine Frage" param="[parametername]">
+      <y name="YReferenz" frage="Eine Frage" param="[parametername]">
 
-        <!-- z Komponente mit eingesetztem Parameter -->
-        <z name="BeispielZ" param="[parametername]" />
+        <a antwort="WegA">
+          <!-- z Komponente mit eingesetztem Parameter -->
+          <z name="BeispielZ" param="[parametername]" />
+        </a>
+
+        <!-- Usw -->
 
       </y>
 
@@ -41,7 +45,8 @@
         
         <!-- a und b gelten gleichzeitig wenn logisch moeglich . Sonst fehlt das Element -->
         <ab antwort="Diese Antwort ist zutreffend fuer die Ueberschneidung und fuehrt in diese Richtung">
-          <!-- Analog -->
+          <!-- y -Komponente wird verwendet -->
+           <y name="YReferenz" param="Einzusetzender Text" />
         </ab>
         
         <!-- Weder-noch : genau ein sonst Element -->

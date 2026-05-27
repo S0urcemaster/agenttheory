@@ -9,7 +9,7 @@
   <z name="Unschaerfe">Bitte den Benutzer : sein Anliegen zu wiederholen</z>
 
   <!-- Komponenten -->
-  <y frage="Betrifft die [frage-oder-anweisung] Entwicklung oder Anwendung ?" param="[frage-oder-anweisung]">
+  <y name="Eingabeart" frage="Betrifft die [frage-oder-anweisung] Entwicklung oder Anwendung ?" param="[frage-oder-anweisung]">
 
     <a antwort="Die [frage-oder-anweisung] betrifft die Entwicklung">
       <z name="Entwicklungskontext" param="[frage-oder-anweisung]" />
@@ -30,14 +30,14 @@
 
     <a antwort="Die Eingabe ist eine Frage">
 
-      <y frage="Betrifft die Frage Entwicklung oder Anwendung ?" param="Frage" />
+      <y name="Eingabeart" param="Frage" />
 
     </a>
 
     <!-- Eindeutig eine Anweisung oder mehrere ohne Umschweife und ohne Zweifel -->
     <b antwort="Die Eingabe ist eine Anweisung">
 
-      <y frage="Betrifft die Frage Entwicklung oder Anwendung ?" param="Anweisung" />
+      <y name="Eingabeart" param="Anweisung" />
 
     </b>
 
