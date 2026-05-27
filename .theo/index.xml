@@ -12,8 +12,7 @@
 
     <def>Notiz : Es gibt Entwickler Agenten und  Agenten - es gibt Agentenklassen</def>
 
-    <ref name=".canon/">Der größere Canon</ref>
-    <ref name=".canon/index.xml">Der Ursprung - das Ganze vollstaendig enthalten in allen seinen Teilen (Rückkopplung verhindert)</ref>
+    <ref name=".canon/index.xml">Der größere Canon (Schale)</ref>
     <ref name="glossar.xml">Globalster Glossar</ref>
     <ref name="maximen.xml">Globalste Leitgedanken</ref>
     <ref name="regeln.xml">Globalste Grundregeln</ref>

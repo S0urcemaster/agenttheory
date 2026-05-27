@@ -3,28 +3,34 @@
 <!-- Es ist kein Canon tiefer als der Canon ! -->
 
 <structure name="canon">
-  <!-- XML-Struktur des Kanons und abgeleiteter Theories im Beispiel -->
+  <!-- XML-Struktur des Canons und abgeleiteter Theories im Beispiel -->
 
-  <!-- Universelle Tags können überall unterhalb von Top Level Tags auftauchen -->
+  <!-- Beschreibung "<structure>" : Structure beschreibt beispielhaft die einer Theory zugrunde liegende Struktur -->
 
-    <!-- def Tag -->
+  <!-- Universelle Tags koennen überall unterhalb von Top Level Tags auftauchen -->
+
+    <!-- Beschreibung def Tag -->
     <def name="optionales semantisches attribut">Tag zur Definition</def>
 
-    <!-- definitionen Tag -->
+    <!-- Beschreibung definitionen Tag -->
     <definitionen name="Ein qualifizierender Name">Tag für Listen von def- Elementen</definitionen>
 
-    <!-- ref Tag -->
+    <!-- Beschreibung ref Tag -->
     <ref name="dateiname">Tag für Referenzen</ref>
 
+    <!-- Beschreibung regel Tag -->
+    <regel name="optionaler Name">Lokal /situativ gesetzte Regel . Kann auch global wirksam sein</regel>
+
+  <!-- Der Canon fängt hier schon an : seine selbst definierten Tags zu verwenden -->
   <def name="Theorie Referentialität">Der Canon und andere Theorien sind referentiell zu lesen / niemals quer
     Als Einstieg dient immer index.xml . Dort sind alle notwendigen Wege vorbereitet und dienen bereits einer schnellen Suche
   </def>
   
-  <def>Das Lesen der Definition soll in seiner Gesamtheit vom Agenten aufgenommen werden</def>
+  <regel>Das Lesen der Definition soll in seiner Gesamtheit vom Agenten aufgenommen / semantisch gelesen werden</regel>
 
   <!-- Top Level Tags : -->
   
-    <!-- Eine AI Agent Theory Definition -->
+    <!-- Beschreibung theory tag : Eine AI Agent Theory Definition -->
     <theory name='Beispielname'>
 
       <def name="Beispiel">allgemeine Tags können überall vorkommen</def>
@@ -35,13 +41,34 @@
       <!-- Autor Tag -->
       <autor>Verpflichtender Verfasser der Theory</autor>
 
+      <!-- Ein Wirkfeld begrenzt den Einsatzbereich des Agents -->
+      <!-- Es muss mindestens ein wirkfeld in einer theory sein -->
+      <wirkfeld name="Theory weit eindeutiger Name">
+        <def>Vielleicht eine nähere Beschreibung des Wirkfelds</def>
+
+        <!-- Es muss mindestens ein ref im Wirkfeld geben -->
+        <ref name="verzeichnis/">Der Ort des Wirkfelds</ref>
+        <ref name="verzeichnis/datei">Eine Einzeldatei im Wirkfeld</ref>
+      </wirkfeld>
+
     </theory>
     
-    <glossar>Der Glossar wird definiert</glossar>  
-    <user>Dieses Wissen wird vom User vorausgesetzt</user>
-    <regeln>Globale Regeln die auf abgeleitete Theories abfaerben</regeln>
-    <teufel>Nichtbeachtung hat Konsequenzen !</teufel>
-    
-    <leitstelle teil="optional">Eingabequalifizierung - Ohne "teil"- Attribut = Hauptleitstelle</leitstelle>
+<!-- Datei Tags -->
+  <!-- Root in eigener Datei -->
+
+  <!-- glossar Tag -->
+  <glossar>Der Glossar wird in einer eigenen Datei glossar.xml definiert</glossar>
+
+  <!-- user Tag -->
+  <user>Das weiß der Agent über den User</user>
+
+  <!-- regeln Tag -->
+  <regeln>Globale Regeln die auf abgeleitete Theories abfaerben</regeln>
+
+  <!-- Der Teufel hat vielleicht noch ein Wort mitzureden -->
+  <teufel>Nichtbeachtung hat Konsequenzen !</teufel>
+  
+  <!-- Die Leitstelle ist dem Agenten vorgeschaltet - begrenzt Befugnisse und teilt Wirkfelder zu -->
+  <leitstelle teil="optional">Eingabequalifizierung - Ohne "teil"- Attribut = Hauptleitstelle</leitstelle>
 
 </structure>

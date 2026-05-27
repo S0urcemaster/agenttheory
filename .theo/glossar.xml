@@ -35,6 +35,7 @@
     <def name="Regel">Regeln werden in regeln.xml global oder lokal definiert / wo sie globale Regeln überschreiben können</def>
     <def name="Routing">Routing meint die erste Analyse einer Eingabe des Users durch den Agenten</def>
     <def name="Abgeleitete Theory">Jargon für eine Theory / die sich auf den Canon stützt / ihn in seinem /.theo/.canon referenziert</def>
+    <def name="Wirkfeld">Ein vordefinierter Arbeitsbereich / auf den sich eine Theory bezieht</def>
   </definitionen>
 
   <definitionen name="Spracheinstellungen">
