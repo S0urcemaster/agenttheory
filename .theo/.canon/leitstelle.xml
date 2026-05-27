@@ -4,39 +4,51 @@
   <!-- XML-Struktur einer Leitstelle im Beispiel -->
   
   <leitstelle teil="optional">
-    <!-- Die Hauptleitstelle hat keine "teil"-Attribut -->
-
-    <!-- var definiert eine Leitstellen- globale Variable / die in allen Teilen gueltig ist -->
-    <var name="Variablenname">
-      <option>Bezeichnet eine</option>
-    </var>
-
-    <!-- Es gibt immer genau EIN Y Element pro Ebene -->
-    <!-- Es gibt immer genau 2 Wahlmoeglichkeiten pro Y- Element : a und a + "beide" wenn moeglich + "weder-noch" -->
-    <y frage="Diese Frage soll geklaert werden">
-
-      <!-- a : Genau ein a Element -->
-      <a antwort="Diese Antwort fuehrt hier entlang">
-        <!-- Ein Ausgang -->
-        <z name="Beispielname">Beispielrueckgabetext</z>
-      </a>
+    <!-- Die Hauptleitstelle hat kein "teil"-Attribut -->
       
-      <!-- b : Genau ein b Element -->
-      <b antwort="Diese Antwort fuert dort entlang">
-        <!-- Eine unidirektionele Weiterleitung -->
-        <gehzu ref="Beispieldatei" />
-      </b>
-      
-      <!-- a und b gelten gleichzeitig wenn logisch moeglich . Sonst fehlt das Element -->
-      <ab antwort="Diese Antwort ist zutreffend fuer die Ueberschneidung und fuehrt in diese Richtung">
+    <def>Jedes Element kann als Komponente deklariert werden . Elemente außerhalb und vor des letzten y-Elements gelten als Komponenten</def>
+    
+    <!-- Vorwärts deklarierte, parametrisierte Komponenten . Komponenten können mit dem param-Attribut parametrisiert werden -->
+    
+      <!-- Beispiel z -Komponente / Ausgang -->
+      <z name="BeispielZ" param="[parametername]">Beispiel mit [parametername] : jetzt der Eingabetext [input_text]</z>
 
-      </ab>
-      
-      <!-- Weder-noch : genau ein sonst Element -->
-      <sonst antwort="Diese Antwort fuehrt meistens zum User zurueck mit Bitte um wiederholung">
+      <!-- Beispiel y -Komponente / Weiche / Frage mit weitergereichtem parameter -->
+      <y frage="Eine Frage" param="[parametername]">
 
-      </sonst>
-    </y>
+        <!-- z Komponente mit eingesetztem Parameter -->
+        <z name="BeispielZ" param="[parametername]" />
+
+      </y>
+
+    <!-- Haupt- Y -Element -->
+    <!-- Es gibt immer genau EIN Start- Y Element pro Ebene / ausgenommen die Komponenten -->
+    <!-- Der Start aller Verzweigungsbaeume ist die Hauptleitstelle <leitstelle> ohne teil-Attribut -->
+    <!-- Es gibt immer genau 3 oder 4 Ausgänge pro Y- Element : a, b, ab (a und b gelten beide wenn moeglich), "weder-noch" (wie else) -->
+      <y frage="Diese Frage soll geklaert werden">
+
+        <!-- a : Genau ein a Element -->
+        <a antwort="Diese Antwort fuehrt hier entlang">
+          <!-- Ein Ausgang -->
+          <z name="Beispielname">Beispielrueckgabetext</z>
+        </a>
+        
+        <!-- b : Genau ein b Element -->
+        <b antwort="Diese Antwort fuert dort entlang">
+          <!-- Eine unidirektionele Weiterleitung -->
+          <gehzu ref="Beispieldatei" />
+        </b>
+        
+        <!-- a und b gelten gleichzeitig wenn logisch moeglich . Sonst fehlt das Element -->
+        <ab antwort="Diese Antwort ist zutreffend fuer die Ueberschneidung und fuehrt in diese Richtung">
+          <!-- Analog -->
+        </ab>
+        
+        <!-- Weder-noch : genau ein sonst Element -->
+        <sonst antwort="Diese Antwort fuehrt meistens zum User zurueck mit Bitte um wiederholung">
+          <!-- Analog -->
+        </sonst>
+      </y>
 
   </leitstelle>
 

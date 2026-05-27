@@ -10,13 +10,16 @@
   <!-- Universelle Tags koennen ueberall unterhalb von Top Level Tags auftauchen -->
 
     <!-- Beschreibung def Tag -->
-    <def name="optionales semantisches attribut">Tag zur Definition</def>
+    <def name="optionale semantische Bezeichnung">Tag zur Definition</def>
 
     <!-- Beschreibung definitionen Tag -->
     <definitionen name="Ein qualifizierender Name">Tag fuer Listen von def- Elementen</definitionen>
 
     <!-- Beschreibung ref Tag -->
-    <ref name="dateiname">Tag fuer Referenzen</ref>
+    <ref name="dateiname">Tag fuer Referenzen . Diese soll gelesen und dann hier weiter fortgefahren werden</ref>
+
+    <!-- Beschreibung gehzu Tag -->
+    <gehzu name="dateiname">Tag fuer Weiterleitung . Hierher kommen wir nicht mehr zurück . Der Rest der Datei kann ignoriert werden</gehzu>
 
     <!-- Beschreibung regel Tag -->
     <regel name="optionaler Name">Lokal /situativ gesetzte Regel . Kann auch global wirksam sein</regel>

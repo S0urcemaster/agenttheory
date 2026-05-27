@@ -3,55 +3,42 @@
 <leitstelle teil="gutwillig">
   <!-- Hier ist also alles schoen fluffig -->
 
-  <y frage="Von welcher User-Rolle kommt wohl die Eingabe ?">
-    <!-- <a antwort="Die User-Eingabe hoert sich professionell und zielstrebig an / weiss : was sie will"></a> -->
+  <!-- Deklarationen der Ausstiegspunkte -->
+  <z name="Entwicklungskontext" param="[frage-oder-anweisung]">Entwickler mit [frage-oder-anweisung] : [input_text]</z>
+  <z name="Anwendungskontext" param="[frage-oder-anweisung]">User mit [frage-oder-anweisung] : [input_text]</z>
+  <z name="Unschaerfe">Bitte den Benutzer : sein Anliegen zu wiederholen</z>
 
-    <a antwort="Die User-Eingabe ist eine Frage">
-      <y frage="Betrifft die Frage Entwicklung oder Anwendung ?">
-        <a antwort="Die Frage betrifft die Entwicklung">
-          <z name="Entwicklungskontext">Entwickler mit Frage: [input_text]</z>
-        </a>
-        <b antwort="Die Frage betrifft die Anwendung">
-          <z name="Anwendungskontext">User mit Frage: [input_text]</z>
-        </b>
-        <!-- ab ist keine Option -->
-        <sonst antwort="Die Rolle der Frage ist unscharf">
-          <z name="Was soll das">Bitte den Benutzer: sein Anliegen zu wiederholen</z>
-        </sonst>
-      </y>
+  <!-- Komponenten -->
+  <y frage="Betrifft die [frage-oder-anweisung] Entwicklung oder Anwendung ?" param="[frage-oder-anweisung]">
+
+    <a antwort="Die [frage-oder-anweisung] betrifft die Entwicklung">
+      <z name="Entwicklungskontext" param="[frage-oder-anweisung]" />
+    </a>
+
+    <b antwort="Die [frage-oder-anweisung] betrifft die Anwendung">
+      <z name="Anwendungskontext" param="[frage-oder-anweisung]" />
+    </b>
+
+    <!-- ab faellt in sonst -->
+
+    <sonst antwort="Die Rolle des [frage-oder-anweisung] -stellers ist unscharf">
+      <z name="Unschaerfe" />
+    </sonst>
+  </y>
+
+  <y frage="Ist die User Eingabe eine Frage oder eine Anweisung ?">
+
+    <a antwort="Die Eingabe ist eine Frage">
+
+      <y frage="Betrifft die Frage Entwicklung oder Anwendung ?" param="Frage" />
+
     </a>
 
     <!-- Eindeutig eine Anweisung oder mehrere ohne Umschweife und ohne Zweifel -->
-    <b antwort="Die User-Eingabe ist eine Anweisung">
-      <y frage="Welche Art von Anweisung liegt vor ?">
-        <a antwort="Die Anweisung ist eine CLI-Anweisung">
-          <!-- CLI Anweisungen auch fuer Anwendung ? Eher nicht -->
-          <z name="CLI Befehl">Entwickler mit CLI-Anweisung: [input_text]</z>
-        </a>
-        <b antwort="Die Anweisung ist eine sprachliche Anweisung">
-          <y frage="Betrifft die sprachliche Anweisung Entwicklung oder Anwendung ?">
-            <a antwort="Die Anweisung betrifft die Entwicklung">
-              <!-- Es ist eindeutig die Entwicklerrolle : die ein Anliegen hat -->
-              <z name="Entwickler Anweisung">Entwickler mit Anweisung: [input_text]</z>
-            </a>
-            <b antwort="Die Anweisung betrifft die Anwendung">
-              <!-- Es ist eindeutig die Anwenderrolle : die sich meldet -->
-              <z name="Anwender Anweisung">User mit Anweisung: [input_text]</z>
-            </b>
-            <!-- ab ist keine Option -->
-            <sonst antwort="Die Rolle der Anweisung ist unscharf">
-              <z name="Was soll das">Bitte den Benutzer: sein Anliegen zu wiederholen</z>
-            </sonst>
-          </y>
-        </b>
-        <ab antwort="Die Eingabe ist zuerst eine CLI-Anweisung und danach eine oder mehrere weitere Anweisungen">
-          <!-- Es ist zuerst eine CLI Anweisung und dann weitere Anweisungen . Das kann nur der Entwickler -->
-          <z name="Entwickler CLI Befehl + weitere Anweisung(en)">Entwickler mit CLI-Anweisung und weiterer Anweisung: [input_text]</z>
-        </ab>
-        <sonst antwort="Die Art der Anweisung ist unscharf">
-          <z name="Was soll das">Bitte den Benutzer: sein Anliegen zu wiederholen</z>
-        </sonst>
-      </y>
+    <b antwort="Die Eingabe ist eine Anweisung">
+
+      <y frage="Betrifft die Frage Entwicklung oder Anwendung ?" param="Anweisung" />
+
     </b>
 
     <!-- Es koennen eine oder mehrere Fragen UND eine oder mehrere Anweisung identifiziert werden . Sonst nichts -->
