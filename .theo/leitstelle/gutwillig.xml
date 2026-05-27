@@ -92,7 +92,6 @@
               <z name="Was soll das">Bitte den Benutzer: sein Anliegen zu wiederholen</z>
             </sonst>
           </y>
-          <z name="Entwickler Botschaft">Entwickler mit Botschaft: [input_text]</z>
         </a>
         <b antwort="Die Eingabe betrifft die Anwendung">
           <!-- Es ist eindeutig die Anwenderrolle : die sich meldet -->
