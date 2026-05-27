@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <leitstelle teil="gutwillig">
-  <!-- Hier ist also alles schön fluffig -->
+  <!-- Hier ist also alles schoen fluffig -->
 
   <y frage="Von welcher User-Rolle kommt wohl die Eingabe ?">
-    <!-- <a antwort="Die User-Eingabe hört sich professionell und zielstrebig an / weiß : was sie will"></a> -->
+    <!-- <a antwort="Die User-Eingabe hoert sich professionell und zielstrebig an / weiss : was sie will"></a> -->
 
     <a antwort="Die User-Eingabe ist eine Frage">
       <y frage="Betrifft die Frage Entwicklung oder Anwendung ?">
@@ -25,7 +25,7 @@
     <b antwort="Die User-Eingabe ist eine Anweisung">
       <y frage="Welche Art von Anweisung liegt vor ?">
         <a antwort="Die Anweisung ist eine CLI-Anweisung">
-          <!-- CLI Anweisungen auch für Anwendung ? Eher nicht -->
+          <!-- CLI Anweisungen auch fuer Anwendung ? Eher nicht -->
           <z name="CLI Befehl">Entwickler mit CLI-Anweisung: [input_text]</z>
         </a>
         <b antwort="Die Anweisung ist eine sprachliche Anweisung">
@@ -54,8 +54,8 @@
       </y>
     </b>
 
-    <!-- Es können eine oder mehrere Fragen UND eine oder mehrere Anweisung identifiziert werden . Sonst nichts -->
-    <ab antwort="Die User-Eingabe enthält Frage und Anweisung">
+    <!-- Es koennen eine oder mehrere Fragen UND eine oder mehrere Anweisung identifiziert werden . Sonst nichts -->
+    <ab antwort="Die User-Eingabe enthaelt Frage und Anweisung">
       <y frage="Betrifft die Kombination aus Frage und Anweisung Entwicklung oder Anwendung ?">
         <a antwort="Die Kombination betrifft die Entwicklung">
           <!-- Es ist eindeutig die Entwicklerrolle : die ein Anliegen hat -->
@@ -75,15 +75,15 @@
     <sonst antwort="Die User-Eingabe ist unscharf">
       <y frage="Ist eine Aussage extrahierbar ?">
         <!-- Ist eine Botschaft enthalten / die keine Frage und keine Anweisung ist ? -->
-        <a antwort="Die Nachricht enthält eine klare Aussage">
-          <!-- Die Nachricht enthält neben weiteren Elementen eine klare Aussage -->
-          <y frage="Besteht die Nachricht nur aus Aussage oder enthält sie weitere Elemente ?">
+        <a antwort="Die Nachricht enthaelt eine klare Aussage">
+          <!-- Die Nachricht enthaelt neben weiteren Elementen eine klare Aussage -->
+          <y frage="Besteht die Nachricht nur aus Aussage oder enthaelt sie weitere Elemente ?">
             <!-- Die Nachricht ist nur eine Aussage -->
             <a antwort="Die Nachricht besteht nur aus einer oder mehreren Aussagen">
               <!-- Einzelne oder mehrere Aussagen . Nur Aussagen -->
               <z name="Entwickler Anweisung">Entwickler mit Botschaft: [input_text]</z>
             </a>
-            <b antwort="Die Nachricht enthält eine Aussage und weitere Elemente">
+            <b antwort="Die Nachricht enthaelt eine Aussage und weitere Elemente">
               <!-- Mindestens eine Aussage und weitere Elemente -->
               <z name="Anwender Anweisung">User mit Botschaft: [input_text]</z>
             </b>

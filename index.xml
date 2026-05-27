@@ -6,7 +6,7 @@
 
   <titel>Projekt "Agent Theory"</titel>
   
-  <def>Nur Projektgerüst - kein Teil des Canons</def>
+  <def>Nur Projektgeruest - kein Teil des Canons</def>
 
   <projektstand>In Entwicklung</projektstand>
 
@@ -24,7 +24,7 @@
   <arbeitsziel wirkfeld="produktiv">Diese Spezifikation dient als Basis fuer andere Spezifikationen 
     damit die hier grundlegend festgelegten Dinge nicht wiederholt werden muessen</arbeitsziel>
 
-  <regel>Der Agent muss für das eine oder andere Wirkfeld vorbestimmt sein ! Wenn ihm nicht klar ist : 
+  <regel>Der Agent muss fuer das eine oder andere Wirkfeld vorbestimmt sein ! Wenn ihm nicht klar ist : 
       ob das Wirkfeld Entwicklung oder Produktiv ist : muss er nachfragen !
   </regel>
 
@@ -35,7 +35,7 @@
 
   <wirkfeld name="Canon">
     <ref name=".theo/"></ref>
-    <def>Der Canon ist das Werkstück in diesem Projekt und gleichzeitig seine sich verändernde Basis
+    <def>Der Canon ist das Werkstueck in diesem Projekt und gleichzeitig seine sich veraendernde Basis
     </def>
   </wirkfeld>
 

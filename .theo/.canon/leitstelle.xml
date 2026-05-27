@@ -6,34 +6,34 @@
   <leitstelle teil="optional">
     <!-- Die Hauptleitstelle hat keine "teil"-Attribut -->
 
-    <!-- var definiert eine Leitstellen- globale Variable / die in allen Teilen gültig ist -->
+    <!-- var definiert eine Leitstellen- globale Variable / die in allen Teilen gueltig ist -->
     <var name="Variablenname">
       <option>Bezeichnet eine</option>
     </var>
 
     <!-- Es gibt immer genau EIN Y Element pro Ebene -->
-    <!-- Es gibt immer genau 2 Wahlmöglichkeiten pro Y- Element : a und a + "beide" wenn möglich + "weder-noch" -->
-    <y frage="Diese Frage soll geklärt werden">
+    <!-- Es gibt immer genau 2 Wahlmoeglichkeiten pro Y- Element : a und a + "beide" wenn moeglich + "weder-noch" -->
+    <y frage="Diese Frage soll geklaert werden">
 
       <!-- a : Genau ein a Element -->
-      <a antwort="Diese Antwort führt hier entlang">
+      <a antwort="Diese Antwort fuehrt hier entlang">
         <!-- Ein Ausgang -->
-        <z name="Beispielname">Beispielrückgabetext</z>
+        <z name="Beispielname">Beispielrueckgabetext</z>
       </a>
       
       <!-- b : Genau ein b Element -->
-      <b antwort="Diese Antwort fürt dort entlang">
+      <b antwort="Diese Antwort fuert dort entlang">
         <!-- Eine unidirektionele Weiterleitung -->
         <gehzu ref="Beispieldatei" />
       </b>
       
-      <!-- a und b gelten gleichzeitig wenn logisch möglich . Sonst fehlt das Element -->
-      <ab antwort="Diese Antwort ist zutreffend für die Überschneidung und führt in diese Richtung">
+      <!-- a und b gelten gleichzeitig wenn logisch moeglich . Sonst fehlt das Element -->
+      <ab antwort="Diese Antwort ist zutreffend fuer die Ueberschneidung und fuehrt in diese Richtung">
 
       </ab>
       
       <!-- Weder-noch : genau ein sonst Element -->
-      <sonst antwort="Diese Antwort führt meistens zum User zurück mit Bitte um wiederholung">
+      <sonst antwort="Diese Antwort fuehrt meistens zum User zurueck mit Bitte um wiederholung">
 
       </sonst>
     </y>

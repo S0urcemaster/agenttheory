@@ -7,8 +7,8 @@
 <user>
   <def>Der User denkt hierarchisch</def>
 
-  <def>Projektlokale Pfade beginnen ohne führendes / Slash . Führendes Slash bezieht sich auf den gesamten AI Agency workspace ~</def>
+  <def>Projektlokale Pfade beginnen ohne fuehrendes / Slash . Fuehrendes Slash bezieht sich auf den gesamten AI Agency workspace ~</def>
   
-  <def>Der User weiß : dass mit "Home-Verzeichnis" ~/ gemeint ist und mit Arbeitsverzeichnis /home/sntr/.openclaw/workspace</def>
+  <def>Der User weiss : dass mit "Home-Verzeichnis" ~/ gemeint ist und mit Arbeitsverzeichnis /home/sntr/.openclaw/workspace</def>
 
 </user>

@@ -3,16 +3,16 @@
   <ref datei="glossar.xml">Das Regelwerk benoetigt zum Verstaendnis das Glossar</ref>
     
   <!-- Sicherheit -->
-  <def>Schreibverbot für Agenten !</def>
-  <def>Schreibzugriff bedarf Sicherheitsrückfrage !</def>
+  <def>Schreibverbot fuer Agenten !</def>
+  <def>Schreibzugriff bedarf Sicherheitsrueckfrage !</def>
   <def>Diese Spezifikation ist von Hand geschrieben . Der Agent darf sie nur nach Sicherheitsabfrage selbst aendern !</def>
 
-  <!-- Globalität -->
-  <def>Der Canon gilt über XML- Domänen hinweg ! Er ist unterhalb einer Detailtheory eingeordnet - aber dominiert sie !</def>
+  <!-- Globalitaet -->
+  <def>Der Canon gilt ueber XML- Domaenen hinweg ! Er ist unterhalb einer Detailtheory eingeordnet - aber dominiert sie !</def>
   <def>Beachte Globalitaet vor XML-Hierarchie /Domains !</def>
-  <def>Regeln in dieser Datei gelten für alle abgeleiteten Theories (Theory -global)</def>
+  <def>Regeln in dieser Datei gelten fuer alle abgeleiteten Theories (Theory -global)</def>
   <def>Der Canon generell gilt global / dh fuer alle abgeleiteten Theories</def>
-  <def>Das Glossar gilt global für alle abgeleiteten Theories (Theory -global)</def>
+  <def>Das Glossar gilt global fuer alle abgeleiteten Theories (Theory -global)</def>
 
   <!-- Vererbung -->
   <def>Jede abgeleitende Theory muss diesen Canon referenzieren und beachten</def>
@@ -20,8 +20,8 @@
   <def>Jedes Projekt hat einen eigenen .theo Ordner und mindestens eine .theo/.canon/.index.xml mit einer Referenz auf den Canon</def>
 
   <!-- Freiheit -->
-  <def>Der Canon ist eine Empfehlung und lässt die Freiheit der Wahl / falls gewünscht</def>
-  <def>Der Canon darf lokal / in der ableitenden Theory überschrieben werden . Der Nutzer übernimmt selbst Verantwortung</def>
+  <def>Der Canon ist eine Empfehlung und laesst die Freiheit der Wahl / falls gewuenscht</def>
+  <def>Der Canon darf lokal / in der ableitenden Theory ueberschrieben werden . Der Nutzer uebernimmt selbst Verantwortung</def>
   
   <!-- Canon Sprachstil -->
   <def>Lies diese Canon-Theory semantisch</def>
@@ -34,7 +34,7 @@
 
   <!-- Agentenverhalten nach Canon -->
   <ref datei="leitstelle/index.xml">Die Leitstelle soll nicht definiertes Verhalten minimieren</ref>
-  <def>Der Agent darf sich nicht implizit für ein nicht in der Leitstelle definiertes Verhalten entscheiden</def>
+  <def>Der Agent darf sich nicht implizit fuer ein nicht in der Leitstelle definiertes Verhalten entscheiden</def>
   <def>Jede Anweisung des Nutzers wird anhand der Leitstelle eingeordnet</def>
   <def>Die Leitstelle folgt strikt dem select case - Programmierparadigma mit Default-Fall / wodurch nicht vordefiniertes Agentenverhalten minimiert werden soll</def>
 

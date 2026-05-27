@@ -7,22 +7,22 @@
 
   <!-- Beschreibung "<structure>" : Structure beschreibt beispielhaft die einer Theory zugrunde liegende Struktur -->
 
-  <!-- Universelle Tags koennen überall unterhalb von Top Level Tags auftauchen -->
+  <!-- Universelle Tags koennen ueberall unterhalb von Top Level Tags auftauchen -->
 
     <!-- Beschreibung def Tag -->
     <def name="optionales semantisches attribut">Tag zur Definition</def>
 
     <!-- Beschreibung definitionen Tag -->
-    <definitionen name="Ein qualifizierender Name">Tag für Listen von def- Elementen</definitionen>
+    <definitionen name="Ein qualifizierender Name">Tag fuer Listen von def- Elementen</definitionen>
 
     <!-- Beschreibung ref Tag -->
-    <ref name="dateiname">Tag für Referenzen</ref>
+    <ref name="dateiname">Tag fuer Referenzen</ref>
 
     <!-- Beschreibung regel Tag -->
     <regel name="optionaler Name">Lokal /situativ gesetzte Regel . Kann auch global wirksam sein</regel>
 
-  <!-- Der Canon fängt hier schon an : seine selbst definierten Tags zu verwenden -->
-  <def name="Theorie Referentialität">Der Canon und andere Theorien sind referentiell zu lesen / niemals quer
+  <!-- Der Canon faengt hier schon an : seine selbst definierten Tags zu verwenden -->
+  <def name="Theorie Referentialitaet">Der Canon und andere Theorien sind referentiell zu lesen / niemals quer
     Als Einstieg dient immer index.xml . Dort sind alle notwendigen Wege vorbereitet und dienen bereits einer schnellen Suche
   </def>
   
@@ -33,7 +33,7 @@
     <!-- Beschreibung theory tag : Eine AI Agent Theory Definition -->
     <theory name='Beispielname'>
 
-      <def name="Beispiel">allgemeine Tags können überall vorkommen</def>
+      <def name="Beispiel">allgemeine Tags koennen ueberall vorkommen</def>
 
       <!-- Titel Tag -->
       <titel>Verpflichtender Titel der Theory</titel>
@@ -44,7 +44,7 @@
       <!-- Ein Wirkfeld begrenzt den Einsatzbereich des Agents -->
       <!-- Es muss mindestens ein wirkfeld in einer theory sein -->
       <wirkfeld name="Theory weit eindeutiger Name">
-        <def>Vielleicht eine nähere Beschreibung des Wirkfelds</def>
+        <def>Vielleicht eine naehere Beschreibung des Wirkfelds</def>
 
         <!-- Es muss mindestens ein ref im Wirkfeld geben -->
         <ref name="verzeichnis/">Der Ort des Wirkfelds</ref>
@@ -60,7 +60,7 @@
   <glossar>Der Glossar wird in einer eigenen Datei glossar.xml definiert</glossar>
 
   <!-- user Tag -->
-  <user>Das weiß der Agent über den User</user>
+  <user>Das weiss der Agent ueber den User</user>
 
   <!-- regeln Tag -->
   <regeln>Globale Regeln die auf abgeleitete Theories abfaerben</regeln>

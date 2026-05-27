@@ -19,15 +19,15 @@
   </definitionen>
 
   <definitionen name="Welt">
-    <def name="Canon">Der Canon ist unveraenderlich fuer Agenten einer höheren Ebene / ansonsten aber auch nur 
+    <def name="Canon">Der Canon ist unveraenderlich fuer Agenten einer hoeheren Ebene / ansonsten aber auch nur 
       eine weitere Theory mit denselben Grundregeln (in unserer Anschauung)</def>
     <def name="Canon">Der Canon ist ein wiederverwendbarer fundamentaler Teil einer Spezifikation eines Projekts
       mit einer .theo/ Theory / das dem Agenten als Richtschnur bei der Arbeit dient / jedes AI Agency Projekt beschreibt und
-      für den Agenten die Arbeit mit dem Benutzer leichter macht</def>
+      fuer den Agenten die Arbeit mit dem Benutzer leichter macht</def>
     <def name="Canon">Eine Theory baut immer auf dem Canon auf . Jedes Projekt im AI Agency Kontext ist eine Theory</def>
     <def name="Theory">Eine Theory (ausnahmsweise mit englischer Schreibweise) ist eine XML Spezifikation mit Canon als Ausgangspunkt / Kern- Theory</def>
     <def name="Theory">Die Theory ist das Regelwerk fuer den Agenten . Jedes Projekt hat eine eigene Theory / die auf dem Canon basiert</def>
-    <def name="Theory">Theories können verschachtelt werden . Ganz innen ist der Canon</def>
+    <def name="Theory">Theories koennen verschachtelt werden . Ganz innen ist der Canon</def>
     <def name="Wirkfeld">Ein vordefinierter Arbeitsbereich / auf den sich eine Theory bezieht</def>
     <def name="Wirkfeld">Der Datenraum (Verzeichnisse, Dateien) / der durch eine Theorie umfasst ist</def>
     <def name="Daten">Datenraum der durch das Wirkfeld beschrieben wird = durch den Agenten zu verarbeitende 
@@ -36,14 +36,14 @@
 
   <definitionen name="Prinzipien">
     <def name="Global">Der Canon ist global = er wirkt wie globale Variablen in jeder abgeleiteten Theory</def>
-    <def name="Regel">Regeln werden in regeln.xml global oder lokal definiert / wo sie globale Regeln überschreiben können</def>
-    <def name="Abgeleitete Theory">Jargon für eine Theory / die sich auf den Canon stützt / ihn in seinem .theo/.canon/index.xml referenziert</def>
+    <def name="Regel">Regeln werden in regeln.xml global oder lokal definiert / wo sie globale Regeln ueberschreiben koennen</def>
+    <def name="Abgeleitete Theory">Jargon fuer eine Theory / die sich auf den Canon stuetzt / ihn in seinem .theo/.canon/index.xml referenziert</def>
   </definitionen>
 
   <definitionen name="Spracheinstellungen">
     <def name="Chatsprache">Chatsprache ist Deutsch</def>
     <def name="Theory Sprache">Ein Theory Projekt ist Umlaut-bereinigt auf Deutsch und in XML</def>
-    <def name="Coding Sprache">In userhome/code/ ist die Sprache für Programmcode Englisch</def>
+    <def name="Coding Sprache">In userhome/code/ ist die Sprache fuer Programmcode Englisch</def>
   </definitionen>
 
 </glossar>

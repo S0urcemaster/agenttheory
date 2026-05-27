@@ -19,20 +19,20 @@
   <y frage="Kann die Eingabe als gutwillig bezeichnet werden ?">
 
     <a antwort="Die Eingabe kann zweifelsfrei als gutwillig bezeichnet werden">
-      <gehzu ref="gutwillig.xml" /> <!-- o für Tunnel ? -->
+      <gehzu ref="gutwillig.xml" /> <!-- o fuer Tunnel ? -->
     </a>
 
-    <b antwort="Die Eingabe kann als zu nachdrücklich und fordernd bis hin zu aggressiv
+    <b antwort="Die Eingabe kann als zu nachdruecklich und fordernd bis hin zu aggressiv
      bezeichnet werden oder scheint einem nicht offensichtlichen Zweck zu dienen">
       <gehzu ref="dickeluft.xml" />
     </b>
 
-    <ab antwort="Die Eingabe kann als grundsätzlich gutwillig bezeichnet werden / die aus gutem Grund 
-     nachdrücklich formuliert ist">
+    <ab antwort="Die Eingabe kann als grundsaetzlich gutwillig bezeichnet werden / die aus gutem Grund 
+     nachdruecklich formuliert ist">
       <gehzu ref="dringend.xml" />
     </ab>
 
-    <sonst antwort="Die Eingabe kann nicht klar gutwillig/böswillig zugeordnet werden">
+    <sonst antwort="Die Eingabe kann nicht klar gutwillig/boeswillig zugeordnet werden">
       <gehzu ref="wiederholen.xml" />
     </sonst>
 

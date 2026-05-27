@@ -51,9 +51,9 @@ export const decisionSchema = {
   }
 };
 
-const QUESTION_RE = /\?|\b(wie|was|warum|wo|wohin|welche|welcher|welches|wann|kannst|koennen|können|soll|reicht|geht|gibt es|ist das)\b/u;
-const COMMAND_RE = /\b(mach|aendere|ändere|lege|leg|anlegen|erstelle|erstellen|setz|setze|fuehre|führe|schreib|baue|installiere|starte|stoppe|pruefe|prüfe|vermerke|halte fest|notiere|speichere|such|suche|lies|read|continue|mach weiter|leg los)\b/u;
-const SOFT_INTENT_RE = /\b(ich moechte|ich möchte|ich will|ich wuerde gern|ich würde gern|wir sollten|man koennte|man könnte)\b/u;
+const QUESTION_RE = /\?|\b(wie|was|warum|wo|wohin|welche|welcher|welches|wann|kannst|koennen|koennen|soll|reicht|geht|gibt es|ist das)\b/u;
+const COMMAND_RE = /\b(mach|aendere|aendere|lege|leg|anlegen|erstelle|erstellen|setz|setze|fuehre|fuehre|schreib|baue|installiere|starte|stoppe|pruefe|pruefe|vermerke|halte fest|notiere|speichere|such|suche|lies|read|continue|mach weiter|leg los)\b/u;
+const SOFT_INTENT_RE = /\b(ich moechte|ich moechte|ich will|ich wuerde gern|ich wuerde gern|wir sollten|man koennte|man koennte)\b/u;
 const DEVELOPMENT_RE = /\b(canon|theory|theorie|\.theo|xml|spec|spezifikation|plugin|plugins|leitstelle|routing|route|workspace|agenttheory|src|code|openclaw|codex|hook|before_dispatch|before_prompt_build|runtime|manifest)\b/u;
 const CLI_RE = /^\s*\/|\b(sync|next|einkaufsliste|tools|channels|plugins|status)\b/u;
 const APPLICATION_RE = /\b(timer|termin|termine|einkaufsliste|spruch|saying|logbuch|post|text|bild|bilder|dokument|datei|backup|telegram|wetter|kalender|mail|email)\b/u;

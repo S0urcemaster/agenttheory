@@ -12,14 +12,14 @@
 
     <def>Notiz : Es gibt Entwickler Agenten und  Agenten - es gibt Agentenklassen</def>
 
-    <ref name=".canon/index.xml">Der größere Canon (Schale)</ref>
+    <ref name=".canon/index.xml">Der groessere Canon (Schale)</ref>
     <ref name="glossar.xml">Globalster Glossar</ref>
     <ref name="maximen.xml">Globalste Leitgedanken</ref>
     <ref name="regeln.xml">Globalste Grundregeln</ref>
     <ref name="szenarios.xml">Beispielhafte Use-Cases und Szenarien</ref>
     <ref name="teufel.xml">Warnanker fuer Fehlverhalten und Folgen</ref>
-    <ref name="user.xml">Userköpfe für Agents verständlich gemacht</ref>
-    <ref name="leitstelle/">"Leitstelle" ist ein System zur Eingabequalifizierung durch einen Mini-Agenten und kein relevanter Bereich für den sprachlichen Agentenaustausch</ref>
+    <ref name="user.xml">Userkoepfe fuer Agents verstaendlich gemacht</ref>
+    <ref name="leitstelle/">"Leitstelle" ist ein System zur Eingabequalifizierung durch einen Mini-Agenten und kein relevanter Bereich fuer den sprachlichen Agentenaustausch</ref>
 
     <def>Der "Canon" soll die Basis -Spezifikation fuer jedes andere Wirkfeld der AI Agency sein / die DNA / der alle Agents folgen koennen</def>
 
