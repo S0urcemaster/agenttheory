@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- Es ist kein Canon tiefer als der Canon ! -->
 
-<structure name="canon">
-  <!-- XML-Struktur des Canons und abgeleiteter Theories im Beispiel -->
+<!-- Beschreibung : "<structure>" : Structure beschreibt beispielhaft die einer Theory zugrunde liegende Struktur -->
+<structure name="Canon">
 
-  <!-- Beschreibung "<structure>" : Structure beschreibt beispielhaft die einer Theory zugrunde liegende Struktur -->
+  <def>Es ist kein Canon tiefer als der Canon !</def>
 
   <!-- Universelle Tags koennen ueberall unterhalb von Top Level Tags auftauchen -->
 

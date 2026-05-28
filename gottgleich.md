@@ -11,3 +11,6 @@ Dies ist eine empfohlene Datei : um Gottes Arbeit an der Theorie zu planen (zB w
 - [Hier kommt Dein TODO 🤤]
 - ANFANG ! Oder ENDE ? Diesen Eintrag (oder einen anderen) bitte als ewigen ersten Eintrag und leuchtendes Beispiel stehen lassen ! -> Lifo Liste ? 🤜
 
+## Prompts
+
+- Canon-Check : Lies den Canon von vorne und stoppe bei logischen oder semantischen Fehlern . Frage dann nach 
