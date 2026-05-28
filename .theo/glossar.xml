@@ -19,17 +19,23 @@
   </definitionen>
 
   <definitionen name="Welt">
-    <def name="Canon">Der Canon ist unveraenderlich fuer Agenten einer hoeheren Ebene / ansonsten aber auch nur 
-      eine weitere Theory mit denselben Grundregeln (in unserer Anschauung)</def>
+    <def name="Canon">Der Canon ist die erste Theory auf der alle anderen Theories aufbauen . Jede Theory muss den Canon referenzieren</def>
     <def name="Canon">Der Canon ist ein wiederverwendbarer fundamentaler Teil einer Spezifikation eines Projekts
       mit einer .theo/ Theory / das dem Agenten als Richtschnur bei der Arbeit dient / jedes AI Agency Projekt beschreibt und
       fuer den Agenten die Arbeit mit dem Benutzer leichter macht</def>
-    <def name="Canon">Eine Theory baut immer auf dem Canon auf . Jedes Projekt im AI Agency Kontext ist eine Theory</def>
-    <def name="Theory">Eine Theory (ausnahmsweise mit englischer Schreibweise) ist eine XML Spezifikation mit Canon als Ausgangspunkt / Kern- Theory</def>
-    <def name="Theory">Die Theory ist das Regelwerk fuer den Agenten . Jedes Projekt hat eine eigene Theory / die auf dem Canon basiert</def>
+    <def name="Canon">Eine Theory baut immer auf dem Canon auf
+      Jedes Projekt im AI Agency Wirkfeld (dem äußersten Wirkfeld / das alle anderen Wirkfelder enthält) ist eine Theory</def>
+    <def name="Theory">Eine Theory (ausnahmsweise mit englischer Schreibweise) ist eine XML Spezifikation im AI Agency Rahmen- Wirkfeld</def>
+    <def name="Theory">Die Theory ist das verbindliche Regelwerk fuer den Agenten
+      Jedes Projekt hat eine eigene Theory / die auf dem Canon basiert / es sei denn : es ist der Canon selbst</def>
     <def name="Theory">Theories koennen verschachtelt werden . Ganz innen ist der Canon</def>
-    <def name="Wirkfeld">Ein vordefinierter Arbeitsbereich / auf den sich eine Theory bezieht</def>
-    <def name="Wirkfeld">Der Datenraum (Verzeichnisse, Dateien) / der durch eine Theorie umfasst ist</def>
+    <def name="Wirkfeld">Ein vordefinierter Arbeitsbereich mit eigener Theory in .theory</def>
+    <def name="Wirkfeld">Der Datenraum (Verzeichnisse, Dateien) / der durch eine Theorie umfasst ist
+      Die Theory selbst ist zwar im gleichen Datenraum / Verzeichnis - wird aber nicht zum Wirkfeld gezählt
+      Die Theory ist die Beschreibung für den Agenten - das Wirkfeld wird in der Theory beschrieben und schließt grundsätzlich
+      die Theory selbst aus / es sei denn : es handelt sich um ein Theory -Projekt : das die Theory selbst als definiertes Wirkfeld hat
+      Die Katze beißt sich hier in den Schwanz - das ist die Schwieriegkeit
+    </def>
     <def name="Daten">Datenraum der durch das Wirkfeld beschrieben wird = durch den Agenten zu verarbeitende 
       Daten eines Theory Projekts . Der Agent darf andere Daten in diesem Kontext nicht bearbeiten</def>  
   </definitionen>

@@ -29,26 +29,18 @@
 
     <def>Das Home -Verzeichnis ist ebenso eine Organisationseinheit / ein Projekt und unterliegt ebenso dem Canon</def>
 
-    <definitionen bereich="Metasprache">
+    <definitionen name="Metasprache">
         <def>Es wird begriffliche und logische Praezision angestrebt</def>
         <def>Der Canon ist redundant formuliert um beim Agenten Verstaerkung zu erzeugen</def>
         <def>Gemischte Sprache : Beschreibungen Deutsch mit Entwickler -Englisch</def>
         <def>Der Sprachstil des Canons soll auf alle seine Theorien abfaerben</def>
     </definitionen>
 
-    <definitionen bereich="Spezielle Zeichensetzung fuer natuerliche Sprache">
+    <definitionen name="Spezielle Zeichensetzung fuer natuerliche Sprache">
         <def>Satzzeichen haben mit Ausnahmen davor und danach ein Leerzeichen</def>
         <def>Kommas dienen nur fuer Aufzaehlungen . Saetze und Nebensaetze werden semantisch mit : / - und dem Mittelpunkt · statt dem unteren Punkt . getrennt</def>
         <def>Auf ein abschliessendes Satzzeichen am Ende eines Absatzes wird verzichtet</def>
     </definitionen>
-
-    <definitionen bereich="Semantische Tags">
-        <def name="[Tagname hier]">Tags werden deutsch benannt, aber ASCII-normalisiert geschrieben: ae statt Umlaut-a, oe statt Umlaut-o, ue statt Umlaut-u, ss statt Eszett. Tags enthalten keine Leerzeichen und keine Sonderzeichen.</def>
-        <def name="def">Eine Definition / nicht so stark wie "bedeutung"</def>
-        <def name="definitionen">Liste mit "bereich" -Attribut</def>
-        <def name="bedeutung">Staerker als "def" . Hier wird versucht : den Urgrund zu vermitteln</def>
-        <def name="ref">Referenziert ein Objekt / meist Datei</def>
-        <def name="regel">Legt eine Regel fest . Regeln in regeln.xml gelten global und in ableitenden Theories . Im anderen Fall lokal</def>
-    </definitionen>
+    
 </theory>
   
