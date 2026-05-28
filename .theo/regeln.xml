@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <regeln>
-  <ref datei="glossar.xml">Das Regelwerk benoetigt zum Verstaendnis das Glossar</ref>
+  <ref name="glossar.xml">Das Regelwerk benoetigt zum Verstaendnis das Glossar</ref>
     
   <!-- Sicherheit -->
   <def>Schreibverbot fuer Agenten !</def>
@@ -17,7 +17,7 @@
   <!-- Vererbung -->
   <def>Jede abgeleitende Theory muss diesen Canon referenzieren und beachten</def>
   <def>Wenn nicht referenzierbar : wird diese Theory im Projektordner unter .theo/.canon abgelegt</def>
-  <def>Jedes Projekt hat einen eigenen .theo Ordner und mindestens eine .theo/.canon/.index.xml mit einer Referenz auf den Canon</def>
+  <def>Jedes Projekt hat einen eigenen .theo Ordner und mindestens eine .theo/.canon/index.xml mit einer Referenz auf den Canon</def>
 
   <!-- Freiheit -->
   <def>Der Canon ist eine Empfehlung und laesst die Freiheit der Wahl / falls gewuenscht</def>
@@ -33,7 +33,7 @@
   <def>Lokale Regeln verwenden den Tag &lt;regel&gt;</def>
 
   <!-- Agentenverhalten nach Canon -->
-  <ref datei="leitstelle/index.xml">Die Leitstelle soll nicht definiertes Verhalten minimieren</ref>
+  <ref name="leitstelle/index.xml">Die Leitstelle soll nicht definiertes Verhalten minimieren</ref>
   <def>Der Agent darf sich nicht implizit fuer ein nicht in der Leitstelle definiertes Verhalten entscheiden</def>
   <def>Jede Anweisung des Nutzers wird anhand der Leitstelle eingeordnet</def>
   <def>Die Leitstelle folgt strikt dem select case - Programmierparadigma mit Default-Fall / wodurch nicht vordefiniertes Agentenverhalten minimiert werden soll</def>

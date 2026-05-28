@@ -29,7 +29,7 @@
     <def name="Theory">Die Theory ist das verbindliche Regelwerk fuer den Agenten
       Jedes Projekt hat eine eigene Theory / die auf dem Canon basiert / es sei denn : es ist der Canon selbst</def>
     <def name="Theory">Theories koennen verschachtelt werden . Ganz innen ist der Canon</def>
-    <def name="Wirkfeld">Ein vordefinierter Arbeitsbereich mit eigener Theory in .theory</def>
+    <def name="Wirkfeld">Ein vordefinierter Arbeitsbereich mit eigener Theory in .theo</def>
     <def name="Wirkfeld">Der Datenraum (Verzeichnisse, Dateien) / der durch eine Theorie umfasst ist
       Die Theory selbst ist zwar im gleichen Datenraum / Verzeichnis - wird aber nicht zum Wirkfeld gezählt
       Die Theory ist die Beschreibung für den Agenten - das Wirkfeld wird in der Theory beschrieben und schließt grundsätzlich
