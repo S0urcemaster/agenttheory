@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- Der instantiierte Canon
+ -->
 <theory name="canon">
 
-    <!-- Gehe zuerst ganz nach unten bis zum Ursprung -->
+    <!-- Die innerste Schachtel : Darin steht : wie es geformt sein soll -->
     <ref name=".canon/index.xml" />
 
     <titel>AI Agency Canon Definition</titel>
@@ -41,6 +43,11 @@
         <def>Kommas dienen nur fuer Aufzaehlungen . Saetze und Nebensaetze werden semantisch mit : / - und dem Mittelpunkt · statt dem unteren Punkt . getrennt</def>
         <def>Auf ein abschliessendes Satzzeichen am Ende eines Absatzes wird verzichtet</def>
     </definitionen>
-    
+
+    <wirkfeld name="Canon">
+        <def>Der Canon hat eigene Regeln und kein richtiges eigenes Wirkfeld</def>
+        <ref name=".canon/" />
+    </wirkfeld>
+
 </theory>
   

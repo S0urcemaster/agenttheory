@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theory name="agenttheory">
 
-  <!-- Gehe zuerst ganz nach unten bis zum Ursprung -->
+  <!-- Gehe zuerst ganz hinein in den Kaninchenbau . Komme erst verwandelt zurück -->
   <ref datei=".theo/index.xml" />
 
   <titel>Projekt "Agent Theory"</titel>
