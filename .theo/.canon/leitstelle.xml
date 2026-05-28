@@ -40,7 +40,7 @@
         <!-- b : Genau ein b Element -->
         <b antwort="Diese Antwort fuert dort entlang">
           <!-- Eine unidirektionele Weiterleitung -->
-          <gehzu ref="Beispieldatei" />
+          <gehzu name="Beispieldatei" />
         </b>
         
         <!-- a und b gelten gleichzeitig wenn logisch moeglich . Sonst fehlt das Element -->
