@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<structure name="leitstelle">
+<struktur name="leitstelle">
   <!-- XML-Struktur einer Leitstelle im Beispiel -->
   
   <leitstelle teil="optional">
@@ -57,4 +57,4 @@
 
   </leitstelle>
 
-</structure>
+</struktur>

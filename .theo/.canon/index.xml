@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Der theoretische Canon
-<structure name="Canon"> beschreibt die einer Theory (der Canon ist eine Theory) zugrunde liegende Struktur
-Innerhalb von <structure> ist jedes XML-Element Teil der Strukturbeschreibung und wird nicht selbst verwendet /
+<struktur name="Canon"> beschreibt die einer Theory (der Canon ist eine Theory) zugrunde liegende Struktur
+Innerhalb von <struktur> ist jedes XML-Element Teil der Strukturbeschreibung und wird nicht selbst verwendet /
  sondern die Elemente beschreiben Form, Bedeutung und erlaubte Verwendung der Canon-Theory und verschachtelter Theories
 Jedes Theory-XML verwendet die im Canon definierte Struktur - auch der Canon selbst
 Theories sind rekursiv - aber enden hier im Canon in diesem Verzeichnis -->
-<structure name="Canon">
-
-  <def>Es ist kein Canon tiefer als der Canon !</def>
+<struktur name="Canon">
 
   <!-- Universelle Tags koennen ueberall unterhalb von Top Level Tags auftauchen -->
 
@@ -78,4 +76,7 @@ Theories sind rekursiv - aber enden hier im Canon in diesem Verzeichnis -->
   <!-- Die Leitstelle ist dem Agenten vorgeschaltet - begrenzt Befugnisse und teilt Wirkfelder zu -->
   <leitstelle teil="optional">Eingabequalifizierung - Ohne "teil"- Attribut = Hauptleitstelle</leitstelle>
 
-</structure>
+  <!-- Rohrpost transportiert Kontext und Arbeitsstand zwischen Agentenstationen -->
+  <rohrpost>Weitergabeformat fuer den sprachlichen Agentenaustausch zwischen Stationen</rohrpost>
+
+</struktur>

@@ -1,5 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<structure name="rohrpost">
+<!-- Struktur fuer Rohrpost
+Rohrpost ist das interne Weitergabeformat zwischen Agentenstationen
+Diese Datei beschreibt die Form einer Rohrpost / sie enthaelt kein einzelnes Rohrpost-Beispiel
+-->
+<struktur name="rohrpost">
 
-</structure>
+  <def name="Rohrpost">Eine Rohrpost ist ein transportierbarer Arbeitsstand fuer Agentenstationen</def>
+  <def name="Zweck">Eine Station kann Kontext / Canon-Auszug / Auftrag / Laufweg und Ergebnis so 
+    vorbereiten : dass die naechste Station ohne verlorenen Zusammenhang weiterarbeiten kann</def>
+  <def name="Abgrenzung">Eine Rohrpost ist kein Endprodukt . Sie ist ein adressierter Zwischenstand mit Auftrag und naechstem Bearbeitungsschritt</def>
+
+  <regel>Eine Rohrpost muss als XML lesbar sein und darf keine versteckten Annahmen ausserhalb ihrer Felder benoetigen</regel>
+  <regel>Der Canon bleibt Grundlage . Eine Rohrpost darf Canon-Auszuege vorbereiten / aber den Canon nicht ersetzen</regel>
+  <regel>Der Laufweg ist fortzuschreiben statt zu ueberschreiben</regel>
+  <regel>Die aktuelle Station beschreibt nur ihren eigenen Ergebnisstand und weist die naechste Station aus</regel>
+
+  <!-- Root einer einzelnen Rohrpost -->
+  <rohrpost id="eindeutige-rohrpost-id" type="rohrpost">
+
+    <!-- Identitaet und Bearbeitungsstand -->
+    <status>Bearbeitungszustand : offen / in_arbeit / blockiert / abgeschlossen</status>
+    <titel>Kurzer menschlich lesbarer Auftragstitel</titel>
+    <created_at>Erstellzeitpunkt im lokalen ISO-Format</created_at>
+    <auftraggeber>Ursprung der Rohrpost / meistens User oder vorherige Agentenrolle</auftraggeber>
+
+    <!-- Routing zwischen Stationen -->
+    <stationen>
+      <aktuelle_station>Station : die diese Rohrpost gerade verantwortet</aktuelle_station>
+      <vorherige_station>Station : von der diese Rohrpost uebernommen wurde</vorherige_station>
+      <naechste_station>Station : an die diese Rohrpost nach Abschluss weitergegeben werden soll</naechste_station>
+    </stationen>
+
+    <!-- Planung -->
+    <prioritaet>Dringlichkeit oder Reihenfolge : niedrig / normal / hoch / dringend</prioritaet>
+    <faellig_bis optional="true">Faelligkeit im lokalen ISO-Format oder leer wenn keine Faelligkeit besteht</faellig_bis>
+
+    <!-- Canon-Bezug -->
+    <canon>
+      <referenz>Pfad zur massgeblichen Canon-Quelle</referenz>
+      <auszug_erstellt_von>Station : die den Canon-Auszug vorbereitet hat</auszug_erstellt_von>
+      <auszug_erstellt_am>Zeitpunkt der Canon-Auszug-Erstellung im lokalen ISO-Format</auszug_erstellt_am>
+      <auszug optional="true">Kurzer relevanter Canon-Auszug / keine Kopie des ganzen Canon</auszug>
+    </canon>
+
+    <!-- Laufweg : chronologische Stationenhistorie -->
+    <laufweg>
+      <station>
+        <name>Name der Station</name>
+        <zeit>Zeitpunkt der Stationsaktion im lokalen ISO-Format</zeit>
+        <aktion>Aktion : erstellt / uebernommen / bearbeitet / weitergegeben / abgeschlossen / blockiert</aktion>
+        <notiz optional="true">Kurze Stationsnotiz</notiz>
+      </station>
+    </laufweg>
+
+    <!-- Inhaltlicher Arbeitskoerper -->
+    <inhalt>
+      <auftrag>Was konkret bearbeitet werden soll</auftrag>
+      <kontext>Warum der Auftrag besteht und welche Situation relevant ist</kontext>
+      <canon_auszug>Nur der fuer diesen Auftrag relevante Canon-Kontext</canon_auszug>
+      <ergebnis status="offen" station="aktuelle_station">Ergebnis der aktuellen Station oder Begruendung warum es noch offen ist</ergebnis>
+    </inhalt>
+
+  </rohrpost>
+
+</struktur>
