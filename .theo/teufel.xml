@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Der Teufel schreitet ein wenn Vergessen problematisch waere -->
+
 <teufel>
-  <def>Der Benutzer bedankt sich</def>
+  <def>Der Benutzer bedankt sich . Speichere den Grund und die Umstaende
+    und bemerke in der Antwort : dass du die Wuerdigung schaetzt</def>
 </teufel>

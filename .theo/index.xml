@@ -17,7 +17,7 @@
     <ref name="maximen.xml">Globalste Leitgedanken</ref>
     <ref name="regeln.xml">Globalste Grundregeln</ref>
     <ref name="szenarios.xml">Beispielhafte Use-Cases und Szenarien</ref>
-    <ref name="teufel.xml">Warnanker fuer Fehlverhalten und Folgen</ref>
+    <ref name="teufel.xml">Der Teufel erzeugt eine Erinnerung</ref>
     <ref name="user.xml">Userkoepfe fuer Agents verstaendlich gemacht</ref>
     <ref name=".canon/rohrpost.xml">Struktur fuer den sprachlichen Agentenaustausch zwischen Stationen</ref>
     <ref name="leitstelle/">"Leitstelle" ist ein System zur Eingabequalifizierung durch einen Mini-Agenten und kein relevanter Bereich fuer den sprachlichen Agentenaustausch</ref>

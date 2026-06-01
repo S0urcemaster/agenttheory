@@ -20,12 +20,16 @@ Dies ist eine empfohlene Datei um Gottes Arbeit an der Theorie zu planen (zB wen
 - Canon-Check : Lies den Canon von vorne und stoppe bei logischen oder semantischen Fehlern . Frage dann nach 
 
 
-## Agentenfragen
+### Fragen
 
-Ausfragen ! Dumme Fragen stellen / sich dumm stellen / Unsicherheiten rueckfragen
+Frage wie ein Lehrer beim Test - denn genau das haben wir : ein lernunfaehiges Kind / das man nach dem Test umprogrammiert und dann wieder befragt
 
 - Wo ist das definiert ?
 - Wie bist du darauf gekommen ?
 - Warum ist jenes nicht passiert ?
 - Wo hast du das her ?
 - WIeSO ist das so ? (ja : ich weiß das noch von wo ich ~7 Jahre alt war . Was fuer ein seltsamer Charakter . Heute genau so kaum in der Oeffentlichkeit zu finden)
+
+## Fehlerbehebung
+
+- Sind Kontext oder Memory verunreinigt ?
