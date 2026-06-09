@@ -79,4 +79,8 @@ Theories sind rekursiv - aber enden hier im Canon in diesem Verzeichnis -->
   <!-- Rohrpost transportiert Kontext und Arbeitsstand zwischen Agentenstationen -->
   <rohrpost>Weitergabeformat fuer den sprachlichen Agentenaustausch zwischen Stationen</rohrpost>
 
+  <!-- Eine Morphology / Morph ist die Rolle / der Charakter eines Agents . Wenn nicht anders angegeben
+   hat ein Agent die "default" -Morphology -->
+  <morph name="Ein eindeutiger Name"></morph>
+
 </struktur>
