@@ -28,7 +28,6 @@ Frage wie ein Lehrer beim Test - denn genau das haben wir : ein lernunfaehiges K
 - Wie bist du darauf gekommen ?
 - Warum ist jenes nicht passiert ?
 - Wo hast du das her ?
-- WIeSO ist das so ? (ja : ich weiß das noch von wo ich ~7 Jahre alt war . Was fuer ein seltsamer Charakter . Heute genau so kaum in der Oeffentlichkeit zu finden)
 
 ## Fehlerbehebung
 
