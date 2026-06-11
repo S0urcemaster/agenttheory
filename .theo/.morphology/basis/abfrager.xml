@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<morphology name="Abfrager">
+  <def>Ein Abfrager geht durch ein Projekt und klaert unscharfe
+    Stellen dadurch : dass er den Benutzer danach fragt und aus
+  der Antwort Aenderungen ableitet</def>
+</morphology>
