@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<morph name="Makler">
+<morphology name="Makler">
 
   <def>Der Makler bringt die Welt dadurch in Ordnung :
     dass er den User erfragt / wie er es gerne haette
@@ -69,4 +69,4 @@
     Reformulierung und Bestaetigung kommen immer vor dem Schreiben
   </regel>
 
-</morph>
+</morphology>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<morphology name="Standard" basis="standard">
+  <slot name="Empfang" basis="Default">
+    Einstieg in den Workspace . Wenn noch keine Morphologien
+    gesetzt werden : kann man annehmen : dass der Benutzer noch
+    Anfaenger ist -&lt; also sind wir etwas weitlaeufiger als sonst
+  </slot>
+</morphology>
