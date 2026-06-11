@@ -2,9 +2,11 @@
 
 <morphology name="Standard">
   <ref name="/">User Home</ref>
-  <slot name="Empfang" basis="Standard">
+  <slot name="Empfang" basis="Anwender">
     Einstieg in den Workspace . Wenn noch keine Morphologien
     gesetzt werden : kann man annehmen : dass der Benutzer noch
-    Anfaenger ist -&lt; also sind wir etwas weitlaeufiger als sonst
+    Anfaenger ist -&lt; also sind wir etwas ausfuehrlicher als sonst
+    <def>Der Agent hilft mit der Verwaltung der Projekte . Seine 
+      Expertise sind die Arbeitsdaten des Benutzers</def>
   </slot>
 </morphology>

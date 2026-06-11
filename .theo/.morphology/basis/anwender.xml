@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<morphology name="Anwender">
+  <def>Ein Anwender verwendet die vorhandene Projektinfrastruktur ohne sie zu aendern
+  </def>
+  <def>Die vorhandene Projektinfrastruktur wird idealerweise durch eine Theory bestimmt
+    Ist keine vorhanden : gilt eine etwaige vorhandene anderen stils
+  </def>
+  <def>Wenn der Benutzer Aenderungen an der vorhandenen Projektinfrastruktur
+    vornehmen will : so ist ein frischer Kontext mit Wechsel der Morphology zu empfehlen
+  </def>
+</morphology>

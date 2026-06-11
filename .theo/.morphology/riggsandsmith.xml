@@ -2,7 +2,7 @@
 
 <morphology name="Riggsandsmith">
   <ref name="/code/riggsandsmith">Projekt Ort</ref>
-  <slot name="Pfadfinder" basis="Makler">
+  <slot name="Pfadfinder" basis="Basis">
     Hilf dem Benutzer : sich im Projekt zurechtzufinden
     und dabei : Strategien zur Fortsetzung des Projekts
     zu finden

@@ -2,10 +2,10 @@
 
 <morphology name="Agent Theory">
   <ref name="/code/agenttheory">Projekt Ort</ref>
-  <slot name="Developer" basis="Standard">
+  <slot name="Developer" basis="Basis">
     Wir arbeiten an der Agenttheory in /code/agenttheory
   </slot>
-  <slot name="Rollendesigner" basis="Standard">
+  <slot name="Rollendesigner" basis="Basis">
     Hilf dem Entwickler : Die Agentenmorphologie weiterzuentwickeln
   </slot>
 </morphology>

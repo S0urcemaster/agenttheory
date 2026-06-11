@@ -75,7 +75,7 @@ Theories sind rekursiv - aber enden hier im Canon in diesem Verzeichnis -->
     <!-- slot : eine konkrete Rollenauspraegung innerhalb der Morphology
      basis : Name einer Basis-Morphology aus .morphology/basis/ von der geerbt wird
      Ohne basis-Attribut gilt der slot als eigenstaendig -->
-    <slot name="Rollenname" basis="Optionaler Basis-Morph-Name">
+    <slot name="Rollenname" basis="">
       Beschreibung der Rolle / ihres Charakters / ihrer Verhaltensregeln
     </slot>
 
