@@ -45,10 +45,8 @@
         <def>Auf ein abschliessendes Satzzeichen am Ende eines Absatzes wird verzichtet</def>
     </definitionen>
 
-    <wirkfeld name="Canon">
-        <def>Der Canon hat eigene Regeln und kein richtiges eigenes Wirkfeld</def>
-        <ref name=".canon/" />
-    </wirkfeld>
+    <morph name="Standard">Die Standardrolle dieses Projekts</morph>
+    <ref name=".morphology/">Verfuegbare Morphologies fuer dieses Projekt</ref>
 
 </theory>
   

@@ -45,16 +45,8 @@ Theories sind rekursiv - aber enden hier im Canon in diesem Verzeichnis -->
       <!-- Autor Tag -->
       <autor>Verpflichtender Verfasser der Theory</autor>
 
-      <!-- Ein Wirkfeld begrenzt den Einsatzbereich des Agents -->
-      <def>Eine Theory hat mindestens ein Wirkfeld</def>
-      
-      <wirkfeld name="Theory weit eindeutiger Name">
-        <def>Vielleicht eine naehere Beschreibung des Wirkfelds</def>
-
-        <!-- Es muss mindestens ein ref im Wirkfeld geben -->
-        <ref name="verzeichnis/">Der Ort des Wirkfelds</ref>
-        <ref name="verzeichnis/datei">Eine Einzeldatei im Wirkfeld</ref>
-      </wirkfeld>
+      <!-- morph Tag : verweist auf die aktive Morphology des Agents in diesem Projekt -->
+      <morph name="Morphology-Name">Optionale Beschreibung . Verweist auf eine Datei in .morphology/</morph>
 
     </theory>
     
@@ -76,8 +68,20 @@ Theories sind rekursiv - aber enden hier im Canon in diesem Verzeichnis -->
   <!-- Rohrpost transportiert Kontext und Arbeitsstand zwischen Agentenstationen -->
   <rohrpost>Weitergabeformat fuer den sprachlichen Agentenaustausch zwischen Stationen</rohrpost>
 
-  <!-- Eine Morphology / Morph ist die Rolle / der Charakter eines Agents . Wenn nicht anders angegeben
-   hat ein Agent die "default" -Morphology -->
-  <morph name="Ein eindeutiger Name"></morph>
+  <!-- Morphology-Dateien : Root einer .morphology/*.xml Datei -->
+
+  <!-- Eine Morphology ist ein benanntes Rollenkostuem / Mindset fuer den Agenten
+   Der Agent nimmt beim Start eine Morphology an und handelt in ihrem Rahmen
+   Wenn keine explizite Morphology gesetzt ist : gilt die Basis-Morphology "Standard" -->
+  <morphology name="Eindeutiger Name">
+
+    <!-- slot : eine konkrete Rollenauspraegung innerhalb der Morphology
+     basis : Name einer Basis-Morphology aus .morphology/basis/ von der geerbt wird
+     Ohne basis-Attribut gilt der slot als eigenstaendig -->
+    <slot name="Rollenname" basis="Optionaler Basis-Morph-Name">
+      Beschreibung der Rolle / ihres Charakters / ihrer Verhaltensregeln
+    </slot>
+
+  </morphology>
 
 </struktur>

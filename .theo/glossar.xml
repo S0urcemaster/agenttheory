@@ -9,12 +9,11 @@
     <def name="AI Agency">AI Agency ist die Firma und der Schoepfer dieser Spezifikation</def>
     <def name="Sebastian Teister">Sebastian Teister ist Programmierer der Agent Theory</def>
     <def name="Developer Agent">AI Agency Agent (Wahrscheinlich du 😉) / der an einer Entwicklungsaufgabe arbeitet</def>
-    <def name="User Agent">Anwender Agent der mit einer reifen Theory auf einem Wirkfeld arbeitet</def>
+    <def name="User Agent">Anwender Agent der mit einer reifen Theory arbeitet</def>
   </definitionen>
 
   <definitionen name="Arbeitskontext">
-    <def name="Userhome">Das Home-Verzeichnis der AI Agency mit allen Agentenprojekten, Beispielwirkfeldern, 
-      eigenen User-Wirkfeldern des Entwicklers und dem alles durchdringenden Canon</def>
+    <def name="Userhome">Das Home-Verzeichnis der AI Agency mit allen Agentenprojekten und dem alles durchdringenden Canon</def>
     <def name="Agenthome">OpenClaw Workspace des Agenten ist unter userhome/.openclaw/workspace</def>
   </definitionen>
 
@@ -24,20 +23,22 @@
       mit einer .theo/ Theory / das dem Agenten als Richtschnur bei der Arbeit dient / jedes AI Agency Projekt beschreibt und
       fuer den Agenten die Arbeit mit dem Benutzer leichter macht</def>
     <def name="Canon">Eine Theory baut immer auf dem Canon auf
-      Jedes Projekt im AI Agency Wirkfeld (dem äußersten Wirkfeld / das alle anderen Wirkfelder enthält) ist eine Theory</def>
-    <def name="Theory">Eine Theory (ausnahmsweise mit englischer Schreibweise) ist eine XML Spezifikation im AI Agency Rahmen- Wirkfeld</def>
+      Jedes AI Agency Projekt ist eine Theory</def>
+    <def name="Theory">Eine Theory (ausnahmsweise mit englischer Schreibweise) ist eine XML Spezifikation im AI Agency Rahmen</def>
     <def name="Theory">Die Theory ist das verbindliche Regelwerk fuer den Agenten
       Jedes Projekt hat eine eigene Theory / die auf dem Canon basiert / es sei denn : es ist der Canon selbst</def>
     <def name="Theory">Theories koennen verschachtelt werden . Ganz innen ist der Canon</def>
-    <def name="Wirkfeld">Ein vordefinierter Arbeitsbereich mit eigener Theory in .theo</def>
-    <def name="Wirkfeld">Der Datenraum (Verzeichnisse, Dateien) / der durch eine Theorie umfasst ist
-      Die Theory selbst ist zwar im gleichen Datenraum / Verzeichnis - wird aber nicht zum Wirkfeld gezählt
-      Die Theory ist die Beschreibung für den Agenten - das Wirkfeld wird in der Theory beschrieben und schließt grundsätzlich
-      die Theory selbst aus / es sei denn : es handelt sich um ein Theory -Projekt : das die Theory selbst als definiertes Wirkfeld hat
-      Die Katze beißt sich hier in den Schwanz - das ist die Schwieriegkeit
-    </def>
-    <def name="Daten">Datenraum der durch das Wirkfeld beschrieben wird = durch den Agenten zu verarbeitende 
-      Daten eines Theory Projekts . Der Agent darf andere Daten in diesem Kontext nicht bearbeiten</def>  
+  </definitionen>
+
+  <definitionen name="Morphology">
+    <def name="Morphology">Eine Morphology ist ein benanntes Rollenkostuem / das der Agent beim Start eines Projekts anlegt
+      Sie definiert Charakter / Ton / Verhalten und Befugnisse des Agents fuer diese Sitzung</def>
+    <def name="Morph">Kurzform fuer Morphology . Im Theory-XML als &lt;morph&gt;-Tag verwendet um die aktive Morphology zu benennen</def>
+    <def name="Slot">Ein Slot ist eine konkrete Rollenauspraegung innerhalb einer Morphology
+      Er kann eine Basis-Morphology beerben und beschreibt dann nur die Abweichung davon</def>
+    <def name="Basis-Morphology">Eine abstrakte Grundrolle in .morphology/basis/ von der konkrete Slots erben koennen</def>
+    <def name="Morphology-Wahl">Wenn der Agent gestartet wird : liest er die verfuegbaren Morphologies und fragt
+      sofern keine explizit gesetzt ist / welche Rolle er annehmen soll</def>
   </definitionen>
 
   <definitionen name="Prinzipien">

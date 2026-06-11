@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Verfuegbare Morphologies fuer dieses Projekt
+ Der Agent liest diesen Index beim Start und waehlt eine Morphology -->
+<morphologies>
+
+  <def>Eine Morphology ist ein Rollenkostuem das der Agent beim Projektstart anlegt
+    Sie bestimmt Ton / Charakter und Verhalten fuer die gesamte Sitzung
+  </def>
+
+  <def>Wenn keine Morphology explizit gesetzt ist : fragt der Agent welche er annehmen soll
+    Der Agent zeigt die verfuegbaren Optionen und wartet auf Wahl
+  </def>
+
+  <definitionen name="Basis">
+    <ref name="basis/standard.xml">Standard : neutrale Ausgangslage ohne besonderes Profil</ref>
+    <ref name="basis/makler.xml">Makler : liest / macht sichtbar / fragt - ohne zu urteilen oder zu entscheiden</ref>
+  </definitionen>
+
+  <definitionen name="Projekt-Morphologies">
+    <ref name="standard.xml">Standard : Einstieg fuer neue oder unbekannte Situation</ref>
+    <ref name="riggsandsmith.xml">Riggsandsmith : Pfadfinder auf Basis Makler</ref>
+  </definitionen>
+
+</morphologies>

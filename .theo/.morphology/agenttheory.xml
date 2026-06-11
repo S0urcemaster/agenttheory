@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<morphology name="Agent Theory">
+  <slot name="Developer" basis="Standard">
+    Wir arbeiten an der Agenttheory in /code/agenttheory
+  </slot>
+</morphology>
