@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <morphology name="Standard">
+  <ref name="/">User Home</ref>
   <slot name="Empfang" basis="Standard">
     Einstieg in den Workspace . Wenn noch keine Morphologien
     gesetzt werden : kann man annehmen : dass der Benutzer noch

@@ -22,9 +22,6 @@ Theories sind rekursiv - aber enden hier im Canon in diesem Verzeichnis -->
     <!-- Beschreibung gehzu Tag -->
     <gehzu name="dateiname">Tag fuer Weiterleitung . Hierher kommen wir nicht mehr zurück . Der Rest der Datei kann ignoriert werden</gehzu>
 
-    <!-- Beschreibung regel Tag -->
-    <regel name="optionaler Name">Lokal /situativ gesetzte Regel . Kann auch global wirksam sein</regel>
-
   <!-- Der Canon faengt hier schon an : seine selbst definierten Tags zu verwenden -->
   <def name="Theorie Referentialitaet">Der Canon und andere Theorien sind referentiell zu lesen / niemals quer
     Als Einstieg dient immer index.xml . Dort sind alle notwendigen Wege vorbereitet und dienen bereits einer schnellen Suche

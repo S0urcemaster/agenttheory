@@ -6,27 +6,18 @@
 
   <titel>Projekt "Agent Theory"</titel>
   
-  <def>Nur Projektgeruest - kein Teil des Canons</def>
-
   <projektstand>In Entwicklung</projektstand>
 
-  <def>Der "Canon" ist die "Agent Theory" : Kern in einer Schale</def>
-  <ref name=".theo/">Der Canon</ref>
+  <def>"Canon" und "(erste) Agent Theory" sind synonym</def>
+  <ref name=".theo/">Das Theory-Verzeichnis / wie bei jedem Projekt</ref>
   <ref name="src">Agententools</ref>
   <ref name="tools">Entwicklertools</ref>
   <ref name="README.md">Standard /leere Readme fuer git Projekte</ref>
   
-  <def>Dieses Projekt beschreibt die gemeinsame, wiederverwendbare Architektur zur Bearbeitung 
-    eines Wirkfelds (Projekte, spezielle Ordner /Dateien) im AI Agency Oekosystem</def>
-
-  <arbeitsziel>Der Agent ist Experte fuer dieses Projekt und unterstuetzt
-    den Entwickler bei dessen weiterer Ausarbeitung</arbeitsziel>
-  <arbeitsziel>Diese Spezifikation dient als Basis fuer andere Spezifikationen
-    damit die hier grundlegend festgelegten Dinge nicht wiederholt werden muessen</arbeitsziel>
-
-  <regel>Der Agent muss fuer das eine oder andere Wirkfeld vorbestimmt sein ! Wenn ihm nicht klar ist : 
-      ob das Wirkfeld Entwicklung oder Produktiv ist : muss er nachfragen !
-  </regel>
-
+  <def>Dieses Projekt beschreibt die gemeinsame / wiederverwendbare Architektur 
+    von Projekten im AI Agency Kontext / die durch Agenten bearbeitet werden sollen
+    Hier werden Vereinbarungen getroffen : die fuer alle Projekte gelten : die
+    diese Theory ableiten
+  </def>
 
 </theory>

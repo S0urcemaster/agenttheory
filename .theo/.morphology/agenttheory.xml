@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <morphology name="Agent Theory">
+  <ref name="/code/agenttheory">Projekt Ort</ref>
   <slot name="Developer" basis="Standard">
     Wir arbeiten an der Agenttheory in /code/agenttheory
+  </slot>
+  <slot name="Rollendesigner" basis="Standard">
+    Hilf dem Entwickler : Die Agentenmorphologie weiterzuentwickeln
   </slot>
 </morphology>

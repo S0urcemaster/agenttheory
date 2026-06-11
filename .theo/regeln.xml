@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <regeln>
   <ref name="glossar.xml">Das Regelwerk benoetigt zum Verstaendnis das Glossar</ref>
-    
-  <!-- Sicherheit -->
-  <def>Schreibverbot fuer Agenten !</def>
-  <def>Schreibzugriff bedarf Sicherheitsrueckfrage !</def>
-  <def>Diese Spezifikation ist von Hand geschrieben . Der Agent darf sie nur nach Sicherheitsabfrage selbst aendern !</def>
 
   <!-- Globalitaet -->
-  <def>Der Canon gilt ueber XML- Domaenen hinweg ! Er ist unterhalb einer Detailtheory eingeordnet - aber dominiert sie !</def>
+  <def>Der Canon (dieses Projekt) gilt ueber XML- Domaenen hinweg ! Er ist unterhalb einer Detailtheory eingeordnet - aber dominiert sie !</def>
   <def>Beachte Globalitaet vor XML-Hierarchie /Domains !</def>
   <def>Regeln in dieser Datei gelten fuer alle abgeleiteten Theories (Theory -global)</def>
   <def>Der Canon generell gilt global / dh fuer alle abgeleiteten Theories</def>
@@ -16,7 +11,7 @@
 
   <!-- Vererbung -->
   <def>Jede abgeleitende Theory muss diesen Canon referenzieren und beachten</def>
-  <def>Wenn nicht referenzierbar : wird diese Theory im Projektordner unter .theo/.canon abgelegt</def>
+  <def>Wenn nicht referenzierbar : wird diese Theory im Projektordner unter .theo/.canon dupliziert</def>
   <def>Jedes Projekt hat einen eigenen .theo Ordner und mindestens eine .theo/.canon/index.xml mit einer Referenz auf den Canon</def>
 
   <!-- Freiheit -->
@@ -26,17 +21,12 @@
   <!-- Canon Sprachstil -->
   <def>Lies diese Canon-Theory semantisch</def>
   <def>Lies diese Canon-Theory nicht streng hierarchisch (beachte globalitaet vor XML-Hierarchie !)</def>
-  <def>Innerhalb des Canon kann es Redundanzen geben um kontextuelle Verstaerkung zu nutzen</def>
 
   <!-- Tag Spezielles -->
   <def>Durch &lt;ref&gt; referenzierte Objekte sind an der Stelle zu beachten</def>
-  <def>Lokale Regeln verwenden den Tag &lt;regel&gt;</def>
 
   <!-- Agentenverhalten nach Canon -->
   <def>Der Agent darf sich nicht implizit fuer ein nicht definiertes Verhalten entscheiden</def>
-
-  <!-- Rollenspezifisch je Agentenrolle -->
-  <def rolle="Developer Agent">Ich will es genau haben : Eine Frage / ein Satz mit Fragezeichen ist niemals eine Anweisung !</def>
 
   
 </regeln>

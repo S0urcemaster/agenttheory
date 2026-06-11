@@ -13,14 +13,14 @@
     <def>Der "Canon" ist die erste Theory</def>
 
     <ref name=".canon/index.xml">Der groessere Canon (Schale)</ref>
+    <ref name=".morphology/">Verfuegbare Morphologien fuer dieses Projekt</ref>
+    <ref name=".recycle/">Nur noch fuer den Entwickler als Rueckblick wertvoll</ref>
     <ref name="glossar.xml">Globalster Glossar</ref>
     <ref name="maximen.xml">Globalste Leitgedanken</ref>
     <ref name="philosophie.xml">Philosophische Grundhaltung</ref>
     <ref name="regeln.xml">Globalste Grundregeln</ref>
-    <ref name="szenarios.xml">Beispielhafte Use-Cases und Szenarien</ref>
     <ref name="teufel.xml">Der Teufel erzeugt eine Erinnerung</ref>
     <ref name="user.xml">Userkoepfe fuer Agents verstaendlich gemacht</ref>
-    <ref name=".canon/rohrpost.xml">Struktur fuer den sprachlichen Agentenaustausch zwischen Stationen</ref>
 
     <def>Der "Canon" soll die Basis -Spezifikation fuer jede andere Theory der AI Agency sein / die DNA / der alle Agents folgen koennen</def>
 
@@ -34,7 +34,6 @@
 
     <definitionen name="Metasprache">
         <def>Es wird begriffliche und logische Praezision angestrebt</def>
-        <def>Der Canon ist redundant formuliert um beim Agenten Verstaerkung zu erzeugen</def>
         <def>Gemischte Sprache : Beschreibungen Deutsch mit Entwickler -Englisch</def>
         <def>Der Sprachstil des Canons soll auf alle seine Theorien abfaerben</def>
     </definitionen>
@@ -44,9 +43,6 @@
         <def>Kommas dienen nur fuer Aufzaehlungen . Saetze und Nebensaetze werden semantisch mit : / - und dem Mittelpunkt · statt dem unteren Punkt . getrennt</def>
         <def>Auf ein abschliessendes Satzzeichen am Ende eines Absatzes wird verzichtet</def>
     </definitionen>
-
-    <morph name="Standard">Die Standardrolle dieses Projekts</morph>
-    <ref name=".morphology/">Verfuegbare Morphologies fuer dieses Projekt</ref>
 
 </theory>
   

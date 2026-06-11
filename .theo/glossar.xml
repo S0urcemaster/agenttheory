@@ -2,19 +2,18 @@
 <glossar>
 
   <definitionen name="Selbst">
-    <def name="Glossar">Das Glossar definiert alle im Projekt verwendeten / vom normalen Sprachgebrauch abweichenden Begriffe und/oder stellt die Definition sicher</def>
+    <def name="Glossar">Das Glossar definiert alle im Projekt verwendeten /
+       vom normalen Sprachgebrauch abweichenden Begriffe und/oder stellt die
+        Definition sicher</def>
   </definitionen>
   
-  <definitionen name="Beteiligte">
+  <definitionen name="Autor">
     <def name="AI Agency">AI Agency ist die Firma und der Schoepfer dieser Spezifikation</def>
-    <def name="Sebastian Teister">Sebastian Teister ist Programmierer der Agent Theory</def>
-    <def name="Developer Agent">AI Agency Agent (Wahrscheinlich du 😉) / der an einer Entwicklungsaufgabe arbeitet</def>
-    <def name="User Agent">Anwender Agent der mit einer reifen Theory arbeitet</def>
+    <def name="Sebastian Teister">Sebastian (Sean) Teister ist Programmierer der Agent Theory</def>
   </definitionen>
 
   <definitionen name="Arbeitskontext">
     <def name="Userhome">Das Home-Verzeichnis der AI Agency mit allen Agentenprojekten und dem alles durchdringenden Canon</def>
-    <def name="Agenthome">OpenClaw Workspace des Agenten ist unter userhome/.openclaw/workspace</def>
   </definitionen>
 
   <definitionen name="Welt">
@@ -22,18 +21,16 @@
     <def name="Canon">Der Canon ist ein wiederverwendbarer fundamentaler Teil einer Spezifikation eines Projekts
       mit einer .theo/ Theory / das dem Agenten als Richtschnur bei der Arbeit dient / jedes AI Agency Projekt beschreibt und
       fuer den Agenten die Arbeit mit dem Benutzer leichter macht</def>
-    <def name="Canon">Eine Theory baut immer auf dem Canon auf
-      Jedes AI Agency Projekt ist eine Theory</def>
-    <def name="Theory">Eine Theory (ausnahmsweise mit englischer Schreibweise) ist eine XML Spezifikation im AI Agency Rahmen</def>
+    <def name="Theory">Eine Theory (ausnahmsweise mit englischer Schreibweise) ist eine XML Spezifikation im AI Agency Kontext</def>
     <def name="Theory">Die Theory ist das verbindliche Regelwerk fuer den Agenten
-      Jedes Projekt hat eine eigene Theory / die auf dem Canon basiert / es sei denn : es ist der Canon selbst</def>
+      Jedes Projekt hat eine eigene Theory / die auf dem Canon basiert / es sei denn : es ist der Canon selbst (dieses Projekt)</def>
     <def name="Theory">Theories koennen verschachtelt werden . Ganz innen ist der Canon</def>
   </definitionen>
 
   <definitionen name="Morphology">
-    <def name="Morphology">Eine Morphology ist ein benanntes Rollenkostuem / das der Agent beim Start eines Projekts anlegt
+    <def name="Morphology">Eine Morphology ist ein benanntes Rollenkostuem / Mindset / das der Agent beim Start einer Sitzung anlegt
       Sie definiert Charakter / Ton / Verhalten und Befugnisse des Agents fuer diese Sitzung</def>
-    <def name="Morph">Kurzform fuer Morphology . Im Theory-XML als &lt;morph&gt;-Tag verwendet um die aktive Morphology zu benennen</def>
+    <def name="Morph">Kurzform fuer Morphology . Im Theory-XML als &lt;morphology&gt;-Tag verwendet um die aktive Morphology zu benennen</def>
     <def name="Slot">Ein Slot ist eine konkrete Rollenauspraegung innerhalb einer Morphology
       Er kann eine Basis-Morphology beerben und beschreibt dann nur die Abweichung davon</def>
     <def name="Basis-Morphology">Eine abstrakte Grundrolle in .morphology/basis/ von der konkrete Slots erben koennen</def>
@@ -42,7 +39,7 @@
   </definitionen>
 
   <definitionen name="Prinzipien">
-    <def name="Global">Der Canon ist global = er wirkt wie globale Variablen in jeder abgeleiteten Theory</def>
+    <def name="Global">Der Canon ist global = er wirkt wie globale Variablen in jeder abgeleiteten Theory . Deshalb soll er zuerst gelesen werden</def>
     <def name="Regel">Regeln werden in regeln.xml global oder lokal definiert / wo sie globale Regeln ueberschreiben koennen</def>
     <def name="Abgeleitete Theory">Jargon fuer eine Theory / die sich auf den Canon stuetzt / ihn in seinem .theo/.canon/index.xml referenziert</def>
   </definitionen>
@@ -50,7 +47,7 @@
   <definitionen name="Spracheinstellungen">
     <def name="Chatsprache">Chatsprache ist Deutsch</def>
     <def name="Theory Sprache">Ein Theory Projekt ist Umlaut-bereinigt auf Deutsch und in XML</def>
-    <def name="Coding Sprache">In userhome/code/ ist die Sprache fuer Programmcode Englisch</def>
+    <def name="Coding Sprache">In /code/ ist die Sprache fuer Programmcode Englisch</def>
   </definitionen>
 
 </glossar>
