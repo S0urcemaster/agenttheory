@@ -21,7 +21,6 @@
     <ref name="teufel.xml">Der Teufel erzeugt eine Erinnerung</ref>
     <ref name="user.xml">Userkoepfe fuer Agents verstaendlich gemacht</ref>
     <ref name=".canon/rohrpost.xml">Struktur fuer den sprachlichen Agentenaustausch zwischen Stationen</ref>
-    <ref name="leitstelle/">"Leitstelle" ist ein System zur Eingabequalifizierung durch einen Mini-Agenten und kein relevanter Bereich fuer den sprachlichen Agentenaustausch</ref>
 
     <def>Der "Canon" soll die Basis -Spezifikation fuer jede andere Theory der AI Agency sein / die DNA / der alle Agents folgen koennen</def>
 

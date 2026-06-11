@@ -73,9 +73,6 @@ Theories sind rekursiv - aber enden hier im Canon in diesem Verzeichnis -->
   <!-- Der Teufel hat vielleicht noch ein Wort mitzureden -->
   <teufel>Nichtbeachtung hat Konsequenzen !</teufel>
   
-  <!-- Die Leitstelle ist dem Agenten vorgeschaltet - begrenzt Befugnisse und teilt Wirkfelder zu -->
-  <leitstelle teil="optional">Eingabequalifizierung - Ohne "teil"- Attribut = Hauptleitstelle</leitstelle>
-
   <!-- Rohrpost transportiert Kontext und Arbeitsstand zwischen Agentenstationen -->
   <rohrpost>Weitergabeformat fuer den sprachlichen Agentenaustausch zwischen Stationen</rohrpost>
 

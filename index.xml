@@ -28,11 +28,6 @@
       ob das Wirkfeld Entwicklung oder Produktiv ist : muss er nachfragen !
   </regel>
 
-  <wirkfeld name="Leitstelle">
-    <ref name="src/leitstelle/"></ref>
-    <def>Aufgabe ist die Entwicklung/Wartung eines OpenClaw Tools</def>
-  </wirkfeld>
-
   <wirkfeld name="Canon">
     <ref name=".theo/"></ref>
     <def>Der Canon ist das Werkstueck in diesem Projekt und gleichzeitig seine sich veraendernde Basis
