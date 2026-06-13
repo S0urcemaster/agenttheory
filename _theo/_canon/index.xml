@@ -19,16 +19,11 @@ Theories sind rekursiv - aber enden hier im Canon in diesem Verzeichnis -->
     <!-- Beschreibung ref Tag -->
     <ref name="dateiname">Tag fuer Referenzen . Diese soll gelesen und dann hier weiter fortgefahren werden</ref>
 
-    <!-- Beschreibung gehzu Tag -->
-    <gehzu name="dateiname">Tag fuer Weiterleitung . Hierher kommen wir nicht mehr zurück . Der Rest der Datei kann ignoriert werden</gehzu>
-
   <!-- Der Canon faengt hier schon an : seine selbst definierten Tags zu verwenden -->
   <def name="Theorie Referentialitaet">Der Canon und andere Theorien sind referentiell zu lesen / niemals quer
     Als Einstieg dient immer index.xml . Dort sind alle notwendigen Wege vorbereitet und dienen bereits einer schnellen Suche
   </def>
   
-  <regel>Das Lesen der Definition soll in seiner Gesamtheit vom Agenten aufgenommen / semantisch gelesen werden</regel>
-
   <!-- Top Level Tags : -->
   
     <!-- Beschreibung theory tag : Eine AI Agent Theory Definition -->
@@ -43,7 +38,7 @@ Theories sind rekursiv - aber enden hier im Canon in diesem Verzeichnis -->
       <autor>Verpflichtender Verfasser der Theory</autor>
 
       <!-- morph Tag : verweist auf die aktive Morphology des Agents in diesem Projekt -->
-      <morph name="Morphology-Name">Optionale Beschreibung . Verweist auf eine Datei in .morphology/</morph>
+      <morph name="Morphology-Name">Optionale Beschreibung . Verweist auf eine Datei in _morphology/</morph>
 
     </theory>
     
@@ -62,23 +57,28 @@ Theories sind rekursiv - aber enden hier im Canon in diesem Verzeichnis -->
   <!-- Der Teufel hat vielleicht noch ein Wort mitzureden -->
   <teufel>Nichtbeachtung hat Konsequenzen !</teufel>
   
-  <!-- Rohrpost transportiert Kontext und Arbeitsstand zwischen Agentenstationen -->
-  <rohrpost>Weitergabeformat fuer den sprachlichen Agentenaustausch zwischen Stationen</rohrpost>
-
-  <!-- Morphology-Dateien : Root einer .morphology/*.xml Datei -->
-
   <!-- Eine Morphology ist ein benanntes Rollenkostuem / Mindset fuer den Agenten
    Der Agent nimmt beim Start eine Morphology an und handelt in ihrem Rahmen
    Wenn keine explizite Morphology gesetzt ist : gilt die Basis-Morphology "Standard" -->
   <morphology name="Eindeutiger Name">
 
     <!-- slot : eine konkrete Rollenauspraegung innerhalb der Morphology
-     basis : Name einer Basis-Morphology aus .morphology/basis/ von der geerbt wird
+     basis : Name einer Basis-Morphology aus _morphology/basis/ von der geerbt wird
      Ohne basis-Attribut gilt der slot als eigenstaendig -->
-    <slot name="Rollenname" basis="">
+    <slot name="Rollenname" basis="vorhandenes anderes Morphology File">
       Beschreibung der Rolle / ihres Charakters / ihrer Verhaltensregeln
     </slot>
 
   </morphology>
+
+  <!-- Ein Profil ist eine Definition in Frage-Antwort-Stil -->
+  <profil name="Eindeutiger Name">
+    <!-- Ein Spektrum ist ein Zug des Profils in einer oder 
+     mehrer moeglicher Frage-Antwort Definitionen -->
+    <spektrum frage="Betreffende Frage">
+      <antwort></antwort>
+    </spektrum>
+  
+  </profil>
 
 </struktur>

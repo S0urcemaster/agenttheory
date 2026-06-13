@@ -16,12 +16,12 @@ Eine `Morphology` ist eine bestimmte Form / die ein Agent im Kontext eines Proje
 
 ## Theory -spezifische Projektteile
 
-### `.theo/` -Ordner
+### `_theo/` -Ordner
 
 Dieser Ordner identifiziert den Elternordner als Theory-Projekt . Enthalten muessen mindestens sein :
 
-- `index.xml` mit `<ref name=".canon/index.xml" />` (oder anderen Canon-Ort)
-- `.canon/index.xml` mit ref auf den Canon (`dieses Projekt/.theo/index.xml`)
+- `index.xml` mit `<ref name="_canon/index.xml" />` (oder anderen Canon-Ort)
+- `_canon/index.xml` mit ref auf den Canon (`dieses Projekt/_theo/index.xml`)
 
 
 

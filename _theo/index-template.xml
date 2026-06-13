@@ -3,7 +3,7 @@
 <theory name="projektname">
 
     <!-- Die innerste Schachtel : Darin steht : wie es geformt sein soll -->
-    <ref name=".canon/index.xml" />
+    <ref name="_canon/index.xml" />
 
     <titel>Projekttitel</titel>
     <autor>Digi Craft</autor>

@@ -19,7 +19,7 @@
   <definitionen name="Welt">
     <def name="Canon">Der Canon ist die erste Theory auf der alle anderen Theories aufbauen . Jede Theory muss den Canon referenzieren</def>
     <def name="Canon">Der Canon ist ein wiederverwendbarer fundamentaler Teil einer Spezifikation eines Projekts
-      mit einer .theo/ Theory / das dem Agenten als Richtschnur bei der Arbeit dient / jedes AI Agency Projekt beschreibt und
+      mit einer _theo/ Theory / das dem Agenten als Richtschnur bei der Arbeit dient / jedes AI Agency Projekt beschreibt und
       fuer den Agenten die Arbeit mit dem Benutzer leichter macht</def>
     <def name="Theory">Eine Theory (ausnahmsweise mit englischer Schreibweise) ist eine XML Spezifikation im AI Agency Kontext</def>
     <def name="Theory">Die Theory ist das verbindliche Regelwerk fuer den Agenten
@@ -33,7 +33,7 @@
     <def name="Morph">Kurzform fuer Morphology . Im Theory-XML als &lt;morphology&gt;-Tag verwendet um die aktive Morphology zu benennen</def>
     <def name="Slot">Ein Slot ist eine konkrete Rollenauspraegung innerhalb einer Morphology
       Er kann eine Basis-Morphology beerben und beschreibt dann nur die Abweichung davon</def>
-    <def name="Basis-Morphology">Eine abstrakte Grundrolle in .morphology/basis/ von der konkrete Slots erben koennen</def>
+    <def name="Basis-Morphology">Eine abstrakte Grundrolle in _morphology/basis/ von der konkrete Slots erben koennen</def>
     <def name="Morphology-Wahl">Wenn der Agent gestartet wird : liest er die verfuegbaren Morphologies und fragt
       sofern keine explizit gesetzt ist / welche Rolle er annehmen soll</def>
   </definitionen>
@@ -41,7 +41,7 @@
   <definitionen name="Prinzipien">
     <def name="Global">Der Canon ist global = er wirkt wie globale Variablen in jeder abgeleiteten Theory . Deshalb soll er zuerst gelesen werden</def>
     <def name="Regel">Regeln werden in regeln.xml global oder lokal definiert / wo sie globale Regeln ueberschreiben koennen</def>
-    <def name="Abgeleitete Theory">Jargon fuer eine Theory / die sich auf den Canon stuetzt / ihn in seinem .theo/.canon/index.xml referenziert</def>
+    <def name="Abgeleitete Theory">Jargon fuer eine Theory / die sich auf den Canon stuetzt / ihn in seinem _theo/_canon/index.xml referenziert</def>
   </definitionen>
 
   <definitionen name="Spracheinstellungen">

@@ -5,16 +5,16 @@
 <theory name="canon">
 
     <!-- Die innerste Schachtel : Darin steht : wie es geformt sein soll -->
-    <ref name=".canon/index.xml" />
+    <ref name="_canon/index.xml" />
 
     <titel>AI Agency Canon Definition</titel>
     <autor>AI Agency</autor>
 
     <def>Der "Canon" ist die erste Theory</def>
 
-    <ref name=".canon/index.xml">Der groessere Canon (Schale)</ref>
-    <ref name=".morphology/">Verfuegbare Morphologien fuer dieses Projekt</ref>
-    <ref name=".recycle/">Nur noch fuer den Entwickler als Rueckblick wertvoll</ref>
+    <ref name="_canon/index.xml">Der groessere Canon (Schale)</ref>
+    <ref name="_morphology/">Verfuegbare Morphologien fuer dieses Projekt</ref>
+    <ref name="_recycle/">Nur noch fuer den Entwickler als Rueckblick wertvoll</ref>
     <ref name="glossar.xml">Globalster Glossar</ref>
     <ref name="maximen.xml">Globalste Leitgedanken</ref>
     <ref name="philosophie.xml">Philosophische Grundhaltung</ref>

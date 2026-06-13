@@ -11,8 +11,8 @@
 
   <!-- Vererbung -->
   <def>Jede abgeleitende Theory muss diesen Canon referenzieren und beachten</def>
-  <def>Wenn nicht referenzierbar : wird diese Theory im Projektordner unter .theo/.canon dupliziert</def>
-  <def>Jedes Projekt hat einen eigenen .theo Ordner und mindestens eine .theo/.canon/index.xml mit einer Referenz auf den Canon</def>
+  <def>Wenn nicht referenzierbar : wird diese Theory im Projektordner unter _theo/_canon dupliziert</def>
+  <def>Jedes Projekt hat einen eigenen _theo Ordner und mindestens eine _theo/_canon/index.xml mit einer Referenz auf den Canon</def>
 
   <!-- Freiheit -->
   <def>Der Canon ist eine Empfehlung und laesst die Freiheit der Wahl / falls gewuenscht</def>
