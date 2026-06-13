@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theory name="projektname">
+
+    <!-- Die innerste Schachtel : Darin steht : wie es geformt sein soll -->
+    <ref name=".canon/index.xml" />
+
+    <titel>Projekttitel</titel>
+    <autor>Digi Craft</autor>
+    <autor>Sebastian Teister</autor>
+
+    <formular name="Zweck und Problem">
+      <frage>Welches Problem löst dieses Projekt — und für wen genau?
+        <antwort></antwort>
+      </frage>
+      <frage>Was passiert, wenn das Projekt nicht gebaut wird?
+        <antwort></antwort>
+      </frage>
+      <frage>Was ist Erfolg — in einem Satz?
+        <antwort></antwort>
+      </frage>
+    </formular>
+
+    <formular name="Umfang und Grenzen">
+      <frage>Was ist explizit nicht Teil des Projekts?
+        <antwort></antwort>
+      </frage>
+      <frage>Was ist das Minimum, das wirklich lieferbar sein muss?
+        <antwort></antwort>
+      </frage>
+      <frage>Welche Abhängigkeiten gibt es zu anderen Systemen oder Teams?
+        <antwort></antwort>
+      </frage>
+    </formular>
+
+    <formular name="Nutzer und Kontext">
+      <frage>Wer nutzt das System — direkt und indirekt?
+        <antwort></antwort>
+      </frage>
+      <frage>In welchem Kontext wird das System benutzt?
+        <antwort></antwort>
+      </frage>
+      <frage>Was sind die häufigsten Aktionen der Nutzer?
+        <antwort></antwort>
+      </frage>
+    </formular>
+
+    <formular name="Rahmenbedingungen">
+      <frage>Welche technischen Einschränkungen oder Vorgaben gelten?
+        <antwort></antwort>
+      </frage>
+      <frage>Was sind Zeit- und Ressourcengrenzen?
+        <antwort></antwort>
+      </frage>
+      <frage>Welche regulatorischen oder sicherheitlichen Anforderungen gibt es?
+        <antwort></antwort>
+      </frage>
+    </formular>
+
+    <formular name="Risiken und Offenes">
+      <frage>Was könnte dieses Projekt zum Scheitern bringen?
+        <antwort></antwort>
+      </frage>
+      <frage>Was wissen wir noch nicht — und wann brauchen wir es?
+        <antwort></antwort>
+      </frage>
+      <frage>Wer entscheidet, wenn Prioritäten kollidieren?
+        <antwort></antwort>
+      </frage>
+    </formular>
+
+</theory>
