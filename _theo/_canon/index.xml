@@ -71,14 +71,15 @@ Theories sind rekursiv - aber enden hier im Canon in diesem Verzeichnis -->
 
   </morphology>
 
-  <!-- Ein Profil ist eine Definition in Frage-Antwort-Stil -->
-  <profil name="Eindeutiger Name">
-    <!-- Ein Spektrum ist ein Zug des Profils in einer oder 
-     mehrer moeglicher Frage-Antwort Definitionen -->
-    <spektrum frage="Betreffende Frage">
-      <antwort></antwort>
+  <!-- Eine Facette ist eine Definition im Frage-Antwort-Stil -->
+  <facette name="Eindeutiger Name">
+    <!-- Ein Spektrum ist ein Teil einer Facetten-Definition (Frage-Antwort(en))
+     Es sind mehrere Spektren in einer Facette moeglich -->
+    <spektrum frage="Teilfrage">
+      <antwort>Eine Antwort</antwort>
+      <antwort>Optionale weitere Antwort</antwort>
     </spektrum>
   
-  </profil>
+  </facette>
 
 </struktur>
