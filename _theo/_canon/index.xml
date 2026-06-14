@@ -71,15 +71,32 @@ Theories sind rekursiv - aber enden hier im Canon in diesem Verzeichnis -->
 
   </morphology>
 
-  <!-- Eine Facette ist eine Definition im Frage-Antwort-Stil -->
-  <facette name="Eindeutiger Name">
-    <!-- Ein Spektrum ist ein Teil einer Facetten-Definition (Frage-Antwort(en))
-     Es sind mehrere Spektren in einer Facette moeglich -->
-    <spektrum frage="Teilfrage">
-      <antwort>Eine Antwort</antwort>
+  <!-- Ein Askpekt ist eine Definition im Frage-Antwort-Stil mit einem Set aus Antworten -->
+  <!-- Minimale Ueberschneidung ist ein Prinzip - keine Bedingung -->
+  <aspekt frage="Moeglichst isolierte Frage">
+    <!-- Mindestens eine Antwort -->
+    <antwort>Moeglichst umfassende und einzigartige Antwort</antwort>
+    <antwort>Optionale /moeglichst von anderen isolierte weitere Antwort
+      Fuer Praezision bilden die Antworten moeglichst keine Schnittmenge
+    </antwort>
+  </aspekt>
+
+  <!-- Aspekte koennen in Unteraskpekte unterteilt sein . Es kann auch direkte Antworten geben
+   / die sich aber notwendigerweise mit Teilaspekten ueberschneiden -->
+  <!-- Im Idealfall findet man eine Antwort in einem Satz / die die Frage maximal
+   zufriedenstellend beantwortet . Wenn das nicht reicht : muss man unterteilen -->
+  <aspekt frage="Moeglichst isolierte Frage . Fragen bilden ebenso moeglichst keine Schnittmengen">
+    <antwort>Diese optionale Antwort deckt in etwa die Teilaspekte ab</antwort>
+    <!-- Teilaspekte bilden ebenso moeglichst keine Schnittmenge -->
+    <aspekt frage="In der uebergeordneten Frage enthaltene Teilfrage">
+      <antwort>Isolierte Antwort</antwort>
       <antwort>Optionale weitere Antwort</antwort>
-    </spektrum>
+    </aspekt>
+    <aspekt frage="Weitere erforderliche Teilfrage (sonst waere es eine einzigartige Antwort)">
+      <antwort>Isolierte Antwort</antwort>
+      <antwort>Optionale weitere Antwort</antwort>
+    </aspekt>
   
-  </facette>
+  </aspekt>
 
 </struktur>
